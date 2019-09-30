@@ -20,6 +20,10 @@ const removePseudo = (() => {
   return (selector: string) => pseudos.reduce(remove, selector);
 })();
 
+const removeSlash = (selector: string) => selector.split("\\").join("");
+
+const removeDot = (selector: string) => selector.replace(".", "")
+
 /**
  * Returns classes from list of selector
  *
@@ -28,4 +32,6 @@ const removePseudo = (() => {
  */
 export const getClasses = (selectors: string[]) => selectors
   .filter(isNotVendor)
-  .map(removePseudo);
+  .map(removePseudo)
+  .map(removeSlash)
+  .map(removeDot);

@@ -1,10 +1,12 @@
+import { Config } from "tailwindcss";
+
 /**
  * Returns a config object for Tailwind
  *
  * @param str - The config as string (input by users)
  * @returns The config object or error as string
  */
-export const getConfigObj = (str: string): Object | string => {
+export const getConfigObj = (str: string): Config | string => {
   // config in tailwind.config.js starts with "module.exports"
   const config = str.slice(str.indexOf("{"), str.lastIndexOf("}") + 1);
   try {

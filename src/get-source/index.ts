@@ -4,6 +4,7 @@ import tailwindcss from "tailwindcss";
 import { getConfigObj } from "./get-config-obj";
 import { getSelectors } from "./get-selectors";
 import { getClasses } from "./get-classes";
+import { optimizeConfig } from "./optimize-config";
 
 const processResult = (
   resolve: (value: string) => void,
@@ -24,12 +25,12 @@ const processResult = (
  * @param configStr - The tailwind config as a string
  * @returns A promise resolve to its TS source
  */
-export const convert = (configStr: string) => {
+export const getSource = (configStr: string) => {
   return new Promise<string>((resolve, reject) => {
-    const configObj = getConfigObj(configStr);
-    if (typeof configObj === "string") { reject(configObj); }
-
-    postcss([tailwindcss(configObj)])
+    const orgConfig = getConfigObj(configStr);
+    if (typeof orgConfig === "string") { return reject(orgConfig); }
+    const [optConfig, changes] = optimizeConfig(orgConfig);
+    postcss([tailwindcss(optConfig)])
       .process("@tailwind utilities;", { from: undefined })
       .then(processResult(resolve, reject));
   });
