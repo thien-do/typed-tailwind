@@ -1,4 +1,4 @@
-const isNotVendor = (function() {
+const isNotVendor = (() => {
   const pseudos = [
     "::-webkit-input-placeholder", "::-moz-placeholder",
     ":-ms-input-placeholder", "::-ms-input-placeholder"
@@ -8,7 +8,7 @@ const isNotVendor = (function() {
   );
 })();
 
-const removePseudo = (function() {
+const removePseudo = (() => {
   const pseudos = [
     // These are not Tailwind's pseudo variants but are used
     ":before", ":after", "::placeholder",
@@ -20,6 +20,12 @@ const removePseudo = (function() {
   return (selector: string) => pseudos.reduce(remove, selector);
 })();
 
-export const toClasses = (selectors: string[]) => selectors
+/**
+ * Returns classes from list of selector
+ *
+ * @param selectors - List of selectors
+ * @returns Classes from selectors
+ */
+export const getClasses = (selectors: string[]) => selectors
   .filter(isNotVendor)
   .map(removePseudo);
