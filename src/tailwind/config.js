@@ -71,7 +71,7 @@ module.exports = {
     visibility: [], whitespace: [], width: [], wordBreak: [],
   },
   corePlugins: {
-    accessibility: false, appearance: false,
+    accessibility: false, appearance: false, alignContent: false, alignSelf: false,
     backgroundAttachment: false, backgroundPosition: false, backgroundRepeat: false,
     backgroundSize: false, borderCollapse: false, borderStyle: false,
     container: false, fill: false, flexGrow: false, flexShrink: false, float: false,

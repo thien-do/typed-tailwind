@@ -1,10 +1,11 @@
 import postcss from "postcss";
 import tailwindcss from "tailwindcss";
 
+import { withSafeSeparator, restoreSeparator } from "./separator";
 import { getConfig } from "./config";
 import { getSelectors } from "./selectors";
 import { getClasses } from "./classes";
-import { withSafeSeparator, restoreSeparator } from "./separator";
+import { getFile } from "./file";
 
 /**
  * Convert a config file to its TS source
@@ -23,6 +24,8 @@ export const getSource = (configStr: string) => {
       .then(getSelectors)
       .then(getClasses)
       .then(restoreSeparator(config))
+      .then(getFile)
+      .then(resolve)
       .catch(reject);
   });
 }
