@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { getSource } from './get-source';
+import { getSource } from './source/source';
 
 const App: React.FC = () => {
 

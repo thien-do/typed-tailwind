@@ -20,6 +20,8 @@ const removePseudo = (() => {
   return (selector: string) => pseudos.reduce(remove, selector);
 })();
 
+// Slashes are used for escaping in CSS. We will put these classes in TS so
+// no longer need escaping slashes
 const removeSlash = (selector: string) => selector.split("\\").join("");
 
 const removeDot = (selector: string) => selector.replace(".", "")

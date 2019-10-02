@@ -1,6 +1,6 @@
 declare module "tailwindcss" {
   export interface Config {
-    separator: string
+    separator?: string
     corePlugins: Record<string, boolean> | string[]
   }
 
