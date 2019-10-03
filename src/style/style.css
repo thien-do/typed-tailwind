@@ -1,4 +1,4 @@
-@import "./style/dist.css";
+@import "./utils.css";
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
