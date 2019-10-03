@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { IDisposable } from "monaco-editor";
+import { Style } from "style";
 
 interface Props {
   source: string;
@@ -23,6 +24,11 @@ export const Demo: React.FC<Props> = (props) => {
       ].join("\n"),
       language: "typescript",
       minimap: { enabled: false },
+      fontFamily: "Source Code Pro, monospace",
+      fontSize: 14,
+      lineNumbers: "off",
+      lineHeight: 24,
+      folding: false,
     });
   }, []);
 
@@ -34,6 +40,6 @@ export const Demo: React.FC<Props> = (props) => {
   }, [source])
 
   return (
-    <div ref={container} style={{ width: "500px", height: "500px" }} />
+    <div ref={container} className={Style().wFull().hFull().$()} />
   );
 };

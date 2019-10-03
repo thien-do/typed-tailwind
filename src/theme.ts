@@ -24,7 +24,7 @@ export const defineTheme = () => {
       "scrollbarSlider.activeBackground": "#747d9180",
       "scrollbarSlider.hoverBackground": "#5a637580",
 
-      "editor.background": "#282c34",
+      "editor.background": "#282c3400",
       "editor.foreground": "#abb2bf",
       "editorError.foreground": "#c24038",
       "editorIndentGuide.activeBackground": "#c8c8c859",

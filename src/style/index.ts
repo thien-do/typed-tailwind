@@ -19,126 +19,6 @@ class SStyle {
   }
  
   // Styling methods
-  bgCurrentColor(): SStyle { return this.add("bg-currentColor"); }
-  bgTransparent(): SStyle { return this.add("bg-transparent"); }
-  bgBlack(): SStyle { return this.add("bg-black"); }
-  bgWhite(): SStyle { return this.add("bg-white"); }
-  bgBackground(): SStyle { return this.add("bg-background"); }
-  bgPurple(): SStyle { return this.add("bg-purple"); }
-  bgError(): SStyle { return this.add("bg-error"); }
-  bgCoral(): SStyle { return this.add("bg-coral"); }
-  bgWhiskey(): SStyle { return this.add("bg-whiskey"); }
-  bgChalky(): SStyle { return this.add("bg-chalky"); }
-  bgLightDark(): SStyle { return this.add("bg-lightDark"); }
-  bgDark(): SStyle { return this.add("bg-dark"); }
-  bgMalibu(): SStyle { return this.add("bg-malibu"); }
-  bgGreen(): SStyle { return this.add("bg-green"); }
-  bgFountainBlue(): SStyle { return this.add("bg-fountainBlue"); }
-  bgInvalid(): SStyle { return this.add("bg-invalid"); }
-  bgLightWhite(): SStyle { return this.add("bg-lightWhite"); }
-  hoverBgCurrentColor(): SStyle { return this.add("hover_bg-currentColor"); }
-  hoverBgTransparent(): SStyle { return this.add("hover_bg-transparent"); }
-  hoverBgBlack(): SStyle { return this.add("hover_bg-black"); }
-  hoverBgWhite(): SStyle { return this.add("hover_bg-white"); }
-  hoverBgBackground(): SStyle { return this.add("hover_bg-background"); }
-  hoverBgPurple(): SStyle { return this.add("hover_bg-purple"); }
-  hoverBgError(): SStyle { return this.add("hover_bg-error"); }
-  hoverBgCoral(): SStyle { return this.add("hover_bg-coral"); }
-  hoverBgWhiskey(): SStyle { return this.add("hover_bg-whiskey"); }
-  hoverBgChalky(): SStyle { return this.add("hover_bg-chalky"); }
-  hoverBgLightDark(): SStyle { return this.add("hover_bg-lightDark"); }
-  hoverBgDark(): SStyle { return this.add("hover_bg-dark"); }
-  hoverBgMalibu(): SStyle { return this.add("hover_bg-malibu"); }
-  hoverBgGreen(): SStyle { return this.add("hover_bg-green"); }
-  hoverBgFountainBlue(): SStyle { return this.add("hover_bg-fountainBlue"); }
-  hoverBgInvalid(): SStyle { return this.add("hover_bg-invalid"); }
-  hoverBgLightWhite(): SStyle { return this.add("hover_bg-lightWhite"); }
-  focusBgCurrentColor(): SStyle { return this.add("focus_bg-currentColor"); }
-  focusBgTransparent(): SStyle { return this.add("focus_bg-transparent"); }
-  focusBgBlack(): SStyle { return this.add("focus_bg-black"); }
-  focusBgWhite(): SStyle { return this.add("focus_bg-white"); }
-  focusBgBackground(): SStyle { return this.add("focus_bg-background"); }
-  focusBgPurple(): SStyle { return this.add("focus_bg-purple"); }
-  focusBgError(): SStyle { return this.add("focus_bg-error"); }
-  focusBgCoral(): SStyle { return this.add("focus_bg-coral"); }
-  focusBgWhiskey(): SStyle { return this.add("focus_bg-whiskey"); }
-  focusBgChalky(): SStyle { return this.add("focus_bg-chalky"); }
-  focusBgLightDark(): SStyle { return this.add("focus_bg-lightDark"); }
-  focusBgDark(): SStyle { return this.add("focus_bg-dark"); }
-  focusBgMalibu(): SStyle { return this.add("focus_bg-malibu"); }
-  focusBgGreen(): SStyle { return this.add("focus_bg-green"); }
-  focusBgFountainBlue(): SStyle { return this.add("focus_bg-fountainBlue"); }
-  focusBgInvalid(): SStyle { return this.add("focus_bg-invalid"); }
-  focusBgLightWhite(): SStyle { return this.add("focus_bg-lightWhite"); }
-  borderCurrentColor(): SStyle { return this.add("border-currentColor"); }
-  borderTransparent(): SStyle { return this.add("border-transparent"); }
-  borderBlack(): SStyle { return this.add("border-black"); }
-  borderWhite(): SStyle { return this.add("border-white"); }
-  borderBackground(): SStyle { return this.add("border-background"); }
-  borderPurple(): SStyle { return this.add("border-purple"); }
-  borderError(): SStyle { return this.add("border-error"); }
-  borderCoral(): SStyle { return this.add("border-coral"); }
-  borderWhiskey(): SStyle { return this.add("border-whiskey"); }
-  borderChalky(): SStyle { return this.add("border-chalky"); }
-  borderLightDark(): SStyle { return this.add("border-lightDark"); }
-  borderDark(): SStyle { return this.add("border-dark"); }
-  borderMalibu(): SStyle { return this.add("border-malibu"); }
-  borderGreen(): SStyle { return this.add("border-green"); }
-  borderFountainBlue(): SStyle { return this.add("border-fountainBlue"); }
-  borderInvalid(): SStyle { return this.add("border-invalid"); }
-  borderLightWhite(): SStyle { return this.add("border-lightWhite"); }
-  rounded0(): SStyle { return this.add("rounded-0"); }
-  rounded1(): SStyle { return this.add("rounded-1"); }
-  rounded2(): SStyle { return this.add("rounded-2"); }
-  roundedFull(): SStyle { return this.add("rounded-full"); }
-  roundedT0(): SStyle { return this.add("rounded-t-0"); }
-  roundedR0(): SStyle { return this.add("rounded-r-0"); }
-  roundedB0(): SStyle { return this.add("rounded-b-0"); }
-  roundedL0(): SStyle { return this.add("rounded-l-0"); }
-  roundedT1(): SStyle { return this.add("rounded-t-1"); }
-  roundedR1(): SStyle { return this.add("rounded-r-1"); }
-  roundedB1(): SStyle { return this.add("rounded-b-1"); }
-  roundedL1(): SStyle { return this.add("rounded-l-1"); }
-  roundedT2(): SStyle { return this.add("rounded-t-2"); }
-  roundedR2(): SStyle { return this.add("rounded-r-2"); }
-  roundedB2(): SStyle { return this.add("rounded-b-2"); }
-  roundedL2(): SStyle { return this.add("rounded-l-2"); }
-  roundedTFull(): SStyle { return this.add("rounded-t-full"); }
-  roundedRFull(): SStyle { return this.add("rounded-r-full"); }
-  roundedBFull(): SStyle { return this.add("rounded-b-full"); }
-  roundedLFull(): SStyle { return this.add("rounded-l-full"); }
-  roundedTl0(): SStyle { return this.add("rounded-tl-0"); }
-  roundedTr0(): SStyle { return this.add("rounded-tr-0"); }
-  roundedBr0(): SStyle { return this.add("rounded-br-0"); }
-  roundedBl0(): SStyle { return this.add("rounded-bl-0"); }
-  roundedTl1(): SStyle { return this.add("rounded-tl-1"); }
-  roundedTr1(): SStyle { return this.add("rounded-tr-1"); }
-  roundedBr1(): SStyle { return this.add("rounded-br-1"); }
-  roundedBl1(): SStyle { return this.add("rounded-bl-1"); }
-  roundedTl2(): SStyle { return this.add("rounded-tl-2"); }
-  roundedTr2(): SStyle { return this.add("rounded-tr-2"); }
-  roundedBr2(): SStyle { return this.add("rounded-br-2"); }
-  roundedBl2(): SStyle { return this.add("rounded-bl-2"); }
-  roundedTlFull(): SStyle { return this.add("rounded-tl-full"); }
-  roundedTrFull(): SStyle { return this.add("rounded-tr-full"); }
-  roundedBrFull(): SStyle { return this.add("rounded-br-full"); }
-  roundedBlFull(): SStyle { return this.add("rounded-bl-full"); }
-  border0(): SStyle { return this.add("border-0"); }
-  border1(): SStyle { return this.add("border-1"); }
-  border2(): SStyle { return this.add("border-2"); }
-  borderT0(): SStyle { return this.add("border-t-0"); }
-  borderR0(): SStyle { return this.add("border-r-0"); }
-  borderB0(): SStyle { return this.add("border-b-0"); }
-  borderL0(): SStyle { return this.add("border-l-0"); }
-  borderT1(): SStyle { return this.add("border-t-1"); }
-  borderR1(): SStyle { return this.add("border-r-1"); }
-  borderB1(): SStyle { return this.add("border-b-1"); }
-  borderL1(): SStyle { return this.add("border-l-1"); }
-  borderT2(): SStyle { return this.add("border-t-2"); }
-  borderR2(): SStyle { return this.add("border-r-2"); }
-  borderB2(): SStyle { return this.add("border-b-2"); }
-  borderL2(): SStyle { return this.add("border-l-2"); }
-  cursorPointer(): SStyle { return this.add("cursor-pointer"); }
   block(): SStyle { return this.add("block"); }
   inlineBlock(): SStyle { return this.add("inline-block"); }
   inline(): SStyle { return this.add("inline"); }
@@ -148,37 +28,12 @@ class SStyle {
   tableRow(): SStyle { return this.add("table-row"); }
   tableCell(): SStyle { return this.add("table-cell"); }
   hidden(): SStyle { return this.add("hidden"); }
-  flexRow(): SStyle { return this.add("flex-row"); }
-  flexRowReverse(): SStyle { return this.add("flex-row-reverse"); }
-  flexCol(): SStyle { return this.add("flex-col"); }
-  flexColReverse(): SStyle { return this.add("flex-col-reverse"); }
-  flexWrap(): SStyle { return this.add("flex-wrap"); }
-  flexWrapReverse(): SStyle { return this.add("flex-wrap-reverse"); }
-  flexNoWrap(): SStyle { return this.add("flex-no-wrap"); }
-  itemsStart(): SStyle { return this.add("items-start"); }
-  itemsEnd(): SStyle { return this.add("items-end"); }
-  itemsCenter(): SStyle { return this.add("items-center"); }
-  itemsBaseline(): SStyle { return this.add("items-baseline"); }
-  itemsStretch(): SStyle { return this.add("items-stretch"); }
-  justifyStart(): SStyle { return this.add("justify-start"); }
-  justifyEnd(): SStyle { return this.add("justify-end"); }
-  justifyCenter(): SStyle { return this.add("justify-center"); }
-  justifyBetween(): SStyle { return this.add("justify-between"); }
-  justifyAround(): SStyle { return this.add("justify-around"); }
   flex1(): SStyle { return this.add("flex-1"); }
   flexNone(): SStyle { return this.add("flex-none"); }
-  fontNormal(): SStyle { return this.add("font-normal"); }
-  fontSemibold(): SStyle { return this.add("font-semibold"); }
-  h0(): SStyle { return this.add("h-0"); }
-  h1(): SStyle { return this.add("h-1"); }
-  h2(): SStyle { return this.add("h-2"); }
-  h3(): SStyle { return this.add("h-3"); }
   h4(): SStyle { return this.add("h-4"); }
-  h6(): SStyle { return this.add("h-6"); }
   h8(): SStyle { return this.add("h-8"); }
   h12(): SStyle { return this.add("h-12"); }
   h16(): SStyle { return this.add("h-16"); }
-  h20(): SStyle { return this.add("h-20"); }
   h24(): SStyle { return this.add("h-24"); }
   h32(): SStyle { return this.add("h-32"); }
   h40(): SStyle { return this.add("h-40"); }
@@ -186,227 +41,6 @@ class SStyle {
   h60(): SStyle { return this.add("h-60"); }
   hFull(): SStyle { return this.add("h-full"); }
   hScreen(): SStyle { return this.add("h-screen"); }
-  leading20(): SStyle { return this.add("leading-20"); }
-  leading24(): SStyle { return this.add("leading-24"); }
-  leading28(): SStyle { return this.add("leading-28"); }
-  leading32(): SStyle { return this.add("leading-32"); }
-  m0(): SStyle { return this.add("m-0"); }
-  m1(): SStyle { return this.add("m-1"); }
-  m2(): SStyle { return this.add("m-2"); }
-  m3(): SStyle { return this.add("m-3"); }
-  m4(): SStyle { return this.add("m-4"); }
-  m6(): SStyle { return this.add("m-6"); }
-  m8(): SStyle { return this.add("m-8"); }
-  m12(): SStyle { return this.add("m-12"); }
-  m16(): SStyle { return this.add("m-16"); }
-  m20(): SStyle { return this.add("m-20"); }
-  m24(): SStyle { return this.add("m-24"); }
-  m32(): SStyle { return this.add("m-32"); }
-  m40(): SStyle { return this.add("m-40"); }
-  m48(): SStyle { return this.add("m-48"); }
-  m60(): SStyle { return this.add("m-60"); }
-  mAuto(): SStyle { return this.add("m-auto"); }
-  nM0(): SStyle { return this.add("-m-0"); }
-  nM1(): SStyle { return this.add("-m-1"); }
-  nM2(): SStyle { return this.add("-m-2"); }
-  nM3(): SStyle { return this.add("-m-3"); }
-  nM4(): SStyle { return this.add("-m-4"); }
-  nM6(): SStyle { return this.add("-m-6"); }
-  nM8(): SStyle { return this.add("-m-8"); }
-  nM12(): SStyle { return this.add("-m-12"); }
-  nM16(): SStyle { return this.add("-m-16"); }
-  nM20(): SStyle { return this.add("-m-20"); }
-  nM24(): SStyle { return this.add("-m-24"); }
-  nM32(): SStyle { return this.add("-m-32"); }
-  nM40(): SStyle { return this.add("-m-40"); }
-  nM48(): SStyle { return this.add("-m-48"); }
-  nM60(): SStyle { return this.add("-m-60"); }
-  my0(): SStyle { return this.add("my-0"); }
-  mx0(): SStyle { return this.add("mx-0"); }
-  my1(): SStyle { return this.add("my-1"); }
-  mx1(): SStyle { return this.add("mx-1"); }
-  my2(): SStyle { return this.add("my-2"); }
-  mx2(): SStyle { return this.add("mx-2"); }
-  my3(): SStyle { return this.add("my-3"); }
-  mx3(): SStyle { return this.add("mx-3"); }
-  my4(): SStyle { return this.add("my-4"); }
-  mx4(): SStyle { return this.add("mx-4"); }
-  my6(): SStyle { return this.add("my-6"); }
-  mx6(): SStyle { return this.add("mx-6"); }
-  my8(): SStyle { return this.add("my-8"); }
-  mx8(): SStyle { return this.add("mx-8"); }
-  my12(): SStyle { return this.add("my-12"); }
-  mx12(): SStyle { return this.add("mx-12"); }
-  my16(): SStyle { return this.add("my-16"); }
-  mx16(): SStyle { return this.add("mx-16"); }
-  my20(): SStyle { return this.add("my-20"); }
-  mx20(): SStyle { return this.add("mx-20"); }
-  my24(): SStyle { return this.add("my-24"); }
-  mx24(): SStyle { return this.add("mx-24"); }
-  my32(): SStyle { return this.add("my-32"); }
-  mx32(): SStyle { return this.add("mx-32"); }
-  my40(): SStyle { return this.add("my-40"); }
-  mx40(): SStyle { return this.add("mx-40"); }
-  my48(): SStyle { return this.add("my-48"); }
-  mx48(): SStyle { return this.add("mx-48"); }
-  my60(): SStyle { return this.add("my-60"); }
-  mx60(): SStyle { return this.add("mx-60"); }
-  myAuto(): SStyle { return this.add("my-auto"); }
-  mxAuto(): SStyle { return this.add("mx-auto"); }
-  nMy0(): SStyle { return this.add("-my-0"); }
-  nMx0(): SStyle { return this.add("-mx-0"); }
-  nMy1(): SStyle { return this.add("-my-1"); }
-  nMx1(): SStyle { return this.add("-mx-1"); }
-  nMy2(): SStyle { return this.add("-my-2"); }
-  nMx2(): SStyle { return this.add("-mx-2"); }
-  nMy3(): SStyle { return this.add("-my-3"); }
-  nMx3(): SStyle { return this.add("-mx-3"); }
-  nMy4(): SStyle { return this.add("-my-4"); }
-  nMx4(): SStyle { return this.add("-mx-4"); }
-  nMy6(): SStyle { return this.add("-my-6"); }
-  nMx6(): SStyle { return this.add("-mx-6"); }
-  nMy8(): SStyle { return this.add("-my-8"); }
-  nMx8(): SStyle { return this.add("-mx-8"); }
-  nMy12(): SStyle { return this.add("-my-12"); }
-  nMx12(): SStyle { return this.add("-mx-12"); }
-  nMy16(): SStyle { return this.add("-my-16"); }
-  nMx16(): SStyle { return this.add("-mx-16"); }
-  nMy20(): SStyle { return this.add("-my-20"); }
-  nMx20(): SStyle { return this.add("-mx-20"); }
-  nMy24(): SStyle { return this.add("-my-24"); }
-  nMx24(): SStyle { return this.add("-mx-24"); }
-  nMy32(): SStyle { return this.add("-my-32"); }
-  nMx32(): SStyle { return this.add("-mx-32"); }
-  nMy40(): SStyle { return this.add("-my-40"); }
-  nMx40(): SStyle { return this.add("-mx-40"); }
-  nMy48(): SStyle { return this.add("-my-48"); }
-  nMx48(): SStyle { return this.add("-mx-48"); }
-  nMy60(): SStyle { return this.add("-my-60"); }
-  nMx60(): SStyle { return this.add("-mx-60"); }
-  mt0(): SStyle { return this.add("mt-0"); }
-  mr0(): SStyle { return this.add("mr-0"); }
-  mb0(): SStyle { return this.add("mb-0"); }
-  ml0(): SStyle { return this.add("ml-0"); }
-  mt1(): SStyle { return this.add("mt-1"); }
-  mr1(): SStyle { return this.add("mr-1"); }
-  mb1(): SStyle { return this.add("mb-1"); }
-  ml1(): SStyle { return this.add("ml-1"); }
-  mt2(): SStyle { return this.add("mt-2"); }
-  mr2(): SStyle { return this.add("mr-2"); }
-  mb2(): SStyle { return this.add("mb-2"); }
-  ml2(): SStyle { return this.add("ml-2"); }
-  mt3(): SStyle { return this.add("mt-3"); }
-  mr3(): SStyle { return this.add("mr-3"); }
-  mb3(): SStyle { return this.add("mb-3"); }
-  ml3(): SStyle { return this.add("ml-3"); }
-  mt4(): SStyle { return this.add("mt-4"); }
-  mr4(): SStyle { return this.add("mr-4"); }
-  mb4(): SStyle { return this.add("mb-4"); }
-  ml4(): SStyle { return this.add("ml-4"); }
-  mt6(): SStyle { return this.add("mt-6"); }
-  mr6(): SStyle { return this.add("mr-6"); }
-  mb6(): SStyle { return this.add("mb-6"); }
-  ml6(): SStyle { return this.add("ml-6"); }
-  mt8(): SStyle { return this.add("mt-8"); }
-  mr8(): SStyle { return this.add("mr-8"); }
-  mb8(): SStyle { return this.add("mb-8"); }
-  ml8(): SStyle { return this.add("ml-8"); }
-  mt12(): SStyle { return this.add("mt-12"); }
-  mr12(): SStyle { return this.add("mr-12"); }
-  mb12(): SStyle { return this.add("mb-12"); }
-  ml12(): SStyle { return this.add("ml-12"); }
-  mt16(): SStyle { return this.add("mt-16"); }
-  mr16(): SStyle { return this.add("mr-16"); }
-  mb16(): SStyle { return this.add("mb-16"); }
-  ml16(): SStyle { return this.add("ml-16"); }
-  mt20(): SStyle { return this.add("mt-20"); }
-  mr20(): SStyle { return this.add("mr-20"); }
-  mb20(): SStyle { return this.add("mb-20"); }
-  ml20(): SStyle { return this.add("ml-20"); }
-  mt24(): SStyle { return this.add("mt-24"); }
-  mr24(): SStyle { return this.add("mr-24"); }
-  mb24(): SStyle { return this.add("mb-24"); }
-  ml24(): SStyle { return this.add("ml-24"); }
-  mt32(): SStyle { return this.add("mt-32"); }
-  mr32(): SStyle { return this.add("mr-32"); }
-  mb32(): SStyle { return this.add("mb-32"); }
-  ml32(): SStyle { return this.add("ml-32"); }
-  mt40(): SStyle { return this.add("mt-40"); }
-  mr40(): SStyle { return this.add("mr-40"); }
-  mb40(): SStyle { return this.add("mb-40"); }
-  ml40(): SStyle { return this.add("ml-40"); }
-  mt48(): SStyle { return this.add("mt-48"); }
-  mr48(): SStyle { return this.add("mr-48"); }
-  mb48(): SStyle { return this.add("mb-48"); }
-  ml48(): SStyle { return this.add("ml-48"); }
-  mt60(): SStyle { return this.add("mt-60"); }
-  mr60(): SStyle { return this.add("mr-60"); }
-  mb60(): SStyle { return this.add("mb-60"); }
-  ml60(): SStyle { return this.add("ml-60"); }
-  mtAuto(): SStyle { return this.add("mt-auto"); }
-  mrAuto(): SStyle { return this.add("mr-auto"); }
-  mbAuto(): SStyle { return this.add("mb-auto"); }
-  mlAuto(): SStyle { return this.add("ml-auto"); }
-  nMt0(): SStyle { return this.add("-mt-0"); }
-  nMr0(): SStyle { return this.add("-mr-0"); }
-  nMb0(): SStyle { return this.add("-mb-0"); }
-  nMl0(): SStyle { return this.add("-ml-0"); }
-  nMt1(): SStyle { return this.add("-mt-1"); }
-  nMr1(): SStyle { return this.add("-mr-1"); }
-  nMb1(): SStyle { return this.add("-mb-1"); }
-  nMl1(): SStyle { return this.add("-ml-1"); }
-  nMt2(): SStyle { return this.add("-mt-2"); }
-  nMr2(): SStyle { return this.add("-mr-2"); }
-  nMb2(): SStyle { return this.add("-mb-2"); }
-  nMl2(): SStyle { return this.add("-ml-2"); }
-  nMt3(): SStyle { return this.add("-mt-3"); }
-  nMr3(): SStyle { return this.add("-mr-3"); }
-  nMb3(): SStyle { return this.add("-mb-3"); }
-  nMl3(): SStyle { return this.add("-ml-3"); }
-  nMt4(): SStyle { return this.add("-mt-4"); }
-  nMr4(): SStyle { return this.add("-mr-4"); }
-  nMb4(): SStyle { return this.add("-mb-4"); }
-  nMl4(): SStyle { return this.add("-ml-4"); }
-  nMt6(): SStyle { return this.add("-mt-6"); }
-  nMr6(): SStyle { return this.add("-mr-6"); }
-  nMb6(): SStyle { return this.add("-mb-6"); }
-  nMl6(): SStyle { return this.add("-ml-6"); }
-  nMt8(): SStyle { return this.add("-mt-8"); }
-  nMr8(): SStyle { return this.add("-mr-8"); }
-  nMb8(): SStyle { return this.add("-mb-8"); }
-  nMl8(): SStyle { return this.add("-ml-8"); }
-  nMt12(): SStyle { return this.add("-mt-12"); }
-  nMr12(): SStyle { return this.add("-mr-12"); }
-  nMb12(): SStyle { return this.add("-mb-12"); }
-  nMl12(): SStyle { return this.add("-ml-12"); }
-  nMt16(): SStyle { return this.add("-mt-16"); }
-  nMr16(): SStyle { return this.add("-mr-16"); }
-  nMb16(): SStyle { return this.add("-mb-16"); }
-  nMl16(): SStyle { return this.add("-ml-16"); }
-  nMt20(): SStyle { return this.add("-mt-20"); }
-  nMr20(): SStyle { return this.add("-mr-20"); }
-  nMb20(): SStyle { return this.add("-mb-20"); }
-  nMl20(): SStyle { return this.add("-ml-20"); }
-  nMt24(): SStyle { return this.add("-mt-24"); }
-  nMr24(): SStyle { return this.add("-mr-24"); }
-  nMb24(): SStyle { return this.add("-mb-24"); }
-  nMl24(): SStyle { return this.add("-ml-24"); }
-  nMt32(): SStyle { return this.add("-mt-32"); }
-  nMr32(): SStyle { return this.add("-mr-32"); }
-  nMb32(): SStyle { return this.add("-mb-32"); }
-  nMl32(): SStyle { return this.add("-ml-32"); }
-  nMt40(): SStyle { return this.add("-mt-40"); }
-  nMr40(): SStyle { return this.add("-mr-40"); }
-  nMb40(): SStyle { return this.add("-mb-40"); }
-  nMl40(): SStyle { return this.add("-ml-40"); }
-  nMt48(): SStyle { return this.add("-mt-48"); }
-  nMr48(): SStyle { return this.add("-mr-48"); }
-  nMb48(): SStyle { return this.add("-mb-48"); }
-  nMl48(): SStyle { return this.add("-ml-48"); }
-  nMt60(): SStyle { return this.add("-mt-60"); }
-  nMr60(): SStyle { return this.add("-mr-60"); }
-  nMb60(): SStyle { return this.add("-mb-60"); }
-  nMl60(): SStyle { return this.add("-ml-60"); }
   overflowAuto(): SStyle { return this.add("overflow-auto"); }
   overflowHidden(): SStyle { return this.add("overflow-hidden"); }
   overflowVisible(): SStyle { return this.add("overflow-visible"); }
@@ -421,41 +55,77 @@ class SStyle {
   overflowYScroll(): SStyle { return this.add("overflow-y-scroll"); }
   scrollingTouch(): SStyle { return this.add("scrolling-touch"); }
   scrollingAuto(): SStyle { return this.add("scrolling-auto"); }
-  p0(): SStyle { return this.add("p-0"); }
-  p1(): SStyle { return this.add("p-1"); }
-  p2(): SStyle { return this.add("p-2"); }
-  p3(): SStyle { return this.add("p-3"); }
+  text0(): SStyle { return this.add("text-0"); }
+  text1(): SStyle { return this.add("text-1"); }
+  text2(): SStyle { return this.add("text-2"); }
+  text3(): SStyle { return this.add("text-3"); }
+  text4(): SStyle { return this.add("text-4"); }
+  text5(): SStyle { return this.add("text-5"); }
+  text6(): SStyle { return this.add("text-6"); }
+  text7(): SStyle { return this.add("text-7"); }
+  text8(): SStyle { return this.add("text-8"); }
+  text9(): SStyle { return this.add("text-9"); }
+  textCurrentColor(): SStyle { return this.add("text-currentColor"); }
+  textTransparent(): SStyle { return this.add("text-transparent"); }
+  textA(): SStyle { return this.add("text-A"); }
+  textB(): SStyle { return this.add("text-B"); }
+  textC(): SStyle { return this.add("text-C"); }
+  textD(): SStyle { return this.add("text-D"); }
+  textE(): SStyle { return this.add("text-E"); }
+  textF(): SStyle { return this.add("text-F"); }
+  text0At95(): SStyle { return this.add("text-0at95"); }
+  selectNone(): SStyle { return this.add("select-none"); }
+  selectText(): SStyle { return this.add("select-text"); }
+  selectAll(): SStyle { return this.add("select-all"); }
+  selectAuto(): SStyle { return this.add("select-auto"); }
+  w4(): SStyle { return this.add("w-4"); }
+  w8(): SStyle { return this.add("w-8"); }
+  w12(): SStyle { return this.add("w-12"); }
+  w16(): SStyle { return this.add("w-16"); }
+  w24(): SStyle { return this.add("w-24"); }
+  w32(): SStyle { return this.add("w-32"); }
+  w40(): SStyle { return this.add("w-40"); }
+  w48(): SStyle { return this.add("w-48"); }
+  w60(): SStyle { return this.add("w-60"); }
+  wFull(): SStyle { return this.add("w-full"); }
+  wScreen(): SStyle { return this.add("w-screen"); }
+  bg0(): SStyle { return this.add("bg-0"); }
+  bg1(): SStyle { return this.add("bg-1"); }
+  bg2(): SStyle { return this.add("bg-2"); }
+  bg3(): SStyle { return this.add("bg-3"); }
+  bg4(): SStyle { return this.add("bg-4"); }
+  bg5(): SStyle { return this.add("bg-5"); }
+  bg6(): SStyle { return this.add("bg-6"); }
+  bg7(): SStyle { return this.add("bg-7"); }
+  bg8(): SStyle { return this.add("bg-8"); }
+  bg9(): SStyle { return this.add("bg-9"); }
+  bgCurrentColor(): SStyle { return this.add("bg-currentColor"); }
+  bgTransparent(): SStyle { return this.add("bg-transparent"); }
+  bgA(): SStyle { return this.add("bg-A"); }
+  bgB(): SStyle { return this.add("bg-B"); }
+  bgC(): SStyle { return this.add("bg-C"); }
+  bgD(): SStyle { return this.add("bg-D"); }
+  bgE(): SStyle { return this.add("bg-E"); }
+  bgF(): SStyle { return this.add("bg-F"); }
+  bg0At95(): SStyle { return this.add("bg-0at95"); }
+  fontMono(): SStyle { return this.add("font-mono"); }
   p4(): SStyle { return this.add("p-4"); }
-  p6(): SStyle { return this.add("p-6"); }
   p8(): SStyle { return this.add("p-8"); }
   p12(): SStyle { return this.add("p-12"); }
   p16(): SStyle { return this.add("p-16"); }
-  p20(): SStyle { return this.add("p-20"); }
   p24(): SStyle { return this.add("p-24"); }
   p32(): SStyle { return this.add("p-32"); }
   p40(): SStyle { return this.add("p-40"); }
   p48(): SStyle { return this.add("p-48"); }
   p60(): SStyle { return this.add("p-60"); }
-  py0(): SStyle { return this.add("py-0"); }
-  px0(): SStyle { return this.add("px-0"); }
-  py1(): SStyle { return this.add("py-1"); }
-  px1(): SStyle { return this.add("px-1"); }
-  py2(): SStyle { return this.add("py-2"); }
-  px2(): SStyle { return this.add("px-2"); }
-  py3(): SStyle { return this.add("py-3"); }
-  px3(): SStyle { return this.add("px-3"); }
   py4(): SStyle { return this.add("py-4"); }
   px4(): SStyle { return this.add("px-4"); }
-  py6(): SStyle { return this.add("py-6"); }
-  px6(): SStyle { return this.add("px-6"); }
   py8(): SStyle { return this.add("py-8"); }
   px8(): SStyle { return this.add("px-8"); }
   py12(): SStyle { return this.add("py-12"); }
   px12(): SStyle { return this.add("px-12"); }
   py16(): SStyle { return this.add("py-16"); }
   px16(): SStyle { return this.add("px-16"); }
-  py20(): SStyle { return this.add("py-20"); }
-  px20(): SStyle { return this.add("px-20"); }
   py24(): SStyle { return this.add("py-24"); }
   px24(): SStyle { return this.add("px-24"); }
   py32(): SStyle { return this.add("py-32"); }
@@ -466,30 +136,10 @@ class SStyle {
   px48(): SStyle { return this.add("px-48"); }
   py60(): SStyle { return this.add("py-60"); }
   px60(): SStyle { return this.add("px-60"); }
-  pt0(): SStyle { return this.add("pt-0"); }
-  pr0(): SStyle { return this.add("pr-0"); }
-  pb0(): SStyle { return this.add("pb-0"); }
-  pl0(): SStyle { return this.add("pl-0"); }
-  pt1(): SStyle { return this.add("pt-1"); }
-  pr1(): SStyle { return this.add("pr-1"); }
-  pb1(): SStyle { return this.add("pb-1"); }
-  pl1(): SStyle { return this.add("pl-1"); }
-  pt2(): SStyle { return this.add("pt-2"); }
-  pr2(): SStyle { return this.add("pr-2"); }
-  pb2(): SStyle { return this.add("pb-2"); }
-  pl2(): SStyle { return this.add("pl-2"); }
-  pt3(): SStyle { return this.add("pt-3"); }
-  pr3(): SStyle { return this.add("pr-3"); }
-  pb3(): SStyle { return this.add("pb-3"); }
-  pl3(): SStyle { return this.add("pl-3"); }
   pt4(): SStyle { return this.add("pt-4"); }
   pr4(): SStyle { return this.add("pr-4"); }
   pb4(): SStyle { return this.add("pb-4"); }
   pl4(): SStyle { return this.add("pl-4"); }
-  pt6(): SStyle { return this.add("pt-6"); }
-  pr6(): SStyle { return this.add("pr-6"); }
-  pb6(): SStyle { return this.add("pb-6"); }
-  pl6(): SStyle { return this.add("pl-6"); }
   pt8(): SStyle { return this.add("pt-8"); }
   pr8(): SStyle { return this.add("pr-8"); }
   pb8(): SStyle { return this.add("pb-8"); }
@@ -502,10 +152,6 @@ class SStyle {
   pr16(): SStyle { return this.add("pr-16"); }
   pb16(): SStyle { return this.add("pb-16"); }
   pl16(): SStyle { return this.add("pl-16"); }
-  pt20(): SStyle { return this.add("pt-20"); }
-  pr20(): SStyle { return this.add("pr-20"); }
-  pb20(): SStyle { return this.add("pb-20"); }
-  pl20(): SStyle { return this.add("pl-20"); }
   pt24(): SStyle { return this.add("pt-24"); }
   pr24(): SStyle { return this.add("pr-24"); }
   pb24(): SStyle { return this.add("pb-24"); }
@@ -526,8 +172,31 @@ class SStyle {
   pr60(): SStyle { return this.add("pr-60"); }
   pb60(): SStyle { return this.add("pb-60"); }
   pl60(): SStyle { return this.add("pl-60"); }
-  pointerEventsNone(): SStyle { return this.add("pointer-events-none"); }
-  pointerEventsAuto(): SStyle { return this.add("pointer-events-auto"); }
+  rounded4(): SStyle { return this.add("rounded-4"); }
+  roundedFull(): SStyle { return this.add("rounded-full"); }
+  roundedT4(): SStyle { return this.add("rounded-t-4"); }
+  roundedR4(): SStyle { return this.add("rounded-r-4"); }
+  roundedB4(): SStyle { return this.add("rounded-b-4"); }
+  roundedL4(): SStyle { return this.add("rounded-l-4"); }
+  roundedTFull(): SStyle { return this.add("rounded-t-full"); }
+  roundedRFull(): SStyle { return this.add("rounded-r-full"); }
+  roundedBFull(): SStyle { return this.add("rounded-b-full"); }
+  roundedLFull(): SStyle { return this.add("rounded-l-full"); }
+  roundedTl4(): SStyle { return this.add("rounded-tl-4"); }
+  roundedTr4(): SStyle { return this.add("rounded-tr-4"); }
+  roundedBr4(): SStyle { return this.add("rounded-br-4"); }
+  roundedBl4(): SStyle { return this.add("rounded-bl-4"); }
+  roundedTlFull(): SStyle { return this.add("rounded-tl-full"); }
+  roundedTrFull(): SStyle { return this.add("rounded-tr-full"); }
+  roundedBrFull(): SStyle { return this.add("rounded-br-full"); }
+  roundedBlFull(): SStyle { return this.add("rounded-bl-full"); }
+  bgAuto(): SStyle { return this.add("bg-auto"); }
+  bgCover(): SStyle { return this.add("bg-cover"); }
+  bgContain(): SStyle { return this.add("bg-contain"); }
+  flexRow(): SStyle { return this.add("flex-row"); }
+  flexRowReverse(): SStyle { return this.add("flex-row-reverse"); }
+  flexCol(): SStyle { return this.add("flex-col"); }
+  flexColReverse(): SStyle { return this.add("flex-col-reverse"); }
   static(): SStyle { return this.add("static"); }
   fixed(): SStyle { return this.add("fixed"); }
   absolute(): SStyle { return this.add("absolute"); }
@@ -540,76 +209,27 @@ class SStyle {
   right0(): SStyle { return this.add("right-0"); }
   bottom0(): SStyle { return this.add("bottom-0"); }
   left0(): SStyle { return this.add("left-0"); }
-  shadow4(): SStyle { return this.add("shadow-4"); }
-  shadow8(): SStyle { return this.add("shadow-8"); }
-  shadow12(): SStyle { return this.add("shadow-12"); }
-  shadow1Light(): SStyle { return this.add("shadow-1-light"); }
-  shadow1Dark(): SStyle { return this.add("shadow-1-dark"); }
+  mAuto(): SStyle { return this.add("m-auto"); }
+  myAuto(): SStyle { return this.add("my-auto"); }
+  mxAuto(): SStyle { return this.add("mx-auto"); }
+  mtAuto(): SStyle { return this.add("mt-auto"); }
+  mrAuto(): SStyle { return this.add("mr-auto"); }
+  mbAuto(): SStyle { return this.add("mb-auto"); }
+  mlAuto(): SStyle { return this.add("ml-auto"); }
+  leading16(): SStyle { return this.add("leading-16"); }
   textLeft(): SStyle { return this.add("text-left"); }
   textCenter(): SStyle { return this.add("text-center"); }
   textRight(): SStyle { return this.add("text-right"); }
   textJustify(): SStyle { return this.add("text-justify"); }
-  textCurrentColor(): SStyle { return this.add("text-currentColor"); }
-  textTransparent(): SStyle { return this.add("text-transparent"); }
-  textBlack(): SStyle { return this.add("text-black"); }
-  textWhite(): SStyle { return this.add("text-white"); }
-  textBackground(): SStyle { return this.add("text-background"); }
-  textPurple(): SStyle { return this.add("text-purple"); }
-  textError(): SStyle { return this.add("text-error"); }
-  textCoral(): SStyle { return this.add("text-coral"); }
-  textWhiskey(): SStyle { return this.add("text-whiskey"); }
-  textChalky(): SStyle { return this.add("text-chalky"); }
-  textLightDark(): SStyle { return this.add("text-lightDark"); }
-  textDark(): SStyle { return this.add("text-dark"); }
-  textMalibu(): SStyle { return this.add("text-malibu"); }
-  textGreen(): SStyle { return this.add("text-green"); }
-  textFountainBlue(): SStyle { return this.add("text-fountainBlue"); }
-  textInvalid(): SStyle { return this.add("text-invalid"); }
-  textLightWhite(): SStyle { return this.add("text-lightWhite"); }
-  text14(): SStyle { return this.add("text-14"); }
-  text16(): SStyle { return this.add("text-16"); }
-  text18(): SStyle { return this.add("text-18"); }
-  selectNone(): SStyle { return this.add("select-none"); }
-  selectText(): SStyle { return this.add("select-text"); }
-  selectAll(): SStyle { return this.add("select-all"); }
-  selectAuto(): SStyle { return this.add("select-auto"); }
-  visible(): SStyle { return this.add("visible"); }
-  invisible(): SStyle { return this.add("invisible"); }
-  whitespaceNormal(): SStyle { return this.add("whitespace-normal"); }
-  whitespaceNoWrap(): SStyle { return this.add("whitespace-no-wrap"); }
-  whitespacePre(): SStyle { return this.add("whitespace-pre"); }
-  whitespacePreLine(): SStyle { return this.add("whitespace-pre-line"); }
-  whitespacePreWrap(): SStyle { return this.add("whitespace-pre-wrap"); }
-  breakNormal(): SStyle { return this.add("break-normal"); }
-  breakWords(): SStyle { return this.add("break-words"); }
-  breakAll(): SStyle { return this.add("break-all"); }
-  truncate(): SStyle { return this.add("truncate"); }
-  w0(): SStyle { return this.add("w-0"); }
-  w1(): SStyle { return this.add("w-1"); }
-  w2(): SStyle { return this.add("w-2"); }
-  w3(): SStyle { return this.add("w-3"); }
-  w4(): SStyle { return this.add("w-4"); }
-  w6(): SStyle { return this.add("w-6"); }
-  w8(): SStyle { return this.add("w-8"); }
-  w12(): SStyle { return this.add("w-12"); }
-  w16(): SStyle { return this.add("w-16"); }
-  w20(): SStyle { return this.add("w-20"); }
-  w24(): SStyle { return this.add("w-24"); }
-  w32(): SStyle { return this.add("w-32"); }
-  w40(): SStyle { return this.add("w-40"); }
-  w48(): SStyle { return this.add("w-48"); }
-  w60(): SStyle { return this.add("w-60"); }
-  w1Div2(): SStyle { return this.add("w-1/2"); }
-  w1Div3(): SStyle { return this.add("w-1/3"); }
-  w2Div3(): SStyle { return this.add("w-2/3"); }
-  w1Div4(): SStyle { return this.add("w-1/4"); }
-  w2Div4(): SStyle { return this.add("w-2/4"); }
-  w3Div4(): SStyle { return this.add("w-3/4"); }
-  w1Div5(): SStyle { return this.add("w-1/5"); }
-  w2Div5(): SStyle { return this.add("w-2/5"); }
-  w3Div5(): SStyle { return this.add("w-3/5"); }
-  w4Div5(): SStyle { return this.add("w-4/5"); }
-  wFull(): SStyle { return this.add("w-full"); }
-  wScreen(): SStyle { return this.add("w-screen"); }
+  itemsStart(): SStyle { return this.add("items-start"); }
+  itemsEnd(): SStyle { return this.add("items-end"); }
+  itemsCenter(): SStyle { return this.add("items-center"); }
+  itemsBaseline(): SStyle { return this.add("items-baseline"); }
+  itemsStretch(): SStyle { return this.add("items-stretch"); }
+  justifyStart(): SStyle { return this.add("justify-start"); }
+  justifyEnd(): SStyle { return this.add("justify-end"); }
+  justifyCenter(): SStyle { return this.add("justify-center"); }
+  justifyBetween(): SStyle { return this.add("justify-between"); }
+  justifyAround(): SStyle { return this.add("justify-around"); }
 }
  

@@ -1,26 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Style } from "style";
-import { Config, initialConfig } from "./config/config";
-import { Demo } from "./demo/demo";
-import { Source } from "./source/source";
+import { Foo } from "./foo/foo";
+
+const img = `
+https://images.unsplash.com/photo-1568878801942-6fc477a748db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1073&q=80
+`
 
 export const App: React.FC = () => {
-
-  const [config, setConfig] = useState(initialConfig);
-  const [source, setSource] = useState("");
-
   return (
-    <div className={Style().flex().hScreen().$()}>
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Config config={config} setConfig={setConfig} />
-      </div>
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Source config={config} source={source} setSource={setSource} />
-      </div>
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Demo source={source} />
-      </div>
+    <div
+      className={Style().hScreen().bgCover().$()}
+      style={{ backgroundImage: `url(${img})`, backgroundPosition: "center" }}
+    >
+      <Foo />
     </div>
   );
 };

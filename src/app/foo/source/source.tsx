@@ -23,7 +23,11 @@ export const Source: React.FC<Props> = (props) => {
 
   useEffect(() => {
     if (!window.monaco) { return; }
-    window.monaco.editor.colorize(source, "typescript", {}).then(setHtml);
+    window.monaco.editor.colorize(
+      source.replace("const Style", "export const Style"),
+      "typescript",
+      {}
+    ).then(setHtml);
   }, [source]);
 
   return (
@@ -31,7 +35,7 @@ export const Source: React.FC<Props> = (props) => {
       className={Style().wFull().hFull().overflowScroll().$()}
     >
       <pre
-        className={Style().bgBackground().selectAll().$()}
+        className={Style().fontMono().selectAll().$()}
         data-lang="text/typescript"
         dangerouslySetInnerHTML={{ __html: html }}
       />

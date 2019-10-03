@@ -1,7 +1,12 @@
 @import "./utils.css";
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
+  font-size: 14px; line-height: 20px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *, *::before, *::after {
