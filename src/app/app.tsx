@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 
 import { getSource } from "../source/source";
 import { sampleConfig } from "../config";
+import { Demo } from "./demo/demo";
 
 const initialConfig: string =
   window.localStorage.getItem("config") || sampleConfig;
@@ -10,7 +11,6 @@ export const App: React.FC = () => {
 
   const [config, setConfig] = useState(initialConfig);
   const [source, setSource] = useState("");
-  const editorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     getSource(config)
@@ -22,26 +22,6 @@ export const App: React.FC = () => {
     window.localStorage.setItem("config", config);
   }, [config]);
 
-  useEffect(() => {
-    if (!window.monaco) { return; }
-    if (!editorRef.current) { return; }
-
-    // window.monaco.languages.typescript.typescriptDefaults.setCompilerOptions({
-    //   jsx: window.monaco.languages.typescript.JsxEmit.React
-    // })
-    window.monaco.languages.typescript.typescriptDefaults.addExtraLib(source);
-
-    const editor = window.monaco.editor;
-    editor.create(editorRef.current, {
-      value: [
-        'function x() {',
-        '\tconsole.log("Hello world!");',
-        '}'
-      ].join('\n'),
-      language: "typescript",
-    });
-  }, [source]);
-
   return (
     <div>
       <textarea
@@ -49,7 +29,7 @@ export const App: React.FC = () => {
         onChange={e => setConfig(e.currentTarget.value)}
       />
       <textarea value={source} readOnly />
-      <div ref={editorRef} style={{ width: "500px", height: "500px" }} />
+      <Demo source={source} />
     </div>
   );
 };
