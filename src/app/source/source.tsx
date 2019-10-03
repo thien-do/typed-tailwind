@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-import { getSource } from "./get-source";
 import { Style } from "style";
+import { getSource } from "./get-source";
 
 interface Props {
   config: string;
@@ -13,16 +13,28 @@ export const Source: React.FC<Props> = (props) => {
 
   const { source, config, setSource } = props;
 
+  const [html, setHtml] = useState("");
+
   useEffect(() => {
     getSource(config)
       .then((newSource: string) => { setSource(newSource); })
       .catch((error: string) => { setSource(error); });
   }, [config, setSource]);
 
+  useEffect(() => {
+    if (!window.monaco) { return; }
+    window.monaco.editor.colorize(source, "typescript", {}).then(setHtml);
+  }, [source]);
+
   return (
-    <textarea
-      className={Style().wFull().hFull().selectAll().$()}
-      value={source} readOnly
-    />
+    <div
+      className={Style().wFull().hFull().overflowScroll().$()}
+    >
+      <pre
+        className={Style().bgBackground().selectAll().$()}
+        data-lang="text/typescript"
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
+    </div>
   );
 };

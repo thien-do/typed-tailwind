@@ -1,9 +1,9 @@
 // http://github.com/dvkndn/typed-tailwind
 export const Style = (): SStyle => new SStyle();
-
+ 
 class SStyle {
   value = "";
-
+ 
   // Getter methods
   // Why "$":
   // - https://github.com/microsoft/TypeScript/issues/2361
@@ -11,102 +11,82 @@ class SStyle {
   // - https://en.wikipedia.org/wiki/Regular_expression
   $(): string { return this.value; }
   [Symbol.toPrimitive](): string { return this.$(); }
-
+ 
   // Building methods
   private add(value: string): SStyle {
     this.value = `${this.value} ${value}`;
     return this;
   }
-
+ 
   // Styling methods
   bgCurrentColor(): SStyle { return this.add("bg-currentColor"); }
   bgTransparent(): SStyle { return this.add("bg-transparent"); }
   bgBlack(): SStyle { return this.add("bg-black"); }
   bgWhite(): SStyle { return this.add("bg-white"); }
-  bgGray1(): SStyle { return this.add("bg-gray-1"); }
-  bgGray2(): SStyle { return this.add("bg-gray-2"); }
-  bgGray3(): SStyle { return this.add("bg-gray-3"); }
-  bgGray4(): SStyle { return this.add("bg-gray-4"); }
-  bgGray5(): SStyle { return this.add("bg-gray-5"); }
-  bgGray6(): SStyle { return this.add("bg-gray-6"); }
-  bgGray7(): SStyle { return this.add("bg-gray-7"); }
-  bgGray8(): SStyle { return this.add("bg-gray-8"); }
-  bgGray9(): SStyle { return this.add("bg-gray-9"); }
-  bgBlue1(): SStyle { return this.add("bg-blue-1"); }
-  bgBlue2(): SStyle { return this.add("bg-blue-2"); }
-  bgBlue3(): SStyle { return this.add("bg-blue-3"); }
-  bgBlue4(): SStyle { return this.add("bg-blue-4"); }
-  bgBlue5(): SStyle { return this.add("bg-blue-5"); }
-  bgBlue6(): SStyle { return this.add("bg-blue-6"); }
-  bgBlue7(): SStyle { return this.add("bg-blue-7"); }
-  bgBlue8(): SStyle { return this.add("bg-blue-8"); }
-  bgBlue9(): SStyle { return this.add("bg-blue-9"); }
+  bgBackground(): SStyle { return this.add("bg-background"); }
+  bgPurple(): SStyle { return this.add("bg-purple"); }
+  bgError(): SStyle { return this.add("bg-error"); }
+  bgCoral(): SStyle { return this.add("bg-coral"); }
+  bgWhiskey(): SStyle { return this.add("bg-whiskey"); }
+  bgChalky(): SStyle { return this.add("bg-chalky"); }
+  bgLightDark(): SStyle { return this.add("bg-lightDark"); }
+  bgDark(): SStyle { return this.add("bg-dark"); }
+  bgMalibu(): SStyle { return this.add("bg-malibu"); }
+  bgGreen(): SStyle { return this.add("bg-green"); }
+  bgFountainBlue(): SStyle { return this.add("bg-fountainBlue"); }
+  bgInvalid(): SStyle { return this.add("bg-invalid"); }
+  bgLightWhite(): SStyle { return this.add("bg-lightWhite"); }
   hoverBgCurrentColor(): SStyle { return this.add("hover_bg-currentColor"); }
   hoverBgTransparent(): SStyle { return this.add("hover_bg-transparent"); }
   hoverBgBlack(): SStyle { return this.add("hover_bg-black"); }
   hoverBgWhite(): SStyle { return this.add("hover_bg-white"); }
-  hoverBgGray1(): SStyle { return this.add("hover_bg-gray-1"); }
-  hoverBgGray2(): SStyle { return this.add("hover_bg-gray-2"); }
-  hoverBgGray3(): SStyle { return this.add("hover_bg-gray-3"); }
-  hoverBgGray4(): SStyle { return this.add("hover_bg-gray-4"); }
-  hoverBgGray5(): SStyle { return this.add("hover_bg-gray-5"); }
-  hoverBgGray6(): SStyle { return this.add("hover_bg-gray-6"); }
-  hoverBgGray7(): SStyle { return this.add("hover_bg-gray-7"); }
-  hoverBgGray8(): SStyle { return this.add("hover_bg-gray-8"); }
-  hoverBgGray9(): SStyle { return this.add("hover_bg-gray-9"); }
-  hoverBgBlue1(): SStyle { return this.add("hover_bg-blue-1"); }
-  hoverBgBlue2(): SStyle { return this.add("hover_bg-blue-2"); }
-  hoverBgBlue3(): SStyle { return this.add("hover_bg-blue-3"); }
-  hoverBgBlue4(): SStyle { return this.add("hover_bg-blue-4"); }
-  hoverBgBlue5(): SStyle { return this.add("hover_bg-blue-5"); }
-  hoverBgBlue6(): SStyle { return this.add("hover_bg-blue-6"); }
-  hoverBgBlue7(): SStyle { return this.add("hover_bg-blue-7"); }
-  hoverBgBlue8(): SStyle { return this.add("hover_bg-blue-8"); }
-  hoverBgBlue9(): SStyle { return this.add("hover_bg-blue-9"); }
+  hoverBgBackground(): SStyle { return this.add("hover_bg-background"); }
+  hoverBgPurple(): SStyle { return this.add("hover_bg-purple"); }
+  hoverBgError(): SStyle { return this.add("hover_bg-error"); }
+  hoverBgCoral(): SStyle { return this.add("hover_bg-coral"); }
+  hoverBgWhiskey(): SStyle { return this.add("hover_bg-whiskey"); }
+  hoverBgChalky(): SStyle { return this.add("hover_bg-chalky"); }
+  hoverBgLightDark(): SStyle { return this.add("hover_bg-lightDark"); }
+  hoverBgDark(): SStyle { return this.add("hover_bg-dark"); }
+  hoverBgMalibu(): SStyle { return this.add("hover_bg-malibu"); }
+  hoverBgGreen(): SStyle { return this.add("hover_bg-green"); }
+  hoverBgFountainBlue(): SStyle { return this.add("hover_bg-fountainBlue"); }
+  hoverBgInvalid(): SStyle { return this.add("hover_bg-invalid"); }
+  hoverBgLightWhite(): SStyle { return this.add("hover_bg-lightWhite"); }
   focusBgCurrentColor(): SStyle { return this.add("focus_bg-currentColor"); }
   focusBgTransparent(): SStyle { return this.add("focus_bg-transparent"); }
   focusBgBlack(): SStyle { return this.add("focus_bg-black"); }
   focusBgWhite(): SStyle { return this.add("focus_bg-white"); }
-  focusBgGray1(): SStyle { return this.add("focus_bg-gray-1"); }
-  focusBgGray2(): SStyle { return this.add("focus_bg-gray-2"); }
-  focusBgGray3(): SStyle { return this.add("focus_bg-gray-3"); }
-  focusBgGray4(): SStyle { return this.add("focus_bg-gray-4"); }
-  focusBgGray5(): SStyle { return this.add("focus_bg-gray-5"); }
-  focusBgGray6(): SStyle { return this.add("focus_bg-gray-6"); }
-  focusBgGray7(): SStyle { return this.add("focus_bg-gray-7"); }
-  focusBgGray8(): SStyle { return this.add("focus_bg-gray-8"); }
-  focusBgGray9(): SStyle { return this.add("focus_bg-gray-9"); }
-  focusBgBlue1(): SStyle { return this.add("focus_bg-blue-1"); }
-  focusBgBlue2(): SStyle { return this.add("focus_bg-blue-2"); }
-  focusBgBlue3(): SStyle { return this.add("focus_bg-blue-3"); }
-  focusBgBlue4(): SStyle { return this.add("focus_bg-blue-4"); }
-  focusBgBlue5(): SStyle { return this.add("focus_bg-blue-5"); }
-  focusBgBlue6(): SStyle { return this.add("focus_bg-blue-6"); }
-  focusBgBlue7(): SStyle { return this.add("focus_bg-blue-7"); }
-  focusBgBlue8(): SStyle { return this.add("focus_bg-blue-8"); }
-  focusBgBlue9(): SStyle { return this.add("focus_bg-blue-9"); }
+  focusBgBackground(): SStyle { return this.add("focus_bg-background"); }
+  focusBgPurple(): SStyle { return this.add("focus_bg-purple"); }
+  focusBgError(): SStyle { return this.add("focus_bg-error"); }
+  focusBgCoral(): SStyle { return this.add("focus_bg-coral"); }
+  focusBgWhiskey(): SStyle { return this.add("focus_bg-whiskey"); }
+  focusBgChalky(): SStyle { return this.add("focus_bg-chalky"); }
+  focusBgLightDark(): SStyle { return this.add("focus_bg-lightDark"); }
+  focusBgDark(): SStyle { return this.add("focus_bg-dark"); }
+  focusBgMalibu(): SStyle { return this.add("focus_bg-malibu"); }
+  focusBgGreen(): SStyle { return this.add("focus_bg-green"); }
+  focusBgFountainBlue(): SStyle { return this.add("focus_bg-fountainBlue"); }
+  focusBgInvalid(): SStyle { return this.add("focus_bg-invalid"); }
+  focusBgLightWhite(): SStyle { return this.add("focus_bg-lightWhite"); }
   borderCurrentColor(): SStyle { return this.add("border-currentColor"); }
   borderTransparent(): SStyle { return this.add("border-transparent"); }
   borderBlack(): SStyle { return this.add("border-black"); }
   borderWhite(): SStyle { return this.add("border-white"); }
-  borderGray1(): SStyle { return this.add("border-gray-1"); }
-  borderGray2(): SStyle { return this.add("border-gray-2"); }
-  borderGray3(): SStyle { return this.add("border-gray-3"); }
-  borderGray4(): SStyle { return this.add("border-gray-4"); }
-  borderGray5(): SStyle { return this.add("border-gray-5"); }
-  borderGray6(): SStyle { return this.add("border-gray-6"); }
-  borderGray7(): SStyle { return this.add("border-gray-7"); }
-  borderGray8(): SStyle { return this.add("border-gray-8"); }
-  borderGray9(): SStyle { return this.add("border-gray-9"); }
-  borderBlue1(): SStyle { return this.add("border-blue-1"); }
-  borderBlue2(): SStyle { return this.add("border-blue-2"); }
-  borderBlue3(): SStyle { return this.add("border-blue-3"); }
-  borderBlue4(): SStyle { return this.add("border-blue-4"); }
-  borderBlue5(): SStyle { return this.add("border-blue-5"); }
-  borderBlue6(): SStyle { return this.add("border-blue-6"); }
-  borderBlue7(): SStyle { return this.add("border-blue-7"); }
-  borderBlue8(): SStyle { return this.add("border-blue-8"); }
-  borderBlue9(): SStyle { return this.add("border-blue-9"); }
+  borderBackground(): SStyle { return this.add("border-background"); }
+  borderPurple(): SStyle { return this.add("border-purple"); }
+  borderError(): SStyle { return this.add("border-error"); }
+  borderCoral(): SStyle { return this.add("border-coral"); }
+  borderWhiskey(): SStyle { return this.add("border-whiskey"); }
+  borderChalky(): SStyle { return this.add("border-chalky"); }
+  borderLightDark(): SStyle { return this.add("border-lightDark"); }
+  borderDark(): SStyle { return this.add("border-dark"); }
+  borderMalibu(): SStyle { return this.add("border-malibu"); }
+  borderGreen(): SStyle { return this.add("border-green"); }
+  borderFountainBlue(): SStyle { return this.add("border-fountainBlue"); }
+  borderInvalid(): SStyle { return this.add("border-invalid"); }
+  borderLightWhite(): SStyle { return this.add("border-lightWhite"); }
   rounded0(): SStyle { return this.add("rounded-0"); }
   rounded1(): SStyle { return this.add("rounded-1"); }
   rounded2(): SStyle { return this.add("rounded-2"); }
@@ -573,24 +553,19 @@ class SStyle {
   textTransparent(): SStyle { return this.add("text-transparent"); }
   textBlack(): SStyle { return this.add("text-black"); }
   textWhite(): SStyle { return this.add("text-white"); }
-  textGray1(): SStyle { return this.add("text-gray-1"); }
-  textGray2(): SStyle { return this.add("text-gray-2"); }
-  textGray3(): SStyle { return this.add("text-gray-3"); }
-  textGray4(): SStyle { return this.add("text-gray-4"); }
-  textGray5(): SStyle { return this.add("text-gray-5"); }
-  textGray6(): SStyle { return this.add("text-gray-6"); }
-  textGray7(): SStyle { return this.add("text-gray-7"); }
-  textGray8(): SStyle { return this.add("text-gray-8"); }
-  textGray9(): SStyle { return this.add("text-gray-9"); }
-  textBlue1(): SStyle { return this.add("text-blue-1"); }
-  textBlue2(): SStyle { return this.add("text-blue-2"); }
-  textBlue3(): SStyle { return this.add("text-blue-3"); }
-  textBlue4(): SStyle { return this.add("text-blue-4"); }
-  textBlue5(): SStyle { return this.add("text-blue-5"); }
-  textBlue6(): SStyle { return this.add("text-blue-6"); }
-  textBlue7(): SStyle { return this.add("text-blue-7"); }
-  textBlue8(): SStyle { return this.add("text-blue-8"); }
-  textBlue9(): SStyle { return this.add("text-blue-9"); }
+  textBackground(): SStyle { return this.add("text-background"); }
+  textPurple(): SStyle { return this.add("text-purple"); }
+  textError(): SStyle { return this.add("text-error"); }
+  textCoral(): SStyle { return this.add("text-coral"); }
+  textWhiskey(): SStyle { return this.add("text-whiskey"); }
+  textChalky(): SStyle { return this.add("text-chalky"); }
+  textLightDark(): SStyle { return this.add("text-lightDark"); }
+  textDark(): SStyle { return this.add("text-dark"); }
+  textMalibu(): SStyle { return this.add("text-malibu"); }
+  textGreen(): SStyle { return this.add("text-green"); }
+  textFountainBlue(): SStyle { return this.add("text-fountainBlue"); }
+  textInvalid(): SStyle { return this.add("text-invalid"); }
+  textLightWhite(): SStyle { return this.add("text-lightWhite"); }
   text14(): SStyle { return this.add("text-14"); }
   text16(): SStyle { return this.add("text-16"); }
   text18(): SStyle { return this.add("text-18"); }
@@ -637,3 +612,4 @@ class SStyle {
   wFull(): SStyle { return this.add("w-full"); }
   wScreen(): SStyle { return this.add("w-screen"); }
 }
+ 

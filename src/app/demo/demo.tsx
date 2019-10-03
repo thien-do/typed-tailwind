@@ -22,6 +22,7 @@ export const Demo: React.FC<Props> = (props) => {
         "  Style()",
       ].join("\n"),
       language: "typescript",
+      minimap: { enabled: false },
     });
   }, []);
 

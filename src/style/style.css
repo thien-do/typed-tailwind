@@ -9,3 +9,7 @@ body {
   box-sizing: border-box;
   appearance: none; border: none;
 }
+
+::selection {
+  background: rgba(103, 118, 150, 0.38);
+}
