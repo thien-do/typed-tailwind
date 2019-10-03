@@ -1,4 +1,4 @@
-export const sampleConfig = `module.exports = {
+export const sample = `module.exports = {
   prefix: '',
   important: false,
   separator: '_',
