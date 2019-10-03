@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import { sample } from "./sample";
+import { Style } from "style";
 
 export const initialConfig: string =
   window.localStorage.getItem("config") || sample;
@@ -22,6 +23,9 @@ export const Config: React.FC<Props> = (props) => {
     setConfig(e.currentTarget.value)
 
   return (
-    <textarea value={config} onChange={onChange} />
+    <textarea
+      className={Style().wFull().hFull().$()}
+      value={config} onChange={onChange}
+    />
   );
 };

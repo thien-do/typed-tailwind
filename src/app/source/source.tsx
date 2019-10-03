@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import { getSource } from "./get-source";
+import { Style } from "style";
 
 interface Props {
   config: string;
@@ -19,6 +20,9 @@ export const Source: React.FC<Props> = (props) => {
   }, [config, setSource]);
 
   return (
-    <textarea value={source} readOnly />
+    <textarea
+      className={Style().wFull().hFull().selectAll().$()}
+      value={source} readOnly
+    />
   );
 };
