@@ -3,7 +3,10 @@ import camelcase from "camelcase";
 // "open" and "close" will be defined later to preserve whitespace
 const base: { open: string, close: string } = { open: "", close: "" };
 
-base.open = `class Style {
+base.open = `// http://github.com/dvkndn/typed-tailwind
+const Style = (): SStyle => new SStyle();
+
+class SStyle {
   value = "";
 
   // Getter methods
@@ -15,13 +18,12 @@ base.open = `class Style {
   [Symbol.toPrimitive](): string { return this.$(); }
 
   // Building methods
-  private add(value: string): Style {
+  private add(value: string): SStyle {
     this.value = \`\${this.value} \${value}\`;
     return this;
   }
 
   // Styling methods
-  // e.g. textRed4(): Style { return this.add("text-red-4"); }
 `;
 
 base.close = "\n}\n";
@@ -42,7 +44,7 @@ const toKey = (value: string): string => {
 // input: text-red-4
 // output: textRed4(): Style { return this.add("text-red-4"); }
 const getMethod = (cls: string): string => (
-  `  ${toKey(cls)}(): Style { return this.add("${cls}"); }`
+  `  ${toKey(cls)}(): SStyle { return this.add("${cls}"); }`
 )
 
 export const getFile = (classes: string[]): string => {

@@ -25,6 +25,12 @@ export const App: React.FC = () => {
   useEffect(() => {
     if (!window.monaco) { return; }
     if (!editorRef.current) { return; }
+
+    // window.monaco.languages.typescript.typescriptDefaults.setCompilerOptions({
+    //   jsx: window.monaco.languages.typescript.JsxEmit.React
+    // })
+    window.monaco.languages.typescript.typescriptDefaults.addExtraLib(source);
+
     const editor = window.monaco.editor;
     editor.create(editorRef.current, {
       value: [
@@ -34,7 +40,6 @@ export const App: React.FC = () => {
       ].join('\n'),
       language: "typescript",
     });
-    console.log(window.monaco && window.monaco.editor);
   }, [source]);
 
   return (

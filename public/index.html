@@ -13,7 +13,10 @@
     <script src="monaco-editor/min/vs/loader.js"></script>
     <script>
       require.config({ paths: { 'vs': 'monaco-editor/min/vs' }});
-      require(['vs/editor/editor.main'], function() { window.monaco = monaco; });
+      require(['vs/editor/editor.main'], function() {
+        window.monaco = monaco;
+        window.onMonacoLoad && window.onMonacoLoad();
+      });
     </script>
   </body>
 </html>
