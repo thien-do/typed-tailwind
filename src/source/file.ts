@@ -1,3 +1,5 @@
+import camelcase from "camelcase";
+
 // "open" and "close" will be defined later to preserve whitespace
 const base: { open: string, close: string } = { open: "", close: "" };
 
@@ -28,14 +30,12 @@ base.close = "\n}\n";
 //   value            key
 // - "text-primary":  "textPrimary"
 // - "m-4":           "m4"
-// - "-m-4":          "minusM4"
+// - "-m-4":          "nM4"
 const toKey = (value: string): string => {
   let key = value;
-  key = key.startsWith("-") ? `minus-${key}` : key;
   key = key.split("/").join("-div-");
-  key = key.replace(/(-[a-z])/ig, ($1: string) => (
-    $1.toUpperCase().replace("-", "")
-  ));
+  key = value.startsWith("-") ? `n-${key}` : key;
+  key = camelcase(key);
   return key;
 };
 

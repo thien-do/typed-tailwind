@@ -1,4 +1,4 @@
-@import "./tailwind/dist.css";
+@import "./style/dist.css";
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
@@ -7,4 +7,5 @@ body {
 *, *::before, *::after {
   margin: 0; padding: 0;
   box-sizing: border-box;
+  appearance: none; border: none;
 }
