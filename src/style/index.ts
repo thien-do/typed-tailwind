@@ -73,7 +73,7 @@ class SStyle {
   textD(): SStyle { return this.add("text-D"); }
   textE(): SStyle { return this.add("text-E"); }
   textF(): SStyle { return this.add("text-F"); }
-  text0At95(): SStyle { return this.add("text-0at95"); }
+  text0At90(): SStyle { return this.add("text-0at90"); }
   selectNone(): SStyle { return this.add("select-none"); }
   selectText(): SStyle { return this.add("select-text"); }
   selectAll(): SStyle { return this.add("select-all"); }
@@ -107,7 +107,7 @@ class SStyle {
   bgD(): SStyle { return this.add("bg-D"); }
   bgE(): SStyle { return this.add("bg-E"); }
   bgF(): SStyle { return this.add("bg-F"); }
-  bg0At95(): SStyle { return this.add("bg-0at95"); }
+  bg0At90(): SStyle { return this.add("bg-0at90"); }
   fontMono(): SStyle { return this.add("font-mono"); }
   p4(): SStyle { return this.add("p-4"); }
   p8(): SStyle { return this.add("p-8"); }
@@ -231,5 +231,18 @@ class SStyle {
   justifyCenter(): SStyle { return this.add("justify-center"); }
   justifyBetween(): SStyle { return this.add("justify-between"); }
   justifyAround(): SStyle { return this.add("justify-around"); }
+  shadowPanel(): SStyle { return this.add("shadow-panel"); }
+  bgFixed(): SStyle { return this.add("bg-fixed"); }
+  bgLocal(): SStyle { return this.add("bg-local"); }
+  bgScroll(): SStyle { return this.add("bg-scroll"); }
+  bgBottom(): SStyle { return this.add("bg-bottom"); }
+  bgCenter(): SStyle { return this.add("bg-center"); }
+  bgLeft(): SStyle { return this.add("bg-left"); }
+  bgLeftBottom(): SStyle { return this.add("bg-left-bottom"); }
+  bgLeftTop(): SStyle { return this.add("bg-left-top"); }
+  bgRight(): SStyle { return this.add("bg-right"); }
+  bgRightBottom(): SStyle { return this.add("bg-right-bottom"); }
+  bgRightTop(): SStyle { return this.add("bg-right-top"); }
+  bgTop(): SStyle { return this.add("bg-top"); }
 }
  

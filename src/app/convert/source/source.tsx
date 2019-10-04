@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { Style } from "style";
 import { getSource } from "./get-source";
+import { Panel } from "app/panel/panel";
 
 interface Props {
   config: string;
@@ -31,14 +32,14 @@ export const Source: React.FC<Props> = (props) => {
   }, [source]);
 
   return (
-    <div
-      className={Style().wFull().hFull().overflowScroll().$()}
-    >
-      <pre
-        className={Style().fontMono().selectAll().$()}
-        data-lang="text/typescript"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
-    </div>
+    <Panel title="style.ts">
+      <div className={Style().wFull().hFull().overflowScroll().$()}>
+        <pre
+          className={Style().fontMono().selectAll().$()}
+          data-lang="text/typescript"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
+    </Panel>
   );
 };

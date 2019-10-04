@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as monaco from "monaco-editor";
 import { Style } from "style";
 import { createEditor } from "app/editor/editor";
+import { Panel } from "app/panel/panel";
 
 interface Props {
   source: string;
@@ -38,6 +39,8 @@ export const Demo: React.FC<Props> = (props) => {
   }, [source])
 
   return (
-    <div ref={container} className={Style().wFull().hFull().$()} />
+    <Panel title="playground.ts">
+      <div ref={container} className={Style().wFull().hFull().$()} />
+    </Panel>
   );
 };

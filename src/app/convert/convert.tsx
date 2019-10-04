@@ -1,33 +1,34 @@
 import React, { useState } from "react";
 
-import { Style } from "style";
 import { Config, initialConfig } from "./config/config";
 import { Demo } from "./demo/demo";
 import { Source } from "./source/source";
-import { Panel } from "../panel/panel";
+import { Style } from "style";
 
-export const Foo: React.FC = () => {
+const img = `
+https://images.unsplash.com/photo-1564089969562-7b8667a4adec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80
+`
+
+const col = Style().flex1().overflowHidden().$();
+
+export const Convert: React.FC = () => {
 
   const [config, setConfig] = useState(initialConfig);
   const [source, setSource] = useState("");
 
   return (
     <div
-      className={Style().flex().hScreen().$()}
-      style={{ height: "400px" }}
+      className={Style().flex().bgCover().bgFixed().bgCenter().p16().$()}
+      style={{ backgroundImage: `url(${img})`, height: "400px" }}
     >
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Panel title="tailwind.config.js">
-          <Config config={config} setConfig={setConfig} />
-        </Panel>
+      <div className={col}>
+        <Config config={config} setConfig={setConfig} />
       </div>
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Panel title="style.ts">
-          <Source config={config} source={source} setSource={setSource} />
-        </Panel>
+      <div className={col}>
+        <Source config={config} source={source} setSource={setSource} />
       </div>
-      <div className={Style().flex1().overflowHidden().$()}>
-        <Panel title="playground.ts"><Demo source={source} /></Panel>
+      <div className={col} style={{ minWidth: "480px" }}>
+        <Demo source={source} />
       </div>
     </div>
   );

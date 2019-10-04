@@ -4,6 +4,7 @@ import { sample } from "./sample";
 import { Style } from "style";
 import * as monaco from "monaco-editor";
 import { createEditor } from "app/editor/editor";
+import { Panel } from "app/panel/panel";
 
 export const initialConfig: string =
   window.localStorage.getItem("config") || sample;
@@ -43,6 +44,8 @@ export const Config: React.FC<Props> = (props) => {
   }, [editor, config])
 
   return (
-    <div ref={container} className={Style().wFull().hFull().$()} />
+    <Panel title="tailwind.config.js">
+      <div ref={container} className={Style().wFull().hFull().$()} />
+    </Panel>
   );
 };

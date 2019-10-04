@@ -214,8 +214,8 @@
   color: #be5046
 }
 
-.text-0at95 {
-  color: rgba(40, 44, 52, 0.95)
+.text-0at90 {
+  color: rgba(40, 44, 52, 0.90)
 }
 
 .select-none {
@@ -362,8 +362,8 @@
   background-color: #be5046
 }
 
-.bg-0at95 {
-  background-color: rgba(40, 44, 52, 0.95)
+.bg-0at90 {
+  background-color: rgba(40, 44, 52, 0.90)
 }
 
 .font-mono {
@@ -890,4 +890,60 @@
 
 .justify-around {
   justify-content: space-around
+}
+
+.shadow-panel {
+  box-shadow: 
+        #3e4451 0 0 0 1px inset,
+        hsl(220, 13%, 13%) 0 0 0 1px,
+        hsl(0, 0%, 0%, 0.6) 0 4px 16px
+      
+}
+
+.bg-fixed {
+  background-attachment: fixed
+}
+
+.bg-local {
+  background-attachment: local
+}
+
+.bg-scroll {
+  background-attachment: scroll
+}
+
+.bg-bottom {
+  background-position: bottom
+}
+
+.bg-center {
+  background-position: center
+}
+
+.bg-left {
+  background-position: left
+}
+
+.bg-left-bottom {
+  background-position: left bottom
+}
+
+.bg-left-top {
+  background-position: left top
+}
+
+.bg-right {
+  background-position: right
+}
+
+.bg-right-bottom {
+  background-position: right bottom
+}
+
+.bg-right-top {
+  background-position: right top
+}
+
+.bg-top {
+  background-position: top
 }

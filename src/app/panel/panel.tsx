@@ -12,15 +12,13 @@ export const Panel: React.FC<Props> = (props) => {
   return (
     <div className={Style().wFull().hFull().p16().$()}>
       <div
-        className={`${
-          Style().wFull().hFull().bg0At95().rounded4().$()
-        }${
-          Style().flex().flexCol().$()
-        }`}
+        className={[
+          Style().rounded4().shadowPanel().bg0At90().$(),
+          Style().wFull().hFull().flex().flexCol().$()
+        ].join(" ")}
         style={{
-          backdropFilter: "blur(10px)",
-          WebkitBackdropFilter: "blur(10px)",
-          boxShadow: "rgba(0, 0, 0, 0.4) 0 4px 16px",
+          backdropFilter: "blur(15px)",
+          WebkitBackdropFilter: "blur(15px)",
         }}
       >
         <div className={Style().flexNone().$()}>
