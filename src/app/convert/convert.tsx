@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { Config, initialConfig } from "./config/config";
-import { Demo } from "./demo/demo";
+import { Playground } from "./playground/playground";
 import { Source } from "./source/source";
 import { Style } from "style";
 
@@ -21,7 +21,7 @@ export const Convert: React.FC = () => {
         <Source config={config} source={source} setSource={setSource} />
       </div>
       <div className={col} style={{ minWidth: "480px" }}>
-        <Demo source={source} />
+        <Playground source={source} />
       </div>
     </div>
   );

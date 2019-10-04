@@ -29,8 +29,11 @@ export const Config: React.FC<Props> = (props) => {
   useEffect(() => {
     const element = container.current;
     if (!element) { return; }
-    editor.current = createEditor(element, "config", "javascript", "");
+
+    const options = { name: "config", language: "javascript", value: "" };
+    editor.current = createEditor(element, options);
     if (!editor.current) { throw new Error("Can't create editor."); }
+
     editor.current.onDidChangeModelContent(() => {
       if (!editor.current) { throw new Error("Editor is not defined."); }
       setConfig(editor.current.getValue());

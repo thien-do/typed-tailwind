@@ -8,21 +8,20 @@ interface Props {
   source: string;
 }
 
-const value = `import { Style } from "style";
+const editorOptions = {
+  name: "playground",
+  language: "typescript",
+  value: `import { Style } from "style";
 
 const style: string =
   Style()
 
 // E.g.:
 // - Style().text0().bg().$();
-`;
-
-const getTSDefaults = () => {
-  if (!window.monaco) { return null; }
-  return window.monaco.languages.typescript.typescriptDefaults;
+`
 };
 
-export const Demo: React.FC<Props> = (props) => {
+export const Playground: React.FC<Props> = (props) => {
 
   const { source } = props;
 
@@ -31,13 +30,14 @@ export const Demo: React.FC<Props> = (props) => {
 
   useEffect(() => {
     if (!container.current) { return; }
-    createEditor(container.current, "demo", "typescript", value);
+    createEditor(container.current, editorOptions);
   }, []);
 
   useEffect(() => {
     lib.current && lib.current.dispose();
-    const tsDefaults = getTSDefaults(); if (!tsDefaults) { return; }
-    lib.current = tsDefaults.addExtraLib(source, "file:///style.ts");
+    if (!window.monaco) { return null; }
+    lib.current = window.monaco.languages.typescript.typescriptDefaults
+      .addExtraLib(source, "file:///style.ts");
   }, [source])
 
   return (
