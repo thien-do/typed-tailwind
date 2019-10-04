@@ -10,13 +10,14 @@ interface Props {
 
 const editorOptions: monaco.editor.IEditorConstructionOptions = {
   language: "typescript",
-  value: [
-    "// Try it:",
-    "// E.g. Style().textBlue2().smBlock().$()",
-    "const style: string =",
-    "  Style()",
-    "",
-  ].join("\n"),
+  value: `// Try it:
+// E.g. Style().textBlue2().smBlock().$()
+const style: string =
+  Style()
+
+// In React:
+// <div className={Style().text4().$()} />
+`,
 };
 
 export const Demo: React.FC<Props> = (props) => {
