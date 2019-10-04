@@ -4,7 +4,7 @@ import camelcase from "camelcase";
 const base: { open: string, close: string } = { open: "", close: "" };
 
 base.open = `// http://github.com/dvkndn/typed-tailwind
-const Style = (): SStyle => new SStyle();
+export const Style = (): SStyle => new SStyle();
 
 class SStyle {
   value = "";

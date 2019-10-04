@@ -8,16 +8,18 @@ interface Props {
   source: string;
 }
 
-const editorOptions: monaco.editor.IEditorConstructionOptions = {
-  language: "typescript",
-  value: `// Try it:
-// E.g. Style().textBlue2().smBlock().$()
+const value = `import { Style } from "style";
+
 const style: string =
   Style()
 
-// In React:
-// <div className={Style().text4().$()} />
-`,
+// E.g.:
+// - Style().text0().bg().$();
+`;
+
+const getTSDefaults = () => {
+  if (!window.monaco) { return null; }
+  return window.monaco.languages.typescript.typescriptDefaults;
 };
 
 export const Demo: React.FC<Props> = (props) => {
@@ -25,18 +27,17 @@ export const Demo: React.FC<Props> = (props) => {
   const { source } = props;
 
   const container = useRef<HTMLDivElement>(null);
-  const sourceAsLib = useRef<monaco.IDisposable| null>(null);
+  const lib = useRef<monaco.IDisposable | null>(null);
 
   useEffect(() => {
     if (!container.current) { return; }
-    createEditor(container.current, editorOptions);
+    createEditor(container.current, "demo", "typescript", value);
   }, []);
 
   useEffect(() => {
-    if (!window.monaco) { return; }
-    sourceAsLib.current && sourceAsLib.current.dispose();
-    sourceAsLib.current = window.monaco.languages.typescript
-      .typescriptDefaults.addExtraLib(source);
+    lib.current && lib.current.dispose();
+    const tsDefaults = getTSDefaults(); if (!tsDefaults) { return; }
+    lib.current = tsDefaults.addExtraLib(source, "file:///style.ts");
   }, [source])
 
   return (

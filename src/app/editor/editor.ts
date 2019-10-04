@@ -1,6 +1,6 @@
 import { editor } from "monaco-editor";
 
-const defaultOptions: editor.IEditorConstructionOptions = {
+const options: editor.IEditorConstructionOptions = {
   folding: false,
   fontFamily: "Source Code Pro, monospace",
   fontSize: 14,
@@ -11,9 +11,12 @@ const defaultOptions: editor.IEditorConstructionOptions = {
 
 export const createEditor = (
   element: HTMLElement,
-  options?: editor.IEditorConstructionOptions
+  name: string,
+  language: string,
+  value: string,
 ): editor.IStandaloneCodeEditor | null => {
   if (!window.monaco) { return null; }
-  const finalOptions = { ...defaultOptions, ...options };
-  return window.monaco.editor.create(element, finalOptions);
+  const uri = window.monaco.Uri.parse(`file:///${name}.tsx`);
+  const model = window.monaco.editor.createModel(value, language, uri);
+  return window.monaco.editor.create(element, { ...options, model });
 };

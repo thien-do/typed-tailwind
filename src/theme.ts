@@ -66,9 +66,9 @@ export const defineTheme = () => {
       { token: "keyword", foreground: "c678dd" },
       { token: "delimiter", foreground: "56b6c2" },
       { token: "delimiter.parenthesis", foreground: "abb2bf" },
-      { token: "identifier", foreground: "e5c07b" },
+      { token: "string", foreground: "e5c07b" },
       { token: "type.identifier", foreground: "61afef" },
-      { token: "string", foreground: "98c379" },
+      { token: "identifier", foreground: "e06c75" },
       { token: "number", foreground: "d19a66" },
     ],
   });

@@ -24,11 +24,7 @@ export const Source: React.FC<Props> = (props) => {
 
   useEffect(() => {
     if (!window.monaco) { return; }
-    window.monaco.editor.colorize(
-      source.replace("const Style", "export const Style"),
-      "typescript",
-      {}
-    ).then(setHtml);
+    window.monaco.editor.colorize(source, "typescript", {}).then(setHtml);
   }, [source]);
 
   return (
