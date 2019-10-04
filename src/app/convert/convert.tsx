@@ -4,7 +4,7 @@ import { Style } from "style";
 import { Config, initialConfig } from "./config/config";
 import { Demo } from "./demo/demo";
 import { Source } from "./source/source";
-import { Panel } from "./panel/panel";
+import { Panel } from "../panel/panel";
 
 export const Foo: React.FC = () => {
 

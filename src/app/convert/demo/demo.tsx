@@ -1,35 +1,33 @@
 import React, { useEffect, useRef } from "react";
-import { IDisposable } from "monaco-editor";
+import * as monaco from "monaco-editor";
 import { Style } from "style";
+import { createEditor } from "app/editor/editor";
 
 interface Props {
   source: string;
 }
+
+const editorOptions: monaco.editor.IEditorConstructionOptions = {
+  language: "typescript",
+  value: [
+    "// Try it:",
+    "// E.g. Style().textBlue2().smBlock().$()",
+    "const style: string =",
+    "  Style()",
+    "",
+  ].join("\n"),
+};
 
 export const Demo: React.FC<Props> = (props) => {
 
   const { source } = props;
 
   const container = useRef<HTMLDivElement>(null);
-  const sourceAsLib = useRef<IDisposable| null>(null);
+  const sourceAsLib = useRef<monaco.IDisposable| null>(null);
 
   useEffect(() => {
-    if (!window.monaco || !container.current) { return; }
-    window.monaco.editor.create(container.current, {
-      value: [
-        "// Try it:",
-        "// E.g. Style().textBlue2().smBlock().$()",
-        "const style: string =",
-        "  Style()",
-      ].join("\n"),
-      language: "typescript",
-      minimap: { enabled: false },
-      fontFamily: "Source Code Pro, monospace",
-      fontSize: 14,
-      lineNumbers: "off",
-      lineHeight: 24,
-      folding: false,
-    });
+    if (!container.current) { return; }
+    createEditor(container.current, editorOptions);
   }, []);
 
   useEffect(() => {

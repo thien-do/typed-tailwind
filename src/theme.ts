@@ -63,9 +63,12 @@ export const defineTheme = () => {
     rules: [
       { token: "comment", foreground: "7f848e", fontStyle: "italic" },
       { token: "keyword", foreground: "c678dd" },
-      { token: "delimiter", foreground: "abb2bf" },
+      { token: "delimiter", foreground: "56b6c2" },
+      { token: "delimiter.parenthesis", foreground: "abb2bf" },
       { token: "identifier", foreground: "e5c07b" },
       { token: "type.identifier", foreground: "61afef" },
+      { token: "string", foreground: "98c379" },
+      { token: "number", foreground: "d19a66" },
     ],
   });
   window.monaco.editor.setTheme("one");
