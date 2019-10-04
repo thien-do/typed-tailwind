@@ -1,4 +1,5 @@
 import camelcase from "camelcase";
+import { Config } from "tailwindcss";
 
 // "open" and "close" will be defined later to preserve whitespace
 const base: { open: string, close: string } = { open: "", close: "" };
@@ -33,8 +34,9 @@ base.close = "\n}\n";
 // - "text-primary":  "textPrimary"
 // - "m-4":           "m4"
 // - "-m-4":          "nM4"
-const toKey = (value: string): string => {
+const toKey = (config: Config, value: string): string => {
   let key = value;
+  key = config.prefix ? key.replace(config.prefix, "") : key;
   key = key.split("/").join("-div-");
   key = value.startsWith("-") ? `n-${key}` : key;
   key = key.replace(/\W/g,'-'); // separator maybe
@@ -44,11 +46,11 @@ const toKey = (value: string): string => {
 
 // input: text-red-4
 // output: textRed4(): Style { return this.add("text-red-4"); }
-const getMethod = (cls: string): string => (
-  `  ${toKey(cls)}(): SStyle { return this.add("${cls}"); }`
+const getMethod = (config: Config) => (cls: string): string => (
+  `  ${toKey(config, cls)}(): SStyle { return this.add("${cls}"); }`
 );
 
-export const getFile = (classes: string[]): string => {
-  const body = classes.map(getMethod).join("\n");
+export const getFile = (config: Config) => (classes: string[]): string => {
+  const body = classes.map(getMethod(config)).join("\n");
   return `${base.open}${body}${base.close}`;
 };

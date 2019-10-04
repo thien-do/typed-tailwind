@@ -24,7 +24,7 @@ export const getSource = (configStr: string) => {
       .then(getSelectors)
       .then(getClasses)
       .then(restoreSeparator(config))
-      .then(getFile)
+      .then(getFile(config))
       .then(resolve)
       .catch(reject);
   });

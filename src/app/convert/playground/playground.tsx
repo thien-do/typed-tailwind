@@ -35,7 +35,7 @@ export const Playground: React.FC<Props> = (props) => {
 
   useEffect(() => {
     lib.current && lib.current.dispose();
-    if (!window.monaco) { return null; }
+    if (!window.monaco) { return; }
     lib.current = window.monaco.languages.typescript.typescriptDefaults
       .addExtraLib(source, "file:///style.ts");
   }, [source])

@@ -1,3 +1,12 @@
+const grayDark = "#7f848e";
+const pink = "#c678dd";
+const teal = "#56b6c2";
+const grayLight = "#abb2bf";
+const yellow = "#e5c07b";
+const blue = "#61afef";
+const red = "#e06c75";
+const orange = "#d19a66";
+
 export const defineTheme = () => {
   if (!window.monaco) { return; }
   window.monaco.editor.defineTheme("one", {
@@ -62,14 +71,14 @@ export const defineTheme = () => {
       "editorWidget.background": "#21252b",
     },
     rules: [
-      { token: "comment", foreground: "7f848e", fontStyle: "italic" },
-      { token: "keyword", foreground: "c678dd" },
-      { token: "delimiter", foreground: "56b6c2" },
-      { token: "delimiter.parenthesis", foreground: "abb2bf" },
-      { token: "string", foreground: "e5c07b" },
-      { token: "type.identifier", foreground: "61afef" },
-      { token: "identifier", foreground: "e06c75" },
-      { token: "number", foreground: "d19a66" },
+      { token: "comment", foreground: grayDark, fontStyle: "italic" },
+      { token: "keyword", foreground: red },
+      { token: "delimiter", foreground: teal },
+      { token: "delimiter.parenthesis", foreground: grayLight },
+      { token: "type.identifier", foreground: blue },
+      { token: "string", foreground: blue },
+      { token: "identifier", foreground: pink },
+      { token: "number", foreground: orange },
     ],
   });
   window.monaco.editor.setTheme("one");
