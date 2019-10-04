@@ -1,7 +1,7 @@
 module.exports = {
   prefix: "",
   important: false,
-  separator: "_",
+  separator: "$",
   theme: {
     screens: {},
     colors: {
@@ -26,8 +26,6 @@ module.exports = {
         hsl(220, 13%, 13%) 0 0 0 1px,
         hsl(0, 0%, 0%, 0.6) 0 4px 16px
       `,
-      // inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
-      // outline: "0 0 0 3px rgba(66, 153, 225, 0.5)",
     },
     cursor: { pointer: "pointer" },
     flex: { "1": "1 1 0%", none: "0 0 auto" },
@@ -45,14 +43,7 @@ module.exports = {
     width: theme => ({ ...theme("spacing"), full: "100%", screen: "100vw" }),
   },
   variants: {
-    alignContent: [], alignItems: [], alignSelf: [], backgroundColor: [],
-    borderColor: [], borderRadius: [], borderWidth: [], boxShadow: [],
-    cursor: [], display: [],
-    flex: [], flexDirection: [], flexWrap: [], fontSize: [], fontWeight: [],
-    height: [], inset: [], justifyContent: [], lineHeight: [], margin: [], overflow: [],
-    padding: [], pointerEvents: [], position: [],
-    textAlign: [], textColor: [], userSelect: [],
-    visibility: [], whitespace: [], width: [], wordBreak: [],
+    backgroundColor: [], textColor: [], boxShadow: [],
   },
   corePlugins: [
     "display", "flex", "height", "overflow", "textColor", "userSelect", "width",

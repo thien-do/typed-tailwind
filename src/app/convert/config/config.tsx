@@ -37,10 +37,12 @@ export const Config: React.FC<Props> = (props) => {
     });
   }, [setConfig]);
 
-  // Update editor
+  // Update editor (on external changes only)
   useEffect(() => {
     if (!editor.current) { return; }
-    editor.current.setValue(config);
+    if (editor.current.getValue() !== config) {
+      editor.current.setValue(config);
+    }
   }, [editor, config])
 
   return (

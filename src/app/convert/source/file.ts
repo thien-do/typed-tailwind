@@ -37,6 +37,7 @@ const toKey = (value: string): string => {
   let key = value;
   key = key.split("/").join("-div-");
   key = value.startsWith("-") ? `n-${key}` : key;
+  key = key.replace(/\W/g,'-'); // separator maybe
   key = camelcase(key);
   return key;
 };
@@ -45,7 +46,7 @@ const toKey = (value: string): string => {
 // output: textRed4(): Style { return this.add("text-red-4"); }
 const getMethod = (cls: string): string => (
   `  ${toKey(cls)}(): SStyle { return this.add("${cls}"); }`
-)
+);
 
 export const getFile = (classes: string[]): string => {
   const body = classes.map(getMethod).join("\n");
