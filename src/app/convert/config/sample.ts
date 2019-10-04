@@ -1,5 +1,6 @@
 export const sample = `module.exports = {
   prefix: "tw-",
+  important: false,
   theme: {
     screens: { sm: "640px" },
     colors: {

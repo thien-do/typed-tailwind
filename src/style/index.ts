@@ -244,5 +244,17 @@ class SStyle {
   bgRightBottom(): SStyle { return this.add("bg-right-bottom"); }
   bgRightTop(): SStyle { return this.add("bg-right-top"); }
   bgTop(): SStyle { return this.add("bg-top"); }
+  font400(): SStyle { return this.add("font-400"); }
+  font500(): SStyle { return this.add("font-500"); }
+  font600(): SStyle { return this.add("font-600"); }
+  font700(): SStyle { return this.add("font-700"); }
+  hoverFont400(): SStyle { return this.add("hover$font-400"); }
+  hoverFont500(): SStyle { return this.add("hover$font-500"); }
+  hoverFont600(): SStyle { return this.add("hover$font-600"); }
+  hoverFont700(): SStyle { return this.add("hover$font-700"); }
+  focusFont400(): SStyle { return this.add("focus$font-400"); }
+  focusFont500(): SStyle { return this.add("focus$font-500"); }
+  focusFont600(): SStyle { return this.add("focus$font-600"); }
+  focusFont700(): SStyle { return this.add("focus$font-700"); }
 }
  

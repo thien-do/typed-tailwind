@@ -947,3 +947,51 @@
 .bg-top {
   background-position: top
 }
+
+.font-400 {
+  font-weight: 400
+}
+
+.font-500 {
+  font-weight: 500
+}
+
+.font-600 {
+  font-weight: 600
+}
+
+.font-700 {
+  font-weight: 700
+}
+
+.hover\$font-400:hover {
+  font-weight: 400
+}
+
+.hover\$font-500:hover {
+  font-weight: 500
+}
+
+.hover\$font-600:hover {
+  font-weight: 600
+}
+
+.hover\$font-700:hover {
+  font-weight: 700
+}
+
+.focus\$font-400:focus {
+  font-weight: 400
+}
+
+.focus\$font-500:focus {
+  font-weight: 500
+}
+
+.focus\$font-600:focus {
+  font-weight: 600
+}
+
+.focus\$font-700:focus {
+  font-weight: 700
+}

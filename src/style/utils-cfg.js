@@ -30,10 +30,8 @@ module.exports = {
     cursor: { pointer: "pointer" },
     flex: { "1": "1 1 0%", none: "0 0 auto" },
     fontSize: { "14": "14px", "16": "16px", "18": "18px" },
-    fontWeight: { normal: "400", semibold: "600" },
-    fontFamily: {
-      mono: ["Source Code Pro", "monospace"],
-    },
+    fontWeight: { "400": "400", "500": "500", "600": "600", "700": "700" },
+    fontFamily: { mono: ["Source Code Pro", "monospace"] },
     height: theme => ({ ...theme("spacing"), full: "100%", screen: "100vh" }),
     inset: { "0": "0px" },
     lineHeight: { "16": "16px" },
@@ -43,14 +41,14 @@ module.exports = {
     width: theme => ({ ...theme("spacing"), full: "100%", screen: "100vw" }),
   },
   variants: {
-    backgroundColor: [], textColor: [], boxShadow: [],
+    backgroundColor: [], textColor: [], boxShadow: [], fontWeight: [],
   },
   corePlugins: [
     "display", "flex", "height", "overflow", "textColor", "userSelect", "width",
     "backgroundColor", "fontFamily", "padding", "borderRadius", "backgroundSize",
     "flexDirection", "position", "inset", "margin", "lineHeight", "textAlign",
     "alignItems", "justifyContent", "boxShadow", "backgroundAttachment",
-    "backgroundPosition",
+    "backgroundPosition", "fontWeight",
   ],
   plugins: [],
 }

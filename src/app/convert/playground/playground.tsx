@@ -16,8 +16,7 @@ const editorOptions = {
 const style: string =
   Style()
 
-// E.g.:
-// - Style().text0().bg().$();
+// E.g. Style().textBlueMid().smFlex().$()
 `
 };
 

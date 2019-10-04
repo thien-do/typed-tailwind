@@ -5,7 +5,7 @@ import { Playground } from "./playground/playground";
 import { Source } from "./source/source";
 import { Style } from "style";
 
-const col = Style().flex1().overflowHidden().$();
+const col = Style().flex1().overflowHidden().px16().py32().$();
 
 export const Convert: React.FC = () => {
 
@@ -13,7 +13,9 @@ export const Convert: React.FC = () => {
   const [source, setSource] = useState("");
 
   return (
-    <div className={Style().flex().p16().$()} style={{ height: "400px" }}>
+    <div
+      className={Style().flex().px16().py32().$()}
+    >
       <div className={col}>
         <Config config={config} setConfig={setConfig} />
       </div>

@@ -18,14 +18,6 @@ export const App: React.FC = () => {
       ].join("")}
       style={{ backgroundImage: `url(${img})` }}
     >
-      {/* <div
-        className={Style().bg0At90().shadowPanel().$()}
-        style={{
-          height: "200px",
-          backdropFilter: "blur(15px)",
-          WebkitBackdropFilter: "blur(15px)",
-        }}
-      /> */}
       <Convert />
     </div>
   );

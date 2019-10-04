@@ -4,10 +4,6 @@
 body {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 14px; line-height: 20px;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   background: #282c34;
 }
 
@@ -20,3 +16,10 @@ body {
 ::selection {
   background: rgba(103, 118, 150, 0.38);
 }
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(78,86,102,0.4); }
+::-webkit-scrollbar-thumb:hover { background: rgba(90,99,117,0.5); }
+::-webkit-scrollbar-thumb:active { background: rgba(116,125,145,0.5); }
+::-webkit-scrollbar-corner { background: transparent; }

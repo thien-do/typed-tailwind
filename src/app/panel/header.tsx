@@ -19,8 +19,11 @@ const Buttons = () => (
 );
 
 const Title: React.FC<Props> = (props) => (
-  <div className={Style().hFull().flex().itemsCenter().justifyCenter().$()}>
-    <div className={Style().text7().leading16().$()}>{props.title}</div>
+  <div className={[
+    Style().hFull().flex().itemsCenter().justifyCenter().$(),
+    Style().text5().font500().leading16().$(),
+  ].join("")}>
+    <span>{props.title}</span>
   </div>
 );
 

@@ -2,10 +2,8 @@ const grayDark = "#7f848e";
 const pink = "#c678dd";
 const teal = "#56b6c2";
 const grayLight = "#abb2bf";
-const yellow = "#e5c07b";
 const blue = "#61afef";
 const red = "#e06c75";
-const orange = "#d19a66";
 
 export const defineTheme = () => {
   if (!window.monaco) { return; }
@@ -72,13 +70,13 @@ export const defineTheme = () => {
     },
     rules: [
       { token: "comment", foreground: grayDark, fontStyle: "italic" },
-      { token: "keyword", foreground: red },
-      { token: "delimiter", foreground: teal },
       { token: "delimiter.parenthesis", foreground: grayLight },
-      { token: "type.identifier", foreground: blue },
-      { token: "string", foreground: blue },
+      { token: "delimiter", foreground: teal },
       { token: "identifier", foreground: pink },
-      { token: "number", foreground: orange },
+      { token: "keyword", foreground: red },
+      { token: "number", foreground: teal },
+      { token: "string", foreground: blue },
+      { token: "type.identifier", foreground: blue },
     ],
   });
   window.monaco.editor.setTheme("one");

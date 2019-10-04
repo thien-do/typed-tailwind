@@ -29,7 +29,7 @@ export const Source: React.FC<Props> = (props) => {
 
   return (
     <Panel title="style.ts">
-      <div className={Style().wFull().hFull().overflowScroll().$()}>
+      <div className={Style().wFull().hFull().overflowAuto().pl16().$()}>
         <pre
           className={Style().fontMono().selectAll().$()}
           data-lang="text/typescript"
