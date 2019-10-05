@@ -190,9 +190,6 @@ class SStyle {
   roundedTrFull(): SStyle { return this.add("rounded-tr-full"); }
   roundedBrFull(): SStyle { return this.add("rounded-br-full"); }
   roundedBlFull(): SStyle { return this.add("rounded-bl-full"); }
-  bgAuto(): SStyle { return this.add("bg-auto"); }
-  bgCover(): SStyle { return this.add("bg-cover"); }
-  bgContain(): SStyle { return this.add("bg-contain"); }
   flexRow(): SStyle { return this.add("flex-row"); }
   flexRowReverse(): SStyle { return this.add("flex-row-reverse"); }
   flexCol(): SStyle { return this.add("flex-col"); }
@@ -233,9 +230,15 @@ class SStyle {
   justifyBetween(): SStyle { return this.add("justify-between"); }
   justifyAround(): SStyle { return this.add("justify-around"); }
   shadowPanel(): SStyle { return this.add("shadow-panel"); }
-  bgFixed(): SStyle { return this.add("bg-fixed"); }
-  bgLocal(): SStyle { return this.add("bg-local"); }
-  bgScroll(): SStyle { return this.add("bg-scroll"); }
+  shadowPanelInset(): SStyle { return this.add("shadow-panel-inset"); }
+  font400(): SStyle { return this.add("font-400"); }
+  font500(): SStyle { return this.add("font-500"); }
+  font600(): SStyle { return this.add("font-600"); }
+  font700(): SStyle { return this.add("font-700"); }
+  font900(): SStyle { return this.add("font-900"); }
+  text14(): SStyle { return this.add("text-14"); }
+  text32(): SStyle { return this.add("text-32"); }
+  text96(): SStyle { return this.add("text-96"); }
   bgBottom(): SStyle { return this.add("bg-bottom"); }
   bgCenter(): SStyle { return this.add("bg-center"); }
   bgLeft(): SStyle { return this.add("bg-left"); }
@@ -245,12 +248,13 @@ class SStyle {
   bgRightBottom(): SStyle { return this.add("bg-right-bottom"); }
   bgRightTop(): SStyle { return this.add("bg-right-top"); }
   bgTop(): SStyle { return this.add("bg-top"); }
-  font400(): SStyle { return this.add("font-400"); }
-  font500(): SStyle { return this.add("font-500"); }
-  font600(): SStyle { return this.add("font-600"); }
-  font700(): SStyle { return this.add("font-700"); }
-  font900(): SStyle { return this.add("font-900"); }
-  text14(): SStyle { return this.add("text-14"); }
-  text32(): SStyle { return this.add("text-32"); }
-  text96(): SStyle { return this.add("text-96"); }
+  bgFixed(): SStyle { return this.add("bg-fixed"); }
+  bgLocal(): SStyle { return this.add("bg-local"); }
+  bgScroll(): SStyle { return this.add("bg-scroll"); }
+  bgAuto(): SStyle { return this.add("bg-auto"); }
+  bgCover(): SStyle { return this.add("bg-cover"); }
+  bgContain(): SStyle { return this.add("bg-contain"); }
+  underline(): SStyle { return this.add("underline"); }
+  lineThrough(): SStyle { return this.add("line-through"); }
+  noUnderline(): SStyle { return this.add("no-underline"); }
 }

@@ -26,6 +26,11 @@ module.exports = {
         hsl(220, 13%, 13%) 0 0 0 1px,
         hsl(0, 0%, 0%, 0.6) 0 4px 16px
       `,
+      "panel-inset": `
+        #3e4451 0 0 0 1px,
+        hsl(220, 13%, 13%) 0 0 0 1px inset,
+        hsl(0, 0%, 0%, 0.6) 0 4px 16px inset
+      `,
     },
     cursor: { pointer: "pointer" },
     flex: { "1": "1 1 0%", none: "0 0 auto" },
@@ -42,13 +47,15 @@ module.exports = {
   },
   variants: {
     backgroundColor: [], textColor: [], boxShadow: [], fontWeight: [],
+    textDecoration: [],
   },
   corePlugins: [
     "display", "flex", "height", "overflow", "textColor", "userSelect", "width",
-    "backgroundColor", "fontFamily", "padding", "borderRadius", "backgroundSize",
+    "backgroundColor", "fontFamily", "padding", "borderRadius",
     "flexDirection", "position", "inset", "margin", "lineHeight", "textAlign",
-    "alignItems", "justifyContent", "boxShadow", "backgroundAttachment",
-    "backgroundPosition", "fontWeight", "fontSize",
+    "alignItems", "justifyContent", "boxShadow", "fontWeight", "fontSize",
+    "backgroundPosition", "backgroundAttachment", "backgroundSize",
+    "textDecoration",
   ],
   plugins: [],
 }

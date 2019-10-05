@@ -8,22 +8,22 @@ interface Props {
   title: string;
 }
 
-const panelStyles = {
-  className: [
-    Style().rounded4().shadowPanel().bg0At90().$(),
-    Style().hFull().wFull().flex().flexCol().$(),
-    "blur",
-  ].join(" "),
-};
-
 export const Panel: React.FC<Props> = (props) => {
   return (
-    <div {...panelStyles}>
-      <div className={Style().flexNone().$()}>
-        <Header title={props.title} />
-      </div>
-      <div className={Style().flex1().overflowHidden().$()}>
-        {props.children}
+    // Padding should be defined here to avoid consumers overflow hidden
+    // the shadow
+    <div className={Style().hFull().px16().pt16().pb24().$()}>
+      <div className={[
+        Style().rounded4().shadowPanel().bg0At90().$(),
+        Style().hFull().flex().flexCol().$(),
+        "blur",
+      ].join(" ")}>
+        <div className={Style().flexNone().$()}>
+          <Header title={props.title} />
+        </div>
+        <div className={Style().flex1().overflowHidden().$()}>
+          {props.children}
+        </div>
       </div>
     </div>
   );

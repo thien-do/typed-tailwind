@@ -3,29 +3,55 @@
 
 body {
   font-family: system-ui, -apple-system, sans-serif;
-  font-size: 14px; line-height: 20px;
-  background: #282c34;
+  font-size: 14px;
+  line-height: 20px;
+  background: black;
   color: #c8ccd4;
 }
 
-*, *::before, *::after {
-  margin: 0; padding: 0;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  appearance: none; border: none;
+  appearance: none;
+  border: none;
 }
 
 ::selection {
   background: rgba(103, 118, 150, 0.38);
 }
 
-::-webkit-scrollbar { width: 12px; height: 12px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(78,86,102,0.4); }
-::-webkit-scrollbar-thumb:hover { background: rgba(90,99,117,0.5); }
-::-webkit-scrollbar-thumb:active { background: rgba(116,125,145,0.5); }
-::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(78, 86, 102, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(90, 99, 117, 0.5);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgba(116, 125, 145, 0.5);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
 
 .blur {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
+}
+
+.text-shadow {
+  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 1px 1px;
+}
+
+.bg-img-main {
+  background-image: url("https://images.unsplash.com/photo-1564089969562-7b8667a4adec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }

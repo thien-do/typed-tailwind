@@ -720,18 +720,6 @@
   border-bottom-left-radius: 999px
 }
 
-.bg-auto {
-  background-size: auto
-}
-
-.bg-cover {
-  background-size: cover
-}
-
-.bg-contain {
-  background-size: contain
-}
-
 .flex-row {
   flex-direction: row
 }
@@ -900,20 +888,48 @@
   box-shadow: 
         #3e4451 0 0 0 1px inset,
         hsl(220, 13%, 13%) 0 0 0 1px,
-        hsl(0, 0%, 0%, 0.6) 0 4px 16px
+        hsl(0, 0%, 0%, 0.6) 0 8px 16px
       
 }
 
-.bg-fixed {
-  background-attachment: fixed
+.shadow-panel-inset {
+  box-shadow: 
+        #3e4451 0 0 0 1px,
+        hsl(220, 13%, 13%) 0 0 0 1px inset,
+        hsl(0, 0%, 0%, 0.6) 0 8px 16px inset
+      
 }
 
-.bg-local {
-  background-attachment: local
+.font-400 {
+  font-weight: 400
 }
 
-.bg-scroll {
-  background-attachment: scroll
+.font-500 {
+  font-weight: 500
+}
+
+.font-600 {
+  font-weight: 600
+}
+
+.font-700 {
+  font-weight: 700
+}
+
+.font-900 {
+  font-weight: 900
+}
+
+.text-14 {
+  font-size: 14px
+}
+
+.text-32 {
+  font-size: 32px
+}
+
+.text-96 {
+  font-size: 96px
 }
 
 .bg-bottom {
@@ -952,34 +968,38 @@
   background-position: top
 }
 
-.font-400 {
-  font-weight: 400
+.bg-fixed {
+  background-attachment: fixed
 }
 
-.font-500 {
-  font-weight: 500
+.bg-local {
+  background-attachment: local
 }
 
-.font-600 {
-  font-weight: 600
+.bg-scroll {
+  background-attachment: scroll
 }
 
-.font-700 {
-  font-weight: 700
+.bg-auto {
+  background-size: auto
 }
 
-.font-900 {
-  font-weight: 900
+.bg-cover {
+  background-size: cover
 }
 
-.text-14 {
-  font-size: 14px
+.bg-contain {
+  background-size: contain
 }
 
-.text-32 {
-  font-size: 32px
+.underline {
+  text-decoration: underline
 }
 
-.text-96 {
-  font-size: 96px
+.line-through {
+  text-decoration: line-through
+}
+
+.no-underline {
+  text-decoration: none
 }
