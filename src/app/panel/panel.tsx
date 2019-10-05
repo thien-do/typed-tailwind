@@ -11,12 +11,9 @@ interface Props {
 const panelStyles = {
   className: [
     Style().rounded4().shadowPanel().bg0At90().$(),
-    Style().hFull().wFull().flex().flexCol().$()
+    Style().hFull().wFull().flex().flexCol().$(),
+    "blur",
   ].join(" "),
-  style: {
-    backdropFilter: "blur(15px)",
-    WebkitBackdropFilter: "blur(15px)",
-  },
 };
 
 export const Panel: React.FC<Props> = (props) => {

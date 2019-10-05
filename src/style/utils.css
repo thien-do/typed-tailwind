@@ -75,7 +75,7 @@
 }
 
 .h-60 {
-  height: 40px
+  height: 60px
 }
 
 .h-full {
@@ -279,7 +279,7 @@
 }
 
 .w-60 {
-  width: 40px
+  width: 60px
 }
 
 .w-full {
@@ -403,7 +403,7 @@
 }
 
 .p-60 {
-  padding: 40px
+  padding: 60px
 }
 
 .py-4 {
@@ -487,13 +487,13 @@
 }
 
 .py-60 {
-  padding-top: 40px;
-  padding-bottom: 40px
+  padding-top: 60px;
+  padding-bottom: 60px
 }
 
 .px-60 {
-  padding-left: 40px;
-  padding-right: 40px
+  padding-left: 60px;
+  padding-right: 60px
 }
 
 .pt-4 {
@@ -625,19 +625,19 @@
 }
 
 .pt-60 {
-  padding-top: 40px
+  padding-top: 60px
 }
 
 .pr-60 {
-  padding-right: 40px
+  padding-right: 60px
 }
 
 .pb-60 {
-  padding-bottom: 40px
+  padding-bottom: 60px
 }
 
 .pl-60 {
-  padding-left: 40px
+  padding-left: 60px
 }
 
 .rounded-4 {
@@ -974,6 +974,10 @@
 
 .text-14 {
   font-size: 14px
+}
+
+.text-32 {
+  font-size: 32px
 }
 
 .text-96 {

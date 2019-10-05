@@ -5,7 +5,7 @@ import { Playground } from "./playground/playground";
 import { Source } from "./source/source";
 import { Style } from "style";
 
-const col = Style().hFull().flex1().overflowHidden().px16().py32().$();
+const col = Style().hFull().flex1().overflowHidden().px16().py60().$();
 
 export const Convert: React.FC = () => {
 

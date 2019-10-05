@@ -1,9 +1,9 @@
 // http://github.com/dvkndn/typed-tailwind
 export const Style = (): SStyle => new SStyle();
- 
+
 class SStyle {
   value = "";
- 
+
   // Getter methods
   // Why "$":
   // - https://github.com/microsoft/TypeScript/issues/2361
@@ -11,13 +11,13 @@ class SStyle {
   // - https://en.wikipedia.org/wiki/Regular_expression
   $(): string { return this.value; }
   [Symbol.toPrimitive](): string { return this.$(); }
- 
+
   // Building methods
   private add(value: string): SStyle {
     this.value = `${this.value} ${value}`;
     return this;
   }
- 
+
   // Styling methods
   block(): SStyle { return this.add("block"); }
   inlineBlock(): SStyle { return this.add("inline-block"); }
@@ -251,6 +251,6 @@ class SStyle {
   font700(): SStyle { return this.add("font-700"); }
   font900(): SStyle { return this.add("font-900"); }
   text14(): SStyle { return this.add("text-14"); }
+  text32(): SStyle { return this.add("text-32"); }
   text96(): SStyle { return this.add("text-96"); }
 }
- 

@@ -14,7 +14,7 @@ module.exports = {
     },
     spacing: {
       "4": "4px", "8": "8px", "12": "12px", "16": "16px", "24": "24px",
-      "32": "32px", "40": "40px", "48": "48px", "60": "40px",
+      "32": "32px", "40": "40px", "48": "48px", "60": "60px",
     },
     backgroundColor: theme => theme("colors"),
     borderColor: theme => theme("colors"),
@@ -29,7 +29,7 @@ module.exports = {
     },
     cursor: { pointer: "pointer" },
     flex: { "1": "1 1 0%", none: "0 0 auto" },
-    fontSize: { "14": "14px", "96": "96px" },
+    fontSize: { "14": "14px", "32": "32px", "96": "96px" },
     fontWeight: { "400": "400", "500": "500", "600": "600", "700": "700", "900": "900" },
     fontFamily: { mono: ["Source Code Pro", "monospace"] },
     height: theme => ({ ...theme("spacing"), full: "100%", screen: "100vh" }),

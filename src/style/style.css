@@ -24,3 +24,8 @@ body {
 ::-webkit-scrollbar-thumb:hover { background: rgba(90,99,117,0.5); }
 ::-webkit-scrollbar-thumb:active { background: rgba(116,125,145,0.5); }
 ::-webkit-scrollbar-corner { background: transparent; }
+
+.blur {
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}

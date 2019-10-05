@@ -22,7 +22,7 @@ export const App: React.FC = () => {
       <div className={Style().overflowHidden().$()} style={{ flex: "1.6 1 0px" }}>
         <Convert />
       </div>
-      <div className={Style().overflowHidden().flex1().$()}>
+      <div className={Style().flex1().$()}>
         <Title />
       </div>
     </div>
