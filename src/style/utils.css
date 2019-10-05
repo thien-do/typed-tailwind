@@ -832,6 +832,10 @@
   margin-left: auto
 }
 
+.leading-1 {
+  line-height: 1
+}
+
 .leading-16 {
   line-height: 16px
 }
@@ -964,34 +968,14 @@
   font-weight: 700
 }
 
-.hover\$font-400:hover {
-  font-weight: 400
+.font-900 {
+  font-weight: 900
 }
 
-.hover\$font-500:hover {
-  font-weight: 500
+.text-14 {
+  font-size: 14px
 }
 
-.hover\$font-600:hover {
-  font-weight: 600
-}
-
-.hover\$font-700:hover {
-  font-weight: 700
-}
-
-.focus\$font-400:focus {
-  font-weight: 400
-}
-
-.focus\$font-500:focus {
-  font-weight: 500
-}
-
-.focus\$font-600:focus {
-  font-weight: 600
-}
-
-.focus\$font-700:focus {
-  font-weight: 700
+.text-96 {
+  font-size: 96px
 }

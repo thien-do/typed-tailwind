@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { Style } from "style";
 import { getSource } from "./get-source";
 import { Panel } from "app/panel/panel";
+import { createEditor, Editor } from "app/editor/editor";
 
 interface Props {
   config: string;
@@ -13,29 +14,32 @@ interface Props {
 export const Source: React.FC<Props> = (props) => {
 
   const { source, config, setSource } = props;
+  const container = useRef<HTMLDivElement>(null);
+  const editor = useRef<Editor | null>(null);
 
-  const [html, setHtml] = useState("");
-
+  // Generate new source
   useEffect(() => {
     getSource(config)
       .then((newSource: string) => { setSource(newSource); })
       .catch((error: string) => { setSource(error); });
   }, [config, setSource]);
 
+  // Init editor
   useEffect(() => {
-    if (!window.monaco) { return; }
-    window.monaco.editor.colorize(source, "typescript", {}).then(setHtml);
+    const element = container.current; if (!element) { return; }
+    const model = { name: "source", language: "typescript", value: "" };
+    editor.current = createEditor(element, model, { readOnly: true });
+  }, [])
+
+  // Set new source to editor
+  useEffect(() => {
+    if (!editor.current) { return; }
+    editor.current.setValue(source);
   }, [source]);
 
   return (
     <Panel title="style.ts">
-      <div className={Style().wFull().hFull().overflowAuto().pl16().$()}>
-        <pre
-          className={Style().fontMono().selectAll().$()}
-          data-lang="text/typescript"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+      <div ref={container} className={Style().wFull().hFull().$()} />
     </Panel>
   );
 };

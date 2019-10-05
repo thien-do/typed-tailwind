@@ -2,8 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 import { sample } from "./sample";
 import { Style } from "style";
-import * as monaco from "monaco-editor";
-import { createEditor } from "app/editor/editor";
+import { createEditor, Editor } from "app/editor/editor";
 import { Panel } from "app/panel/panel";
 
 export const initialConfig: string =
@@ -17,7 +16,7 @@ interface Props {
 export const Config: React.FC<Props> = (props) => {
 
   const { config, setConfig } = props;
-  const editor = useRef<monaco.editor.IStandaloneCodeEditor | null>(null)
+  const editor = useRef<Editor | null>(null)
   const container = useRef<HTMLDivElement>(null)
 
   // Save config

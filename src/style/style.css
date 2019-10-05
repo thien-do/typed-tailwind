@@ -5,6 +5,7 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 14px; line-height: 20px;
   background: #282c34;
+  color: #c8ccd4;
 }
 
 *, *::before, *::after {

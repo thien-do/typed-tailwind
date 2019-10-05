@@ -216,6 +216,7 @@ class SStyle {
   mrAuto(): SStyle { return this.add("mr-auto"); }
   mbAuto(): SStyle { return this.add("mb-auto"); }
   mlAuto(): SStyle { return this.add("ml-auto"); }
+  leading1(): SStyle { return this.add("leading-1"); }
   leading16(): SStyle { return this.add("leading-16"); }
   textLeft(): SStyle { return this.add("text-left"); }
   textCenter(): SStyle { return this.add("text-center"); }
@@ -248,13 +249,8 @@ class SStyle {
   font500(): SStyle { return this.add("font-500"); }
   font600(): SStyle { return this.add("font-600"); }
   font700(): SStyle { return this.add("font-700"); }
-  hoverFont400(): SStyle { return this.add("hover$font-400"); }
-  hoverFont500(): SStyle { return this.add("hover$font-500"); }
-  hoverFont600(): SStyle { return this.add("hover$font-600"); }
-  hoverFont700(): SStyle { return this.add("hover$font-700"); }
-  focusFont400(): SStyle { return this.add("focus$font-400"); }
-  focusFont500(): SStyle { return this.add("focus$font-500"); }
-  focusFont600(): SStyle { return this.add("focus$font-600"); }
-  focusFont700(): SStyle { return this.add("focus$font-700"); }
+  font900(): SStyle { return this.add("font-900"); }
+  text14(): SStyle { return this.add("text-14"); }
+  text96(): SStyle { return this.add("text-96"); }
 }
  

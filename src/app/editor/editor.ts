@@ -9,17 +9,22 @@ const base: editor.IEditorConstructionOptions = {
   minimap: { enabled: false },
 };
 
-interface Options {
+interface ModelOptions {
   name: string;
   language: string;
   value: string;
 }
 
-export const createEditor = (element: HTMLElement, options: Options)  => {
-  if (!window.monaco) { return null; }
-  const { name, value, language } = options;
+export type Editor = editor.IStandaloneCodeEditor;
 
-  const uri = window.monaco.Uri.parse(`file:///${name}.tsx`);
-  const model = window.monaco.editor.createModel(value, language, uri);
-  return window.monaco.editor.create(element, { ...base, model });
+export const createEditor = (
+  element: HTMLElement,
+  modelOptions: ModelOptions,
+  options: editor.IEditorConstructionOptions = {}
+)  => {
+  const { monaco } = window; if (!monaco) { return null; }
+  const { name, value, language } = modelOptions;
+  const uri = monaco.Uri.parse(`file:///${name}.tsx`);
+  const model = monaco.editor.createModel(value, language, uri);
+  return monaco.editor.create(element, { ...base, ...options, model });
 };

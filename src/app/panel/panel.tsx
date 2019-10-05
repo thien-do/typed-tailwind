@@ -11,12 +11,11 @@ interface Props {
 const panelStyles = {
   className: [
     Style().rounded4().shadowPanel().bg0At90().$(),
-    Style().wFull().flex().flexCol().$()
+    Style().hFull().wFull().flex().flexCol().$()
   ].join(" "),
   style: {
     backdropFilter: "blur(15px)",
     WebkitBackdropFilter: "blur(15px)",
-    height: "300px",
   },
 };
 

@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Convert } from "./convert/convert";
 import { Style } from "style";
+import { Convert } from "./convert/convert";
+import { Title } from "./title";
 
 // https://unsplash.com/photos/yXABLtZJpdI
 const img = [
@@ -13,12 +14,17 @@ export const App: React.FC = () => {
   return (
     <div
       className={[
-        Style().hScreen().overflowHidden().$(),
-        Style().bgCover().bgFixed().bgCenter().$(),
+        Style().overflowHidden().bgCover().bgFixed().bgCenter().$(),
+        Style().hScreen().flex().flexCol().$(),
       ].join("")}
       style={{ backgroundImage: `url(${img})` }}
     >
-      <Convert />
+      <div className={Style().overflowHidden().$()} style={{ flex: "1.6 1 0px" }}>
+        <Convert />
+      </div>
+      <div className={Style().overflowHidden().flex1().$()}>
+        <Title />
+      </div>
     </div>
   );
 };
