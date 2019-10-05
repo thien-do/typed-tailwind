@@ -2,12 +2,13 @@
 
 A tool to generate TypeScript source code from Tailwind CSS.
 
-- [Usage](#usage)
-- [FAQ](#faq)
-	- Is there a CLI
-	- Does it work without TypeScript
-	- Does it work with PurgeCSS
-	- Is it slow
+* [Usage](#usage)
+* [FAQ](#faq)
+    + [Is there a CLI?](#is-there-a-cli)
+    + [Does it work without TypeScript?](#does-it-work-without-typescript)
+    + [Does it work with PurgeCSS?](#does-it-work-with-purgecss)
+    + [Is it slow?](#is-it-slow)
+* [License](#license)
 
 ## Usage
 
