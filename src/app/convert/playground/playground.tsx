@@ -40,7 +40,7 @@ export const Playground: React.FC<Props> = (props) => {
   }, [source])
 
   return (
-    <Panel title="playground.ts">
+    <Panel title="./playground.ts">
       <div ref={container} className={Tw().wFull().hFull().$()} />
     </Panel>
   );

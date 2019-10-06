@@ -26,7 +26,7 @@ export const Convert: React.FC = () => {
         </Step>
       </div>
       <div className={col} style={{ minWidth: "480px" }}>
-        <Step text="Step 3. Use its `Tw` function:">
+        <Step text="Step 3. Use `Tw` function from the file:">
           <Playground source={source} />
         </Step>
       </div>

@@ -16,7 +16,9 @@ body {
   padding: 0;
   box-sizing: border-box;
   appearance: none;
-  border: none;
+  /* https://github.com/tailwindcss/tailwindcss/pull/116 */
+  border-width: 0;
+  border-style: solid;
 }
 
 ::selection {
@@ -54,4 +56,8 @@ body {
 
 .bg-img-main {
   background-image: url("https://images.unsplash.com/photo-1564089969562-7b8667a4adec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+}
+
+.transition {
+  transition: all 0.2s;
 }

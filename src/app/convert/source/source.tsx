@@ -38,7 +38,7 @@ export const Source: React.FC<Props> = (props) => {
   }, [source]);
 
   return (
-    <Panel title="./style.ts">
+    <Panel title="./tw.ts">
       <div ref={container} className={Tw().wFull().hFull().$()} />
     </Panel>
   );

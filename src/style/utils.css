@@ -174,44 +174,12 @@
   color: #c8ccd4
 }
 
-.text-8 {
-  color: #e06c75
-}
-
-.text-9 {
-  color: #d19a66
-}
-
 .text-currentColor {
   color: currentColor
 }
 
 .text-transparent {
   color: transparent
-}
-
-.text-A {
-  color: #e5c07b
-}
-
-.text-B {
-  color: #98c379
-}
-
-.text-C {
-  color: #56b6c2
-}
-
-.text-D {
-  color: #61afef
-}
-
-.text-E {
-  color: #c678dd
-}
-
-.text-F {
-  color: #be5046
 }
 
 .text-0at90 {
@@ -322,44 +290,12 @@
   background-color: #c8ccd4
 }
 
-.bg-8 {
-  background-color: #e06c75
-}
-
-.bg-9 {
-  background-color: #d19a66
-}
-
 .bg-currentColor {
   background-color: currentColor
 }
 
 .bg-transparent {
   background-color: transparent
-}
-
-.bg-A {
-  background-color: #e5c07b
-}
-
-.bg-B {
-  background-color: #98c379
-}
-
-.bg-C {
-  background-color: #56b6c2
-}
-
-.bg-D {
-  background-color: #61afef
-}
-
-.bg-E {
-  background-color: #c678dd
-}
-
-.bg-F {
-  background-color: #be5046
 }
 
 .bg-0at90 {
@@ -888,7 +824,7 @@
   box-shadow: 
         #3e4451 0 0 0 1px inset,
         hsl(220, 13%, 13%) 0 0 0 1px,
-        hsl(0, 0%, 0%, 0.6) 0 8px 16px
+        hsl(0, 0%, 0%, 0.6) 0 4px 16px
       
 }
 
@@ -896,7 +832,7 @@
   box-shadow: 
         #3e4451 0 0 0 1px,
         hsl(220, 13%, 13%) 0 0 0 1px inset,
-        hsl(0, 0%, 0%, 0.6) 0 8px 16px inset
+        hsl(0, 0%, 0%, 0.6) 0 4px 16px inset
       
 }
 
@@ -1002,4 +938,132 @@
 
 .no-underline {
   text-decoration: none
+}
+
+.border-1px {
+  border-width: 1px
+}
+
+.border-2px {
+  border-width: 2px
+}
+
+.border-t-1px {
+  border-top-width: 1px
+}
+
+.border-r-1px {
+  border-right-width: 1px
+}
+
+.border-b-1px {
+  border-bottom-width: 1px
+}
+
+.border-l-1px {
+  border-left-width: 1px
+}
+
+.border-t-2px {
+  border-top-width: 2px
+}
+
+.border-r-2px {
+  border-right-width: 2px
+}
+
+.border-b-2px {
+  border-bottom-width: 2px
+}
+
+.border-l-2px {
+  border-left-width: 2px
+}
+
+.border-0 {
+  border-color: #282c34
+}
+
+.border-1 {
+  border-color: #353b45
+}
+
+.border-2 {
+  border-color: #3e4451
+}
+
+.border-3 {
+  border-color: #545862
+}
+
+.border-4 {
+  border-color: #565c64
+}
+
+.border-5 {
+  border-color: #abb2bf
+}
+
+.border-6 {
+  border-color: #b6bdca
+}
+
+.border-7 {
+  border-color: #c8ccd4
+}
+
+.border-currentColor {
+  border-color: currentColor
+}
+
+.border-transparent {
+  border-color: transparent
+}
+
+.border-0at90 {
+  border-color: rgba(40, 44, 52, 0.90)
+}
+
+.hover\$border-0:hover {
+  border-color: #282c34
+}
+
+.hover\$border-1:hover {
+  border-color: #353b45
+}
+
+.hover\$border-2:hover {
+  border-color: #3e4451
+}
+
+.hover\$border-3:hover {
+  border-color: #545862
+}
+
+.hover\$border-4:hover {
+  border-color: #565c64
+}
+
+.hover\$border-5:hover {
+  border-color: #abb2bf
+}
+
+.hover\$border-6:hover {
+  border-color: #b6bdca
+}
+
+.hover\$border-7:hover {
+  border-color: #c8ccd4
+}
+
+.hover\$border-currentColor:hover {
+  border-color: currentColor
+}
+
+.hover\$border-transparent:hover {
+  border-color: transparent
+}
+
+.hover\$border-0at90:hover {
+  border-color: rgba(40, 44, 52, 0.90)
 }

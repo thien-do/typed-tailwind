@@ -2,20 +2,22 @@ import React from "react";
 
 import { Tw } from "style";
 
-const Link = () => {
-  return (
+const Description = () => (
+  <p className={Tw().text32().leading1().font600().$()}>
+    <span className={Tw().text5().$()}>
+      Brings types to Tailwind CSS.
+    </span>
+    <span> </span>
     <a
       className={[
-        Tw().bgFixed().bgCenter().bgCover().$(), "bg-img-main",
-        Tw().roundedFull().px24().py12().shadowPanelInset().$(),
-        Tw().text7().font700().noUnderline().$(), "text-shadow",
+        Tw().text7().font700().noUnderline().$(),
+        Tw().borderB2Px().border4().hoverBorder7().pb4().$(),
+        "transition",
       ].join(" ")}
       href="https://github.com/dvkndn/typed-tailwind"
-    >
-      Learn more →
-    </a>
-  );
-};
+    >Learn more →</a>
+  </p>
+);
 
 export const Title: React.FC = () => {
   return (
@@ -31,13 +33,7 @@ export const Title: React.FC = () => {
           Typed Tailwind
         </h1>
         <div className={Tw().h24().$()} />
-        <p className={Tw().text32().leading1().font600().$()}>
-          <span className={Tw().text5().$()}>
-            Brings types to Tailwind CSS.
-          </span>
-          <span className={Tw().pl24().$()} />
-          <Link />
-        </p>
+        <Description />
       </div>
     </div>
   );

@@ -63,16 +63,8 @@ class Tailwind {
   text5(): Tailwind { return this.add("text-5"); }
   text6(): Tailwind { return this.add("text-6"); }
   text7(): Tailwind { return this.add("text-7"); }
-  text8(): Tailwind { return this.add("text-8"); }
-  text9(): Tailwind { return this.add("text-9"); }
   textCurrentColor(): Tailwind { return this.add("text-currentColor"); }
   textTransparent(): Tailwind { return this.add("text-transparent"); }
-  textA(): Tailwind { return this.add("text-A"); }
-  textB(): Tailwind { return this.add("text-B"); }
-  textC(): Tailwind { return this.add("text-C"); }
-  textD(): Tailwind { return this.add("text-D"); }
-  textE(): Tailwind { return this.add("text-E"); }
-  textF(): Tailwind { return this.add("text-F"); }
   text0At90(): Tailwind { return this.add("text-0at90"); }
   selectNone(): Tailwind { return this.add("select-none"); }
   selectText(): Tailwind { return this.add("select-text"); }
@@ -97,16 +89,8 @@ class Tailwind {
   bg5(): Tailwind { return this.add("bg-5"); }
   bg6(): Tailwind { return this.add("bg-6"); }
   bg7(): Tailwind { return this.add("bg-7"); }
-  bg8(): Tailwind { return this.add("bg-8"); }
-  bg9(): Tailwind { return this.add("bg-9"); }
   bgCurrentColor(): Tailwind { return this.add("bg-currentColor"); }
   bgTransparent(): Tailwind { return this.add("bg-transparent"); }
-  bgA(): Tailwind { return this.add("bg-A"); }
-  bgB(): Tailwind { return this.add("bg-B"); }
-  bgC(): Tailwind { return this.add("bg-C"); }
-  bgD(): Tailwind { return this.add("bg-D"); }
-  bgE(): Tailwind { return this.add("bg-E"); }
-  bgF(): Tailwind { return this.add("bg-F"); }
   bg0At90(): Tailwind { return this.add("bg-0at90"); }
   fontMono(): Tailwind { return this.add("font-mono"); }
   p4(): Tailwind { return this.add("p-4"); }
@@ -257,4 +241,36 @@ class Tailwind {
   underline(): Tailwind { return this.add("underline"); }
   lineThrough(): Tailwind { return this.add("line-through"); }
   noUnderline(): Tailwind { return this.add("no-underline"); }
+  border1Px(): Tailwind { return this.add("border-1px"); }
+  border2Px(): Tailwind { return this.add("border-2px"); }
+  borderT1Px(): Tailwind { return this.add("border-t-1px"); }
+  borderR1Px(): Tailwind { return this.add("border-r-1px"); }
+  borderB1Px(): Tailwind { return this.add("border-b-1px"); }
+  borderL1Px(): Tailwind { return this.add("border-l-1px"); }
+  borderT2Px(): Tailwind { return this.add("border-t-2px"); }
+  borderR2Px(): Tailwind { return this.add("border-r-2px"); }
+  borderB2Px(): Tailwind { return this.add("border-b-2px"); }
+  borderL2Px(): Tailwind { return this.add("border-l-2px"); }
+  border0(): Tailwind { return this.add("border-0"); }
+  border1(): Tailwind { return this.add("border-1"); }
+  border2(): Tailwind { return this.add("border-2"); }
+  border3(): Tailwind { return this.add("border-3"); }
+  border4(): Tailwind { return this.add("border-4"); }
+  border5(): Tailwind { return this.add("border-5"); }
+  border6(): Tailwind { return this.add("border-6"); }
+  border7(): Tailwind { return this.add("border-7"); }
+  borderCurrentColor(): Tailwind { return this.add("border-currentColor"); }
+  borderTransparent(): Tailwind { return this.add("border-transparent"); }
+  border0At90(): Tailwind { return this.add("border-0at90"); }
+  hoverBorder0(): Tailwind { return this.add("hover$border-0"); }
+  hoverBorder1(): Tailwind { return this.add("hover$border-1"); }
+  hoverBorder2(): Tailwind { return this.add("hover$border-2"); }
+  hoverBorder3(): Tailwind { return this.add("hover$border-3"); }
+  hoverBorder4(): Tailwind { return this.add("hover$border-4"); }
+  hoverBorder5(): Tailwind { return this.add("hover$border-5"); }
+  hoverBorder6(): Tailwind { return this.add("hover$border-6"); }
+  hoverBorder7(): Tailwind { return this.add("hover$border-7"); }
+  hoverBorderCurrentColor(): Tailwind { return this.add("hover$border-currentColor"); }
+  hoverBorderTransparent(): Tailwind { return this.add("hover$border-transparent"); }
+  hoverBorder0At90(): Tailwind { return this.add("hover$border-0at90"); }
 }

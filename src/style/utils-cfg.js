@@ -8,8 +8,6 @@ module.exports = {
       currentColor: "currentColor", transparent: "transparent",
       "0": "#282c34", "1": "#353b45", "2": "#3e4451", "3": "#545862",
       "4": "#565c64", "5": "#abb2bf", "6": "#b6bdca", "7": "#c8ccd4",
-      "8": "#e06c75", "9": "#d19a66", "A": "#e5c07b", "B": "#98c379",
-      "C": "#56b6c2", "D": "#61afef", "E": "#c678dd", "F": "#be5046",
       "0at90": "rgba(40, 44, 52, 0.90)",
     },
     spacing: {
@@ -19,7 +17,7 @@ module.exports = {
     backgroundColor: theme => theme("colors"),
     borderColor: theme => theme("colors"),
     borderRadius: { "4": "4px", full: "999px" },
-    borderWidth: { "0": "0", "1": "1px", "2": "2px" },
+    borderWidth: { "1px": "1px", "2px": "2px" },
     boxShadow: {
       "panel": `
         #3e4451 0 0 0 1px inset,
@@ -47,7 +45,7 @@ module.exports = {
   },
   variants: {
     backgroundColor: [], textColor: [], boxShadow: [], fontWeight: [],
-    textDecoration: [],
+    textDecoration: [], borderColor: ["hover"],
   },
   corePlugins: [
     "display", "flex", "height", "overflow", "textColor", "userSelect", "width",
@@ -55,7 +53,7 @@ module.exports = {
     "flexDirection", "position", "inset", "margin", "lineHeight", "textAlign",
     "alignItems", "justifyContent", "boxShadow", "fontWeight", "fontSize",
     "backgroundPosition", "backgroundAttachment", "backgroundSize",
-    "textDecoration",
+    "textDecoration", "borderWidth", "borderColor",
   ],
   plugins: [],
 }

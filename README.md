@@ -1,4 +1,4 @@
-# Typed Tailwind · [typed-tailwind.com](https://typed-tailwind.com)
+# [Typed Tailwind](https://typed-tailwind.com)
 
 Brings types to [Tailwind CSS](https://tailwindcss.com).
 
@@ -48,7 +48,11 @@ Example usages: [https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%2
 
 ### Where to put the generated file?
 
-The file should be imported from many places in your codebase so place it where you can take advantage of absolute imports. For example, if you are using CRA and your [`baseUrl`](https://create-react-app.dev/docs/importing-a-component#absolute-imports) is `src` folder then you can place the file at `src/tw/index.ts`.
+The file should be imported from many places in your codebase so place it where you can take advantage of absolute imports. For example, if you are using CRA and your [`baseUrl`](https://create-react-app.dev/docs/importing-a-component#absolute-imports) is the `src` folder then you can place the file at `src/tw/index.ts`.
+
+```ts
+import { Tw } from "tw";
+```
 
 ### Does it work without TypeScript?
 
