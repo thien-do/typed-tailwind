@@ -33,7 +33,7 @@ export const Title: React.FC = () => {
         <div className={Style().h24().$()} />
         <p className={Style().text32().leading1().font600().$()}>
           <span className={Style().text5().$()}>
-            Utility-first CSS framework, statically typed.
+            A utility-first CSS framework, statically typed.
           </span>
           <span className={Style().pl24().$()} />
           <Link />

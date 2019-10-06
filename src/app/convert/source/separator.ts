@@ -1,4 +1,4 @@
-import { Config } from "tailwindcss";
+import { Config } from "tailwindcss-won";
 
 // Because some separator (including the default ":") is not code-friendly
 // and may be conflicted with CSS syntax

@@ -1,4 +1,4 @@
-import { Config } from "tailwindcss";
+import { Config } from "tailwindcss-won";
 
 /**
  * Remove preflight option since it's not necessary AND tailwind uses "fs" to

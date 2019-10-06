@@ -9328,10 +9328,10 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss@1.1.2:
-  version "1.1.2"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-1.1.2.tgz#0107dc092c3edee6132b105d896b109c0f66afd6"
-  integrity sha512-mcTzZHXMipnQY9haB17baNJmBTkYYcC8ljfMdB9/97FfhKJIzlglJcyGythuQTOu7r/QIbLfZYYWZhAvaGj95A==
+tailwindcss-won@1.1.2-won-2:
+  version "1.1.2-won-2"
+  resolved "https://registry.npmjs.org/tailwindcss-won/-/tailwindcss-won-1.1.2-won-2.tgz#c5007aa0c95a27f609e52f0fa705118c0a734f33"
+  integrity sha512-8f5p/WCNOtAB+c/zc8ePvTBxN5hTC/zNfKeucOHegQvtpqjYpkU34D4On00HkpQr5qwATFpdK0Dn+HOxhuYESA==
   dependencies:
     autoprefixer "^9.4.5"
     bytes "^3.0.0"

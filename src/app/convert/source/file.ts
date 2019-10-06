@@ -1,5 +1,5 @@
 import camelcase from "camelcase";
-import { Config } from "tailwindcss";
+import { Config } from "tailwindcss-won";
 
 // "open" and "close" will be defined later to preserve whitespace
 const base: { open: string, close: string } = { open: "", close: "" };

@@ -1,5 +1,5 @@
 import postcss from "postcss";
-import tailwindcss from "tailwindcss";
+import tailwindcss from "tailwindcss-won";
 
 import { withSafeSeparator, restoreSeparator } from "./separator";
 import { getConfig } from "./config";
