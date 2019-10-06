@@ -79,11 +79,11 @@ Yes. The result is simply a source file, so feel free to modify it anyway you wa
 ```typescript
 // style.ts
 
-class SStyle {
+class Tailwind {
   /* ... */
   
   // Add your custom ones:
-  textShadow(): SStyle { return this.add("text-shadow"); }
+  textShadow(): Tailwind { return this.add("text-shadow"); }
 }
 ```
 
@@ -94,7 +94,7 @@ Out of the box, it's a run time solution so it's slower and use more memory than
 - Move the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
 
     ```tsx
-    const styles = Style().fontBold().textBlue().$();
+    const styles = Tw().fontBold().textBlue().$();
     
     const Foo = () => <p className={styles} />;
     ```
