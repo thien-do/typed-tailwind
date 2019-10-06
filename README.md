@@ -45,6 +45,7 @@ Example usages: https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29
 + [Does it work with custom classes?](#does-it-work-with-custom-classes)
 + [Is there any performance issue?](#is-there-any-performance-issue)
 + [Is there a CLI?](#is-there-a-cli)
++ [The generated code style doesn't match ours. Can I reformat it?](#the-generated-code-style-doesnt-match-ours-can-i-reformat-it)
 
 ### Where to put the generated file?
 
@@ -107,6 +108,12 @@ Yes. The generated code should be checked into your source control so you can (a
 ### Is there a CLI?
 
 It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
+
+## Credits
+
+- @nhducit for the help in implementation
+- @trungfinity for the help in API design
+- [anduin.design/style/](http://anduin.design/style/) for the inspiration
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
