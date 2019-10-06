@@ -1,6 +1,6 @@
-# Typed Tailwind – [typed.tw](https://typed.tw)
+# Typed Tailwind · [typed.tw](https://typed.tw)
 
-A tool to generate TypeScript source code from Tailwind CSS.
+Utility-first CSS framework, statically typed.
 
 * [Usage](#usage)
 * [FAQ](#faq)
