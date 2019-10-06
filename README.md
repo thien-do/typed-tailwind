@@ -8,7 +8,7 @@ Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [License](#license)
 
 Typed Tailwind brings static typing to [Tailwind CSS](https://tailwindcss.com). It generates a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your configuration conveniently:
 
-<img width="693" alt="Code completion" src="https://user-images.githubusercontent.com/5953369/66266440-535a5480-e84f-11e9-9640-eeee65039886.png">
+<img width="693" alt="Code completion" src="https://user-images.githubusercontent.com/5953369/66266581-227b1f00-e851-11e9-8baf-9d986bf2cb35.png">
 
 …and safely:
 
