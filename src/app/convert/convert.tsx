@@ -21,7 +21,7 @@ export const Convert: React.FC = () => {
         </Step>
       </div>
       <div className={col}>
-        <Step text="Step 2. Put this TS file into your codebase:">
+        <Step text="Step 2. Put this file into your codebase:">
           <Source config={config} source={source} setSource={setSource} />
         </Step>
       </div>
