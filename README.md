@@ -111,8 +111,8 @@ It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
 
 ## Credits
 
-- @nhducit for the help in implementation
-- @trungfinity for the help in API design
+- [@nhducit](https://github.com/nhducit) for the help in implementation
+- [@trungfinity](https://github.com/trungfinity) for the help in API design
 - [anduin.design/style/](http://anduin.design/style/) for the inspiration
 
 ## License
