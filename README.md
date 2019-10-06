@@ -1,13 +1,9 @@
-# Typed Tailwind – [typed.tw](https://typed.tw)
+# Typed Tailwind · [typed.tw](https://typed.tw)
 
-A tool to generate TypeScript source code from Tailwind CSS.
+Utility-first CSS framework, statically typed.
 
 * [Usage](#usage)
 * [FAQ](#faq)
-    + [Is there a CLI?](#is-there-a-cli)
-    + [Does it work without TypeScript?](#does-it-work-without-typescript)
-    + [Does it work with PurgeCSS?](#does-it-work-with-purgecss)
-    + [Is it slow?](#is-it-slow)
 * [License](#license)
 
 ## Usage
@@ -28,9 +24,12 @@ const Foo = () => (
 
 ## FAQ
 
-### Is there a CLI?
-
-We are [working on it](https://github.com/dvkndn/typed-tailwind/issues/3).
++ [Does it work without TypeScript?](#does-it-work-without-typescript)
++ [Does it work with PurgeCSS?](#does-it-work-with-purgecss)
++ [Does it work with custom plugins?](#does-it-work-with-custom-plugins)
++ [Does it work with custom classes?](#does-it-work-with-custom-classes)
++ [Is there any performance issue?](#is-there-any-performance-issue)
++ [Is there a CLI?](#is-there-a-cli)
 
 ### Does it work without TypeScript?
 
@@ -40,26 +39,47 @@ Yes. You can always compile the generated file to JS, optionally with a [declara
 tsc --declaration style.ts
 ```
 
-This way, you can still get full [code completion](https://code.visualstudio.com/docs/editor/intellisense), just no compile-time type checking.
+This way, you still get full [code completion](https://code.visualstudio.com/docs/editor/intellisense), just no compile time type checking.
 
 ### Does it work with PurgeCSS?
 
-It requires a custom extractor, which [is planned](https://github.com/dvkndn/typed-tailwind/issues/2).
+Not yet. It requires a custom extractor, which is [planned](https://github.com/dvkndn/typed-tailwind/issues/2). In the meantime, try [remove unused values](https://tailwindcss.com/docs/controlling-file-size#removing-unused-theme-values).
 
-### Is it slow?
+### Does it work with custom plugins?
 
-Out of the box, yes, it's slower than typing the class strings directly. It looks strings up and concatenate them at run time (as you can see in the generated file). This can be improved in several ways:
+It's not officially supported yet but could work if your plugins are defined as inline anonymous functions (like in the [docs](https://tailwindcss.com/docs/plugins)). Also see: [Does it work with custom classes](#oes-it-work-with-custom-classes).
 
-- Move the calls out of render. The work is still done at run time, but just once instead of every render.
+### Does it work with custom classes?
+
+Yes. The result is simply a source file, so feel free to modify it anyway you want:
+
+```typescript
+// style.ts
+
+class SStyle {
+  /* ... */
+  
+  // Add your custom ones:
+  textShadow(): SStyle { return this.add("text-shadow"); }
+}
+```
+
+### Is there any performance issue?
+
+Out of the box, it's a run time solution so it's slower and use more memory than typing the class strings directly. However, this can be improved:
+
+- Move the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
 
     ```tsx
     const styles = Style().fontBold().textBlue().$();
     
-    const Foo = () => (
-      <p className={styles} />
-    );
+    const Foo = () => <p className={styles} />;
     ```
-- Use a build plugin to move all of these works to compile time. It does not exist yet but [is planned](https://github.com/dvkndn/typed-tailwind/issues/1).
+- Use a build plugin to handle all the works at compile time. It does not exist yet but is [planned](https://github.com/dvkndn/typed-tailwind/issues/1).
+
+### Is there a CLI?
+
+It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
