@@ -16,17 +16,17 @@ export const Convert: React.FC = () => {
   return (
     <div className={Style().hFull().flex().px16().py32().$()}>
       <div className={col}>
-        <Step text="Step 1. Paste your Tailwind config here:">
+        <Step text="Step 1. Put your Tailwind config below:">
           <Config config={config} setConfig={setConfig} />
         </Step>
       </div>
       <div className={col}>
-        <Step text="Step 2. Save this file into your codebase:">
+        <Step text="Step 2. Put this TS file into your codebase:">
           <Source config={config} source={source} setSource={setSource} />
         </Step>
       </div>
       <div className={col} style={{ minWidth: "480px" }}>
-        <Step text="Step 3. Import the `Style` function:">
+        <Step text="Step 3. Use the `Style` function from that file:">
           <Playground source={source} />
         </Step>
       </div>
