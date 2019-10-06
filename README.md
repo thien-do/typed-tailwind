@@ -1,10 +1,21 @@
 # Typed Tailwind · [typed-tw.now.sh](https://typed-tw.now.sh)
 
-Utility-first CSS framework, statically typed.
+A utility-first CSS framework, statically typed.
 
-* [Usage](#usage)
-* [FAQ](#faq)
-* [License](#license)
+Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [License](#license)
+
+## What
+
+Typed Tailwind brings static typing to [Tailwind CSS](https://tailwindcss.com). It generates a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your configuration conveniently:
+
+<img width="693" alt="Code completion" src="https://user-images.githubusercontent.com/5953369/66266440-535a5480-e84f-11e9-9640-eeee65039886.png">
+
+…and safely:
+
+<img width="693" alt="Typo catching" src="https://user-images.githubusercontent.com/5953369/66266428-2017c580-e84f-11e9-990a-a9ed02b857ad.png">
+
+
+Try it live at [typed-tw.now.sh](https://typed-tw.now.sh)!
 
 ## Usage
 
@@ -21,6 +32,8 @@ const Foo = () => (
   </p>
 );
 ```
+
+Example usages: [https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Style%28%29]()
 
 ## FAQ
 
