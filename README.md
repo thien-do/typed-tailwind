@@ -1,12 +1,12 @@
 # Typed Tailwind · [typed-tailwind.com](https://typed-tailwind.com)
 
-A utility-first CSS framework, statically typed.
+Brings types to [Tailwind CSS](https://tailwindcss.com).
 
 Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [License](#license)
 
 ## What
 
-Typed Tailwind brings static typing to [Tailwind CSS](https://tailwindcss.com). It generates a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your configuration conveniently:
+Typed Tailwind is a tool to generate a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your Tailwind configuration conveniently:
 
 <img width="693" alt="Code completion" src="https://user-images.githubusercontent.com/5953369/66266581-227b1f00-e851-11e9-8baf-9d986bf2cb35.png">
 
@@ -15,34 +15,40 @@ Typed Tailwind brings static typing to [Tailwind CSS](https://tailwindcss.com). 
 <img width="693" alt="Typo catching" src="https://user-images.githubusercontent.com/5953369/66266428-2017c580-e84f-11e9-990a-a9ed02b857ad.png">
 
 
-Try it live at [typed-tw.now.sh](https://typed-tw.now.sh)!
+Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
 
 ## Usage
 
 1. Go to [typed-tailwind.com](https://typed-tailwind.com) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
-2. Save the generated code in the second panel as a TypeScript file in your codebase.
-3. Import the `Style` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
+2. Save the generated file in the second panel to your codebase.
+3. Import the `Tw` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
 
 ```tsx
-import { Style } from "style";
+// In practice, the file should be imported using absolute path
+import { Tw } from "./tw";
 
 const Foo = () => (
-  <p className={Style().textBlue().fontBold().$()}>
+  <p className={Tw().textBlue().fontBold().$()}>
     Bold, blue text
   </p>
 );
 ```
 
-Example usages: [https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Style%28%29]()
+Example usages: [https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29]()
 
 ## FAQ
 
++ [Where to put the generated file?](where-to-put-the-generated-file)
 + [Does it work without TypeScript?](#does-it-work-without-typescript)
 + [Does it work with PurgeCSS?](#does-it-work-with-purgecss)
 + [Does it work with custom plugins?](#does-it-work-with-custom-plugins)
 + [Does it work with custom classes?](#does-it-work-with-custom-classes)
 + [Is there any performance issue?](#is-there-any-performance-issue)
 + [Is there a CLI?](#is-there-a-cli)
+
+### Where to put the generated file?
+
+The file should be imported from many places in your codebase so place it where you can take advantage of absolute imports. For example, if you are using CRA and your [`baseUrl`](https://create-react-app.dev/docs/importing-a-component#absolute-imports) is `src` folder then you can place the file at `src/tw/index.ts`.
 
 ### Does it work without TypeScript?
 

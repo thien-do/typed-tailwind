@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Style } from "style";
+import { Tw } from "style";
 
 interface Props {
   children: React.ReactChild;
@@ -9,16 +9,16 @@ interface Props {
 
 export const Step: React.FC<Props> = (props) => {
   return (
-    <div className={Style().flex().flexCol().hFull().$()}>
-      <div className={Style().flexNone().$()}>
+    <div className={Tw().flex().flexCol().hFull().$()}>
+      <div className={Tw().flexNone().$()}>
         <p
           className={[
-            Style().text14().leading16().textCenter().font600().$(),
+            Tw().text14().leading16().textCenter().font600().$(),
             "text-shadow"
           ].join(" ")}
         >{props.text}</p>
       </div>
-      <div className={Style().flex1().$()}>
+      <div className={Tw().flex1().$()}>
         {props.children}
       </div>
     </div>

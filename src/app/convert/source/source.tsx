@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-import { Style } from "style";
+import { Tw } from "style";
 import { getSource } from "./get-source";
 import { Panel } from "app/panel/panel";
 import { createEditor, Editor } from "app/editor/editor";
@@ -38,8 +38,8 @@ export const Source: React.FC<Props> = (props) => {
   }, [source]);
 
   return (
-    <Panel title="style.ts">
-      <div ref={container} className={Style().wFull().hFull().$()} />
+    <Panel title="./style.ts">
+      <div ref={container} className={Tw().wFull().hFull().$()} />
     </Panel>
   );
 };

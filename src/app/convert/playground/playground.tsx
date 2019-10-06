@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as monaco from "monaco-editor";
-import { Style } from "style";
+import { Tw } from "style";
 import { createEditor } from "app/editor/editor";
 import { Panel } from "app/panel/panel";
 
@@ -11,12 +11,12 @@ interface Props {
 const editorOptions = {
   name: "playground",
   language: "typescript",
-  value: `import { Style } from "style";
+  value: `import { Tw } from "./tw";
 
 const style: string =
-  Style()
+  Tw()
 
-// E.g. Style().textBlueMid().smFlex().$()
+// E.g. Tw().textBlueMid().smFlex().$()
 `
 };
 
@@ -36,12 +36,12 @@ export const Playground: React.FC<Props> = (props) => {
     lib.current && lib.current.dispose();
     if (!window.monaco) { return; }
     lib.current = window.monaco.languages.typescript.typescriptDefaults
-      .addExtraLib(source, "file:///style.ts");
+      .addExtraLib(source, "file:///tw.ts");
   }, [source])
 
   return (
     <Panel title="playground.ts">
-      <div ref={container} className={Style().wFull().hFull().$()} />
+      <div ref={container} className={Tw().wFull().hFull().$()} />
     </Panel>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Style } from "style";
+import { Tw } from "style";
 import { Header } from "./header";
 
 interface Props {
@@ -12,16 +12,16 @@ export const Panel: React.FC<Props> = (props) => {
   return (
     // Padding should be defined here to avoid consumers overflow hidden
     // the shadow
-    <div className={Style().hFull().px16().pt16().pb24().$()}>
+    <div className={Tw().hFull().px16().pt16().pb24().$()}>
       <div className={[
-        Style().rounded4().shadowPanel().bg0At90().$(),
-        Style().hFull().flex().flexCol().$(),
+        Tw().rounded4().shadowPanel().bg0At90().$(),
+        Tw().hFull().flex().flexCol().$(),
         "blur",
       ].join(" ")}>
-        <div className={Style().flexNone().$()}>
+        <div className={Tw().flexNone().$()}>
           <Header title={props.title} />
         </div>
-        <div className={Style().flex1().overflowHidden().$()}>
+        <div className={Tw().flex1().overflowHidden().$()}>
           {props.children}
         </div>
       </div>

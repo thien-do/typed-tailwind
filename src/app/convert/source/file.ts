@@ -4,10 +4,12 @@ import { Config } from "tailwindcss-won";
 // "open" and "close" will be defined later to preserve whitespace
 const base: { open: string, close: string } = { open: "", close: "" };
 
-base.open = `// http://github.com/dvkndn/typed-tailwind
-export const Style = (): SStyle => new SStyle();
+const twClass = "Tailwind";
 
-class SStyle {
+base.open = `// http://github.com/dvkndn/typed-tailwind
+export const Tw = (): ${twClass} => new ${twClass}();
+
+class ${twClass} {
   value = "";
 
   // Getter methods
@@ -19,7 +21,7 @@ class SStyle {
   [Symbol.toPrimitive](): string { return this.$(); }
 
   // Building methods
-  private add(value: string): SStyle {
+  private add(value: string): ${twClass} {
     this.value = \`\${this.value} \${value}\`;
     return this;
   }
@@ -47,7 +49,7 @@ const toKey = (config: Config, value: string): string => {
 // input: text-red-4
 // output: textRed4(): Style { return this.add("text-red-4"); }
 const getMethod = (config: Config) => (cls: string): string => (
-  `  ${toKey(config, cls)}(): SStyle { return this.add("${cls}"); }`
+  `  ${toKey(config, cls)}(): ${twClass} { return this.add("${cls}"); }`
 );
 
 export const getFile = (config: Config) => (classes: string[]): string => {

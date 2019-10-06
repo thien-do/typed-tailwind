@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
 import { sample } from "./sample";
-import { Style } from "style";
+import { Tw } from "style";
 import { createEditor, Editor } from "app/editor/editor";
 import { Panel } from "app/panel/panel";
 
@@ -49,7 +49,7 @@ export const Config: React.FC<Props> = (props) => {
 
   return (
     <Panel title="tailwind.config.js">
-      <div ref={container} className={Style().wFull().hFull().$()} />
+      <div ref={container} className={Tw().wFull().hFull().$()} />
     </Panel>
   );
 };

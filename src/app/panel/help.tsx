@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Style } from "style";
+import { Tw } from "style";
 
 interface Props {
   help: string
@@ -9,8 +9,8 @@ interface Props {
 export const Help: React.FC<Props> = (props) => (
   <div
     className={[
-      Style().text7().textCenter().font700().$(),
-      Style().$(),
+      Tw().text7().textCenter().font700().$(),
+      Tw().$(),
     ].join("")}
     style={{
       textShadow: "rgba(0, 0, 0, 0.7) 0px 1px 4px"
