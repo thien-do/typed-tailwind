@@ -2,7 +2,7 @@
 
 Brings types to [Tailwind CSS](https://tailwindcss.com).
 
-Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [License](#license)
+Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
 ## What
 
