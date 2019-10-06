@@ -1,4 +1,4 @@
-# Typed Tailwind · [typed-tw.now.sh](https://typed-tw.now.sh)
+# Typed Tailwind · [typed-tailwind.com](https://typed-tailwind.com)
 
 Utility-first CSS framework, statically typed.
 
@@ -8,7 +8,7 @@ Utility-first CSS framework, statically typed.
 
 ## Usage
 
-1. Go to [typed-tw.now.sh](https://typed-tw.now.sh) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
+1. Go to [typed-tailwind.com](https://typed-tailwind.com) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
 2. Save the generated code in the second panel as a TypeScript file in your codebase.
 3. Import the `Style` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
 
