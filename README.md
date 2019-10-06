@@ -34,11 +34,11 @@ const Foo = () => (
 );
 ```
 
-Example usages: [https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29]()
+Example usages: https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29
 
 ## FAQ
 
-+ [Where to put the generated file?](where-to-put-the-generated-file)
++ [Where to put the generated file?](#where-to-put-the-generated-file)
 + [Does it work without TypeScript?](#does-it-work-without-typescript)
 + [Does it work with PurgeCSS?](#does-it-work-with-purgecss)
 + [Does it work with custom plugins?](#does-it-work-with-custom-plugins)
