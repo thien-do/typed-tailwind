@@ -100,6 +100,10 @@ Out of the box, it's a run time solution so it's slower and use more memory than
     ```
 - Use a build plugin to handle all the works at compile time. It does not exist yet but is [planned](https://github.com/dvkndn/typed-tailwind/issues/1).
 
+### The generated code style doesn't match ours. Can I reformat it?
+
+Yes. The generated code should be checked into your source control so you can (and should) format it with your code formatter. In other words, just judge it as your own source code.
+
 ### Is there a CLI?
 
 It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
