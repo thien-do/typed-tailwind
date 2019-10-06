@@ -8,11 +8,11 @@ Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [License](#license)
 
 Typed Tailwind is a tool to generate a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your Tailwind configuration conveniently:
 
-<img width="693" alt="Code completion" src="https://user-images.githubusercontent.com/5953369/66266581-227b1f00-e851-11e9-8baf-9d986bf2cb35.png">
+<img width="686" alt="Code completion" src="https://typed-tailwind.com/img1.png">
 
 …and safely:
 
-<img width="693" alt="Typo catching" src="https://user-images.githubusercontent.com/5953369/66266428-2017c580-e84f-11e9-990a-a9ed02b857ad.png">
+<img width="686" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
 
 
 Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
