@@ -1,21 +1,16 @@
-# [Typed Tailwind](https://typed-tailwind.com)
+# Typed Tailwind
 
-Brings types to [Tailwind CSS](https://tailwindcss.com).
+Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods produce the utility classes from your Tailwind config:
 
-Jump to: [What](#what) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
-
-## What
-
-Typed Tailwind is a tool to generate a TypeScript class ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods help you use the utility classes from your Tailwind configuration conveniently:
-
-<img width="686" alt="Code completion" src="https://typed-tailwind.com/img1.png">
-
-…and safely:
-
-<img width="686" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
-
+<img width="400" alt="Code completion" src="https://typed-tailwind.com/img1.png"> <img width="400" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
 
 Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
+
+Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
+
+## Why
+
+TBA
 
 ## Usage
 
