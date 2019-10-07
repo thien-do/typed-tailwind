@@ -6,18 +6,9 @@ import { Title } from "./title";
 
 export const App: React.FC = () => {
   return (
-    <div
-      className={[
-        Tw().overflowHidden().hScreen().flex().flexCol().$(),
-        Tw().bgFixed().bgCenter().bgCover().$(), "bg-img-main",
-      ].join(" ")}
-    >
-      <div className={Tw().overflowHidden().$()} style={{ flex: "1.6 1 0px" }}>
-        <Convert />
-      </div>
-      <div className={Tw().flex1().$()}>
-        <Title />
-      </div>
+    <div className={Tw().bg3().hScreen().flex().flexCol().py32().$()}>
+      <div className={Tw().flex1().$()}><Convert /></div>
+      <div className={Tw().flexNone().py32().$()}><Title /></div>
     </div>
   );
 };

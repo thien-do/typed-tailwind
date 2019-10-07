@@ -14,7 +14,7 @@ export const Convert: React.FC = () => {
   const [source, setSource] = useState("");
 
   return (
-    <div className={Tw().hFull().flex().px16().py32().$()}>
+    <div className={Tw().hFull().flex().px16().$()}>
       <div className={col}>
         <Step text="Step 1. Put your Tailwind config below:">
           <Config config={config} setConfig={setConfig} />
@@ -26,7 +26,7 @@ export const Convert: React.FC = () => {
         </Step>
       </div>
       <div className={col} style={{ minWidth: "480px" }}>
-        <Step text="Step 3. Use `Tw` function from the file:">
+        <Step text="Step 3. Use the `Tw` function from the file:">
           <Playground source={source} />
         </Step>
       </div>

@@ -14,9 +14,8 @@ export const Panel: React.FC<Props> = (props) => {
     // the shadow
     <div className={Tw().hFull().px16().pt16().pb24().$()}>
       <div className={[
-        Tw().rounded4().shadowPanel().bg0At90().$(),
+        Tw().rounded4().overflowHidden().shadowLg().bg8().$(),
         Tw().hFull().flex().flexCol().$(),
-        "blur",
       ].join(" ")}>
         <div className={Tw().flexNone().$()}>
           <Header title={props.title} />

@@ -55,7 +55,6 @@ class Tailwind {
   overflowYScroll(): Tailwind { return this.add("overflow-y-scroll"); }
   scrollingTouch(): Tailwind { return this.add("scrolling-touch"); }
   scrollingAuto(): Tailwind { return this.add("scrolling-auto"); }
-  text0(): Tailwind { return this.add("text-0"); }
   text1(): Tailwind { return this.add("text-1"); }
   text2(): Tailwind { return this.add("text-2"); }
   text3(): Tailwind { return this.add("text-3"); }
@@ -63,9 +62,8 @@ class Tailwind {
   text5(): Tailwind { return this.add("text-5"); }
   text6(): Tailwind { return this.add("text-6"); }
   text7(): Tailwind { return this.add("text-7"); }
-  textCurrentColor(): Tailwind { return this.add("text-currentColor"); }
-  textTransparent(): Tailwind { return this.add("text-transparent"); }
-  text0At90(): Tailwind { return this.add("text-0at90"); }
+  text8(): Tailwind { return this.add("text-8"); }
+  text9(): Tailwind { return this.add("text-9"); }
   selectNone(): Tailwind { return this.add("select-none"); }
   selectText(): Tailwind { return this.add("select-text"); }
   selectAll(): Tailwind { return this.add("select-all"); }
@@ -81,7 +79,6 @@ class Tailwind {
   w60(): Tailwind { return this.add("w-60"); }
   wFull(): Tailwind { return this.add("w-full"); }
   wScreen(): Tailwind { return this.add("w-screen"); }
-  bg0(): Tailwind { return this.add("bg-0"); }
   bg1(): Tailwind { return this.add("bg-1"); }
   bg2(): Tailwind { return this.add("bg-2"); }
   bg3(): Tailwind { return this.add("bg-3"); }
@@ -89,9 +86,8 @@ class Tailwind {
   bg5(): Tailwind { return this.add("bg-5"); }
   bg6(): Tailwind { return this.add("bg-6"); }
   bg7(): Tailwind { return this.add("bg-7"); }
-  bgCurrentColor(): Tailwind { return this.add("bg-currentColor"); }
-  bgTransparent(): Tailwind { return this.add("bg-transparent"); }
-  bg0At90(): Tailwind { return this.add("bg-0at90"); }
+  bg8(): Tailwind { return this.add("bg-8"); }
+  bg9(): Tailwind { return this.add("bg-9"); }
   fontMono(): Tailwind { return this.add("font-mono"); }
   p4(): Tailwind { return this.add("p-4"); }
   p8(): Tailwind { return this.add("p-8"); }
@@ -213,8 +209,7 @@ class Tailwind {
   justifyCenter(): Tailwind { return this.add("justify-center"); }
   justifyBetween(): Tailwind { return this.add("justify-between"); }
   justifyAround(): Tailwind { return this.add("justify-around"); }
-  shadowPanel(): Tailwind { return this.add("shadow-panel"); }
-  shadowPanelInset(): Tailwind { return this.add("shadow-panel-inset"); }
+  shadowLg(): Tailwind { return this.add("shadow-lg"); }
   font400(): Tailwind { return this.add("font-400"); }
   font500(): Tailwind { return this.add("font-500"); }
   font600(): Tailwind { return this.add("font-600"); }
@@ -223,54 +218,8 @@ class Tailwind {
   text14(): Tailwind { return this.add("text-14"); }
   text32(): Tailwind { return this.add("text-32"); }
   text96(): Tailwind { return this.add("text-96"); }
-  bgBottom(): Tailwind { return this.add("bg-bottom"); }
-  bgCenter(): Tailwind { return this.add("bg-center"); }
-  bgLeft(): Tailwind { return this.add("bg-left"); }
-  bgLeftBottom(): Tailwind { return this.add("bg-left-bottom"); }
-  bgLeftTop(): Tailwind { return this.add("bg-left-top"); }
-  bgRight(): Tailwind { return this.add("bg-right"); }
-  bgRightBottom(): Tailwind { return this.add("bg-right-bottom"); }
-  bgRightTop(): Tailwind { return this.add("bg-right-top"); }
-  bgTop(): Tailwind { return this.add("bg-top"); }
-  bgFixed(): Tailwind { return this.add("bg-fixed"); }
-  bgLocal(): Tailwind { return this.add("bg-local"); }
-  bgScroll(): Tailwind { return this.add("bg-scroll"); }
-  bgAuto(): Tailwind { return this.add("bg-auto"); }
-  bgCover(): Tailwind { return this.add("bg-cover"); }
-  bgContain(): Tailwind { return this.add("bg-contain"); }
   underline(): Tailwind { return this.add("underline"); }
   lineThrough(): Tailwind { return this.add("line-through"); }
   noUnderline(): Tailwind { return this.add("no-underline"); }
-  border1Px(): Tailwind { return this.add("border-1px"); }
-  border2Px(): Tailwind { return this.add("border-2px"); }
-  borderT1Px(): Tailwind { return this.add("border-t-1px"); }
-  borderR1Px(): Tailwind { return this.add("border-r-1px"); }
-  borderB1Px(): Tailwind { return this.add("border-b-1px"); }
-  borderL1Px(): Tailwind { return this.add("border-l-1px"); }
-  borderT2Px(): Tailwind { return this.add("border-t-2px"); }
-  borderR2Px(): Tailwind { return this.add("border-r-2px"); }
-  borderB2Px(): Tailwind { return this.add("border-b-2px"); }
-  borderL2Px(): Tailwind { return this.add("border-l-2px"); }
-  border0(): Tailwind { return this.add("border-0"); }
-  border1(): Tailwind { return this.add("border-1"); }
-  border2(): Tailwind { return this.add("border-2"); }
-  border3(): Tailwind { return this.add("border-3"); }
-  border4(): Tailwind { return this.add("border-4"); }
-  border5(): Tailwind { return this.add("border-5"); }
-  border6(): Tailwind { return this.add("border-6"); }
-  border7(): Tailwind { return this.add("border-7"); }
-  borderCurrentColor(): Tailwind { return this.add("border-currentColor"); }
-  borderTransparent(): Tailwind { return this.add("border-transparent"); }
-  border0At90(): Tailwind { return this.add("border-0at90"); }
-  hoverBorder0(): Tailwind { return this.add("hover$border-0"); }
-  hoverBorder1(): Tailwind { return this.add("hover$border-1"); }
-  hoverBorder2(): Tailwind { return this.add("hover$border-2"); }
-  hoverBorder3(): Tailwind { return this.add("hover$border-3"); }
-  hoverBorder4(): Tailwind { return this.add("hover$border-4"); }
-  hoverBorder5(): Tailwind { return this.add("hover$border-5"); }
-  hoverBorder6(): Tailwind { return this.add("hover$border-6"); }
-  hoverBorder7(): Tailwind { return this.add("hover$border-7"); }
-  hoverBorderCurrentColor(): Tailwind { return this.add("hover$border-currentColor"); }
-  hoverBorderTransparent(): Tailwind { return this.add("hover$border-transparent"); }
-  hoverBorder0At90(): Tailwind { return this.add("hover$border-0at90"); }
+  nTracking1(): Tailwind { return this.add("-tracking-1"); }
 }

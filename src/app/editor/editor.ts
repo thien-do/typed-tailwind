@@ -7,6 +7,7 @@ const base: editor.IEditorConstructionOptions = {
   lineHeight: 24,
   lineNumbers: "off",
   minimap: { enabled: false },
+  contextmenu: false,
 };
 
 interface ModelOptions {

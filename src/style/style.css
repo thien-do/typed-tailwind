@@ -4,9 +4,8 @@
 body {
   font-family: system-ui, -apple-system, sans-serif;
   font-size: 14px;
-  line-height: 20px;
-  background: black;
-  color: #c8ccd4;
+  line-height: 16px;
+  background-color: #e2e8f0;
 }
 
 *,
@@ -43,19 +42,6 @@ body {
 }
 ::-webkit-scrollbar-corner {
   background: transparent;
-}
-
-.blur {
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-}
-
-.text-shadow {
-  text-shadow: rgba(0, 0, 0, 0.3) 0 2px 4px, rgba(0, 0, 0, 0.3) 0 1px 1px;
-}
-
-.bg-img-main {
-  background-image: url("https://images.unsplash.com/photo-1564089969562-7b8667a4adec?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
 
 .transition {

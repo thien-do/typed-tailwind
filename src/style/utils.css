@@ -142,48 +142,40 @@
   -webkit-overflow-scrolling: auto
 }
 
-.text-0 {
-  color: #282c34
-}
-
 .text-1 {
-  color: #353b45
+  color: #f7fafc
 }
 
 .text-2 {
-  color: #3e4451
+  color: #edf2f7
 }
 
 .text-3 {
-  color: #545862
+  color: #e2e8f0
 }
 
 .text-4 {
-  color: #565c64
+  color: #cbd5e0
 }
 
 .text-5 {
-  color: #abb2bf
+  color: #a0aec0
 }
 
 .text-6 {
-  color: #b6bdca
+  color: #718096
 }
 
 .text-7 {
-  color: #c8ccd4
+  color: #4a5568
 }
 
-.text-currentColor {
-  color: currentColor
+.text-8 {
+  color: #2d3748
 }
 
-.text-transparent {
-  color: transparent
-}
-
-.text-0at90 {
-  color: rgba(40, 44, 52, 0.90)
+.text-9 {
+  color: #1a202c
 }
 
 .select-none {
@@ -258,48 +250,40 @@
   width: 100vw
 }
 
-.bg-0 {
-  background-color: #282c34
-}
-
 .bg-1 {
-  background-color: #353b45
+  background-color: #f7fafc
 }
 
 .bg-2 {
-  background-color: #3e4451
+  background-color: #edf2f7
 }
 
 .bg-3 {
-  background-color: #545862
+  background-color: #e2e8f0
 }
 
 .bg-4 {
-  background-color: #565c64
+  background-color: #cbd5e0
 }
 
 .bg-5 {
-  background-color: #abb2bf
+  background-color: #a0aec0
 }
 
 .bg-6 {
-  background-color: #b6bdca
+  background-color: #718096
 }
 
 .bg-7 {
-  background-color: #c8ccd4
+  background-color: #4a5568
 }
 
-.bg-currentColor {
-  background-color: currentColor
+.bg-8 {
+  background-color: #2d3748
 }
 
-.bg-transparent {
-  background-color: transparent
-}
-
-.bg-0at90 {
-  background-color: rgba(40, 44, 52, 0.90)
+.bg-9 {
+  background-color: #1a202c
 }
 
 .font-mono {
@@ -820,19 +804,10 @@
   justify-content: space-around
 }
 
-.shadow-panel {
+.shadow-lg {
   box-shadow: 
-        #3e4451 0 0 0 1px inset,
-        hsl(220, 13%, 13%) 0 0 0 1px,
-        hsl(0, 0%, 0%, 0.6) 0 4px 16px
-      
-}
-
-.shadow-panel-inset {
-  box-shadow: 
-        #3e4451 0 0 0 1px,
-        hsl(220, 13%, 13%) 0 0 0 1px inset,
-        hsl(0, 0%, 0%, 0.6) 0 4px 16px inset
+        0 10px 15px -3px rgba(0,0,0,.2),
+        0 4px 6px -2px rgba(0,0,0,.1)
       
 }
 
@@ -868,66 +843,6 @@
   font-size: 96px
 }
 
-.bg-bottom {
-  background-position: bottom
-}
-
-.bg-center {
-  background-position: center
-}
-
-.bg-left {
-  background-position: left
-}
-
-.bg-left-bottom {
-  background-position: left bottom
-}
-
-.bg-left-top {
-  background-position: left top
-}
-
-.bg-right {
-  background-position: right
-}
-
-.bg-right-bottom {
-  background-position: right bottom
-}
-
-.bg-right-top {
-  background-position: right top
-}
-
-.bg-top {
-  background-position: top
-}
-
-.bg-fixed {
-  background-attachment: fixed
-}
-
-.bg-local {
-  background-attachment: local
-}
-
-.bg-scroll {
-  background-attachment: scroll
-}
-
-.bg-auto {
-  background-size: auto
-}
-
-.bg-cover {
-  background-size: cover
-}
-
-.bg-contain {
-  background-size: contain
-}
-
 .underline {
   text-decoration: underline
 }
@@ -940,130 +855,6 @@
   text-decoration: none
 }
 
-.border-1px {
-  border-width: 1px
-}
-
-.border-2px {
-  border-width: 2px
-}
-
-.border-t-1px {
-  border-top-width: 1px
-}
-
-.border-r-1px {
-  border-right-width: 1px
-}
-
-.border-b-1px {
-  border-bottom-width: 1px
-}
-
-.border-l-1px {
-  border-left-width: 1px
-}
-
-.border-t-2px {
-  border-top-width: 2px
-}
-
-.border-r-2px {
-  border-right-width: 2px
-}
-
-.border-b-2px {
-  border-bottom-width: 2px
-}
-
-.border-l-2px {
-  border-left-width: 2px
-}
-
-.border-0 {
-  border-color: #282c34
-}
-
-.border-1 {
-  border-color: #353b45
-}
-
-.border-2 {
-  border-color: #3e4451
-}
-
-.border-3 {
-  border-color: #545862
-}
-
-.border-4 {
-  border-color: #565c64
-}
-
-.border-5 {
-  border-color: #abb2bf
-}
-
-.border-6 {
-  border-color: #b6bdca
-}
-
-.border-7 {
-  border-color: #c8ccd4
-}
-
-.border-currentColor {
-  border-color: currentColor
-}
-
-.border-transparent {
-  border-color: transparent
-}
-
-.border-0at90 {
-  border-color: rgba(40, 44, 52, 0.90)
-}
-
-.hover\$border-0:hover {
-  border-color: #282c34
-}
-
-.hover\$border-1:hover {
-  border-color: #353b45
-}
-
-.hover\$border-2:hover {
-  border-color: #3e4451
-}
-
-.hover\$border-3:hover {
-  border-color: #545862
-}
-
-.hover\$border-4:hover {
-  border-color: #565c64
-}
-
-.hover\$border-5:hover {
-  border-color: #abb2bf
-}
-
-.hover\$border-6:hover {
-  border-color: #b6bdca
-}
-
-.hover\$border-7:hover {
-  border-color: #c8ccd4
-}
-
-.hover\$border-currentColor:hover {
-  border-color: currentColor
-}
-
-.hover\$border-transparent:hover {
-  border-color: transparent
-}
-
-.hover\$border-0at90:hover {
-  border-color: rgba(40, 44, 52, 0.90)
+.-tracking-1 {
+  letter-spacing: -1px
 }
