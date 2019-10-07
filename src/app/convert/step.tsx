@@ -15,7 +15,7 @@ export const Step: React.FC<Props> = (props) => {
           {props.text}
         </p>
       </div>
-      <div className={Tw().flex1().$()}>
+      <div className={Tw().flex1().overflowHidden().$()}>
         {props.children}
       </div>
     </div>
