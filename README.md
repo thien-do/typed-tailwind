@@ -4,7 +4,7 @@ Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by genera
 
 <img width="400" alt="Code completion" src="https://typed-tailwind.com/img1.png"> <img width="400" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
 
-<img alt="new" src="https://img.shields.io/badge/-NEW-brightgreen"> Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
+Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
 
 Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
