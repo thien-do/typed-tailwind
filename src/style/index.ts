@@ -19,6 +19,39 @@ class Tailwind {
   }
 
   // Styling methods
+  itemsStart(): Tailwind { return this.add("items-start"); }
+  itemsEnd(): Tailwind { return this.add("items-end"); }
+  itemsCenter(): Tailwind { return this.add("items-center"); }
+  itemsBaseline(): Tailwind { return this.add("items-baseline"); }
+  itemsStretch(): Tailwind { return this.add("items-stretch"); }
+  bg1(): Tailwind { return this.add("bg-1"); }
+  bg2(): Tailwind { return this.add("bg-2"); }
+  bg3(): Tailwind { return this.add("bg-3"); }
+  bg4(): Tailwind { return this.add("bg-4"); }
+  bg5(): Tailwind { return this.add("bg-5"); }
+  bg6(): Tailwind { return this.add("bg-6"); }
+  bg7(): Tailwind { return this.add("bg-7"); }
+  bg8(): Tailwind { return this.add("bg-8"); }
+  bg9(): Tailwind { return this.add("bg-9"); }
+  rounded6(): Tailwind { return this.add("rounded-6"); }
+  roundedFull(): Tailwind { return this.add("rounded-full"); }
+  roundedT6(): Tailwind { return this.add("rounded-t-6"); }
+  roundedR6(): Tailwind { return this.add("rounded-r-6"); }
+  roundedB6(): Tailwind { return this.add("rounded-b-6"); }
+  roundedL6(): Tailwind { return this.add("rounded-l-6"); }
+  roundedTFull(): Tailwind { return this.add("rounded-t-full"); }
+  roundedRFull(): Tailwind { return this.add("rounded-r-full"); }
+  roundedBFull(): Tailwind { return this.add("rounded-b-full"); }
+  roundedLFull(): Tailwind { return this.add("rounded-l-full"); }
+  roundedTl6(): Tailwind { return this.add("rounded-tl-6"); }
+  roundedTr6(): Tailwind { return this.add("rounded-tr-6"); }
+  roundedBr6(): Tailwind { return this.add("rounded-br-6"); }
+  roundedBl6(): Tailwind { return this.add("rounded-bl-6"); }
+  roundedTlFull(): Tailwind { return this.add("rounded-tl-full"); }
+  roundedTrFull(): Tailwind { return this.add("rounded-tr-full"); }
+  roundedBrFull(): Tailwind { return this.add("rounded-br-full"); }
+  roundedBlFull(): Tailwind { return this.add("rounded-bl-full"); }
+  shadowLg(): Tailwind { return this.add("shadow-lg"); }
   block(): Tailwind { return this.add("block"); }
   inlineBlock(): Tailwind { return this.add("inline-block"); }
   inline(): Tailwind { return this.add("inline"); }
@@ -30,6 +63,19 @@ class Tailwind {
   hidden(): Tailwind { return this.add("hidden"); }
   flex1(): Tailwind { return this.add("flex-1"); }
   flexNone(): Tailwind { return this.add("flex-none"); }
+  flexRow(): Tailwind { return this.add("flex-row"); }
+  flexRowReverse(): Tailwind { return this.add("flex-row-reverse"); }
+  flexCol(): Tailwind { return this.add("flex-col"); }
+  flexColReverse(): Tailwind { return this.add("flex-col-reverse"); }
+  text14(): Tailwind { return this.add("text-14"); }
+  text32(): Tailwind { return this.add("text-32"); }
+  text48(): Tailwind { return this.add("text-48"); }
+  text96(): Tailwind { return this.add("text-96"); }
+  font400(): Tailwind { return this.add("font-400"); }
+  font500(): Tailwind { return this.add("font-500"); }
+  font600(): Tailwind { return this.add("font-600"); }
+  font700(): Tailwind { return this.add("font-700"); }
+  font900(): Tailwind { return this.add("font-900"); }
   h4(): Tailwind { return this.add("h-4"); }
   h8(): Tailwind { return this.add("h-8"); }
   h12(): Tailwind { return this.add("h-12"); }
@@ -39,8 +85,36 @@ class Tailwind {
   h40(): Tailwind { return this.add("h-40"); }
   h48(): Tailwind { return this.add("h-48"); }
   h60(): Tailwind { return this.add("h-60"); }
+  h300(): Tailwind { return this.add("h-300"); }
   hFull(): Tailwind { return this.add("h-full"); }
   hScreen(): Tailwind { return this.add("h-screen"); }
+  inset0(): Tailwind { return this.add("inset-0"); }
+  insetY0(): Tailwind { return this.add("inset-y-0"); }
+  insetX0(): Tailwind { return this.add("inset-x-0"); }
+  top0(): Tailwind { return this.add("top-0"); }
+  right0(): Tailwind { return this.add("right-0"); }
+  bottom0(): Tailwind { return this.add("bottom-0"); }
+  left0(): Tailwind { return this.add("left-0"); }
+  justifyStart(): Tailwind { return this.add("justify-start"); }
+  justifyEnd(): Tailwind { return this.add("justify-end"); }
+  justifyCenter(): Tailwind { return this.add("justify-center"); }
+  justifyBetween(): Tailwind { return this.add("justify-between"); }
+  justifyAround(): Tailwind { return this.add("justify-around"); }
+  nTracking1(): Tailwind { return this.add("-tracking-1"); }
+  leading1(): Tailwind { return this.add("leading-1"); }
+  leading16(): Tailwind { return this.add("leading-16"); }
+  leading40(): Tailwind { return this.add("leading-40"); }
+  leading56(): Tailwind { return this.add("leading-56"); }
+  mAuto(): Tailwind { return this.add("m-auto"); }
+  myAuto(): Tailwind { return this.add("my-auto"); }
+  mxAuto(): Tailwind { return this.add("mx-auto"); }
+  mtAuto(): Tailwind { return this.add("mt-auto"); }
+  mrAuto(): Tailwind { return this.add("mr-auto"); }
+  mbAuto(): Tailwind { return this.add("mb-auto"); }
+  mlAuto(): Tailwind { return this.add("ml-auto"); }
+  minW480(): Tailwind { return this.add("min-w-480"); }
+  order0(): Tailwind { return this.add("order-0"); }
+  order1(): Tailwind { return this.add("order-1"); }
   overflowAuto(): Tailwind { return this.add("overflow-auto"); }
   overflowHidden(): Tailwind { return this.add("overflow-hidden"); }
   overflowVisible(): Tailwind { return this.add("overflow-visible"); }
@@ -55,40 +129,6 @@ class Tailwind {
   overflowYScroll(): Tailwind { return this.add("overflow-y-scroll"); }
   scrollingTouch(): Tailwind { return this.add("scrolling-touch"); }
   scrollingAuto(): Tailwind { return this.add("scrolling-auto"); }
-  text1(): Tailwind { return this.add("text-1"); }
-  text2(): Tailwind { return this.add("text-2"); }
-  text3(): Tailwind { return this.add("text-3"); }
-  text4(): Tailwind { return this.add("text-4"); }
-  text5(): Tailwind { return this.add("text-5"); }
-  text6(): Tailwind { return this.add("text-6"); }
-  text7(): Tailwind { return this.add("text-7"); }
-  text8(): Tailwind { return this.add("text-8"); }
-  text9(): Tailwind { return this.add("text-9"); }
-  selectNone(): Tailwind { return this.add("select-none"); }
-  selectText(): Tailwind { return this.add("select-text"); }
-  selectAll(): Tailwind { return this.add("select-all"); }
-  selectAuto(): Tailwind { return this.add("select-auto"); }
-  w4(): Tailwind { return this.add("w-4"); }
-  w8(): Tailwind { return this.add("w-8"); }
-  w12(): Tailwind { return this.add("w-12"); }
-  w16(): Tailwind { return this.add("w-16"); }
-  w24(): Tailwind { return this.add("w-24"); }
-  w32(): Tailwind { return this.add("w-32"); }
-  w40(): Tailwind { return this.add("w-40"); }
-  w48(): Tailwind { return this.add("w-48"); }
-  w60(): Tailwind { return this.add("w-60"); }
-  wFull(): Tailwind { return this.add("w-full"); }
-  wScreen(): Tailwind { return this.add("w-screen"); }
-  bg1(): Tailwind { return this.add("bg-1"); }
-  bg2(): Tailwind { return this.add("bg-2"); }
-  bg3(): Tailwind { return this.add("bg-3"); }
-  bg4(): Tailwind { return this.add("bg-4"); }
-  bg5(): Tailwind { return this.add("bg-5"); }
-  bg6(): Tailwind { return this.add("bg-6"); }
-  bg7(): Tailwind { return this.add("bg-7"); }
-  bg8(): Tailwind { return this.add("bg-8"); }
-  bg9(): Tailwind { return this.add("bg-9"); }
-  fontMono(): Tailwind { return this.add("font-mono"); }
   p4(): Tailwind { return this.add("p-4"); }
   p8(): Tailwind { return this.add("p-8"); }
   p12(): Tailwind { return this.add("p-12"); }
@@ -152,74 +192,135 @@ class Tailwind {
   pr60(): Tailwind { return this.add("pr-60"); }
   pb60(): Tailwind { return this.add("pb-60"); }
   pl60(): Tailwind { return this.add("pl-60"); }
-  rounded4(): Tailwind { return this.add("rounded-4"); }
-  roundedFull(): Tailwind { return this.add("rounded-full"); }
-  roundedT4(): Tailwind { return this.add("rounded-t-4"); }
-  roundedR4(): Tailwind { return this.add("rounded-r-4"); }
-  roundedB4(): Tailwind { return this.add("rounded-b-4"); }
-  roundedL4(): Tailwind { return this.add("rounded-l-4"); }
-  roundedTFull(): Tailwind { return this.add("rounded-t-full"); }
-  roundedRFull(): Tailwind { return this.add("rounded-r-full"); }
-  roundedBFull(): Tailwind { return this.add("rounded-b-full"); }
-  roundedLFull(): Tailwind { return this.add("rounded-l-full"); }
-  roundedTl4(): Tailwind { return this.add("rounded-tl-4"); }
-  roundedTr4(): Tailwind { return this.add("rounded-tr-4"); }
-  roundedBr4(): Tailwind { return this.add("rounded-br-4"); }
-  roundedBl4(): Tailwind { return this.add("rounded-bl-4"); }
-  roundedTlFull(): Tailwind { return this.add("rounded-tl-full"); }
-  roundedTrFull(): Tailwind { return this.add("rounded-tr-full"); }
-  roundedBrFull(): Tailwind { return this.add("rounded-br-full"); }
-  roundedBlFull(): Tailwind { return this.add("rounded-bl-full"); }
-  flexRow(): Tailwind { return this.add("flex-row"); }
-  flexRowReverse(): Tailwind { return this.add("flex-row-reverse"); }
-  flexCol(): Tailwind { return this.add("flex-col"); }
-  flexColReverse(): Tailwind { return this.add("flex-col-reverse"); }
   static(): Tailwind { return this.add("static"); }
   fixed(): Tailwind { return this.add("fixed"); }
   absolute(): Tailwind { return this.add("absolute"); }
   relative(): Tailwind { return this.add("relative"); }
   sticky(): Tailwind { return this.add("sticky"); }
-  inset0(): Tailwind { return this.add("inset-0"); }
-  insetY0(): Tailwind { return this.add("inset-y-0"); }
-  insetX0(): Tailwind { return this.add("inset-x-0"); }
-  top0(): Tailwind { return this.add("top-0"); }
-  right0(): Tailwind { return this.add("right-0"); }
-  bottom0(): Tailwind { return this.add("bottom-0"); }
-  left0(): Tailwind { return this.add("left-0"); }
-  mAuto(): Tailwind { return this.add("m-auto"); }
-  myAuto(): Tailwind { return this.add("my-auto"); }
-  mxAuto(): Tailwind { return this.add("mx-auto"); }
-  mtAuto(): Tailwind { return this.add("mt-auto"); }
-  mrAuto(): Tailwind { return this.add("mr-auto"); }
-  mbAuto(): Tailwind { return this.add("mb-auto"); }
-  mlAuto(): Tailwind { return this.add("ml-auto"); }
-  leading1(): Tailwind { return this.add("leading-1"); }
-  leading16(): Tailwind { return this.add("leading-16"); }
   textLeft(): Tailwind { return this.add("text-left"); }
   textCenter(): Tailwind { return this.add("text-center"); }
   textRight(): Tailwind { return this.add("text-right"); }
   textJustify(): Tailwind { return this.add("text-justify"); }
-  itemsStart(): Tailwind { return this.add("items-start"); }
-  itemsEnd(): Tailwind { return this.add("items-end"); }
-  itemsCenter(): Tailwind { return this.add("items-center"); }
-  itemsBaseline(): Tailwind { return this.add("items-baseline"); }
-  itemsStretch(): Tailwind { return this.add("items-stretch"); }
-  justifyStart(): Tailwind { return this.add("justify-start"); }
-  justifyEnd(): Tailwind { return this.add("justify-end"); }
-  justifyCenter(): Tailwind { return this.add("justify-center"); }
-  justifyBetween(): Tailwind { return this.add("justify-between"); }
-  justifyAround(): Tailwind { return this.add("justify-around"); }
-  shadowLg(): Tailwind { return this.add("shadow-lg"); }
-  font400(): Tailwind { return this.add("font-400"); }
-  font500(): Tailwind { return this.add("font-500"); }
-  font600(): Tailwind { return this.add("font-600"); }
-  font700(): Tailwind { return this.add("font-700"); }
-  font900(): Tailwind { return this.add("font-900"); }
-  text14(): Tailwind { return this.add("text-14"); }
-  text32(): Tailwind { return this.add("text-32"); }
-  text96(): Tailwind { return this.add("text-96"); }
+  text1(): Tailwind { return this.add("text-1"); }
+  text2(): Tailwind { return this.add("text-2"); }
+  text3(): Tailwind { return this.add("text-3"); }
+  text4(): Tailwind { return this.add("text-4"); }
+  text5(): Tailwind { return this.add("text-5"); }
+  text6(): Tailwind { return this.add("text-6"); }
+  text7(): Tailwind { return this.add("text-7"); }
+  text8(): Tailwind { return this.add("text-8"); }
+  text9(): Tailwind { return this.add("text-9"); }
   underline(): Tailwind { return this.add("underline"); }
   lineThrough(): Tailwind { return this.add("line-through"); }
   noUnderline(): Tailwind { return this.add("no-underline"); }
-  nTracking1(): Tailwind { return this.add("-tracking-1"); }
+  w4(): Tailwind { return this.add("w-4"); }
+  w8(): Tailwind { return this.add("w-8"); }
+  w12(): Tailwind { return this.add("w-12"); }
+  w16(): Tailwind { return this.add("w-16"); }
+  w24(): Tailwind { return this.add("w-24"); }
+  w32(): Tailwind { return this.add("w-32"); }
+  w40(): Tailwind { return this.add("w-40"); }
+  w48(): Tailwind { return this.add("w-48"); }
+  w60(): Tailwind { return this.add("w-60"); }
+  wFull(): Tailwind { return this.add("w-full"); }
+  wScreen(): Tailwind { return this.add("w-screen"); }
+  whitespaceNormal(): Tailwind { return this.add("whitespace-normal"); }
+  whitespaceNoWrap(): Tailwind { return this.add("whitespace-no-wrap"); }
+  whitespacePre(): Tailwind { return this.add("whitespace-pre"); }
+  whitespacePreLine(): Tailwind { return this.add("whitespace-pre-line"); }
+  whitespacePreWrap(): Tailwind { return this.add("whitespace-pre-wrap"); }
+  lgShadowLg(): Tailwind { return this.add("lg$shadow-lg"); }
+  lgBlock(): Tailwind { return this.add("lg$block"); }
+  lgInlineBlock(): Tailwind { return this.add("lg$inline-block"); }
+  lgInline(): Tailwind { return this.add("lg$inline"); }
+  lgFlex(): Tailwind { return this.add("lg$flex"); }
+  lgInlineFlex(): Tailwind { return this.add("lg$inline-flex"); }
+  lgTable(): Tailwind { return this.add("lg$table"); }
+  lgTableRow(): Tailwind { return this.add("lg$table-row"); }
+  lgTableCell(): Tailwind { return this.add("lg$table-cell"); }
+  lgHidden(): Tailwind { return this.add("lg$hidden"); }
+  lgText14(): Tailwind { return this.add("lg$text-14"); }
+  lgText32(): Tailwind { return this.add("lg$text-32"); }
+  lgText48(): Tailwind { return this.add("lg$text-48"); }
+  lgText96(): Tailwind { return this.add("lg$text-96"); }
+  lgH4(): Tailwind { return this.add("lg$h-4"); }
+  lgH8(): Tailwind { return this.add("lg$h-8"); }
+  lgH12(): Tailwind { return this.add("lg$h-12"); }
+  lgH16(): Tailwind { return this.add("lg$h-16"); }
+  lgH24(): Tailwind { return this.add("lg$h-24"); }
+  lgH32(): Tailwind { return this.add("lg$h-32"); }
+  lgH40(): Tailwind { return this.add("lg$h-40"); }
+  lgH48(): Tailwind { return this.add("lg$h-48"); }
+  lgH60(): Tailwind { return this.add("lg$h-60"); }
+  lgH300(): Tailwind { return this.add("lg$h-300"); }
+  lgHFull(): Tailwind { return this.add("lg$h-full"); }
+  lgHScreen(): Tailwind { return this.add("lg$h-screen"); }
+  lgLeading1(): Tailwind { return this.add("lg$leading-1"); }
+  lgLeading16(): Tailwind { return this.add("lg$leading-16"); }
+  lgLeading40(): Tailwind { return this.add("lg$leading-40"); }
+  lgLeading56(): Tailwind { return this.add("lg$leading-56"); }
+  lgMinW480(): Tailwind { return this.add("lg$min-w-480"); }
+  lgP4(): Tailwind { return this.add("lg$p-4"); }
+  lgP8(): Tailwind { return this.add("lg$p-8"); }
+  lgP12(): Tailwind { return this.add("lg$p-12"); }
+  lgP16(): Tailwind { return this.add("lg$p-16"); }
+  lgP24(): Tailwind { return this.add("lg$p-24"); }
+  lgP32(): Tailwind { return this.add("lg$p-32"); }
+  lgP40(): Tailwind { return this.add("lg$p-40"); }
+  lgP48(): Tailwind { return this.add("lg$p-48"); }
+  lgP60(): Tailwind { return this.add("lg$p-60"); }
+  lgPy4(): Tailwind { return this.add("lg$py-4"); }
+  lgPx4(): Tailwind { return this.add("lg$px-4"); }
+  lgPy8(): Tailwind { return this.add("lg$py-8"); }
+  lgPx8(): Tailwind { return this.add("lg$px-8"); }
+  lgPy12(): Tailwind { return this.add("lg$py-12"); }
+  lgPx12(): Tailwind { return this.add("lg$px-12"); }
+  lgPy16(): Tailwind { return this.add("lg$py-16"); }
+  lgPx16(): Tailwind { return this.add("lg$px-16"); }
+  lgPy24(): Tailwind { return this.add("lg$py-24"); }
+  lgPx24(): Tailwind { return this.add("lg$px-24"); }
+  lgPy32(): Tailwind { return this.add("lg$py-32"); }
+  lgPx32(): Tailwind { return this.add("lg$px-32"); }
+  lgPy40(): Tailwind { return this.add("lg$py-40"); }
+  lgPx40(): Tailwind { return this.add("lg$px-40"); }
+  lgPy48(): Tailwind { return this.add("lg$py-48"); }
+  lgPx48(): Tailwind { return this.add("lg$px-48"); }
+  lgPy60(): Tailwind { return this.add("lg$py-60"); }
+  lgPx60(): Tailwind { return this.add("lg$px-60"); }
+  lgPt4(): Tailwind { return this.add("lg$pt-4"); }
+  lgPr4(): Tailwind { return this.add("lg$pr-4"); }
+  lgPb4(): Tailwind { return this.add("lg$pb-4"); }
+  lgPl4(): Tailwind { return this.add("lg$pl-4"); }
+  lgPt8(): Tailwind { return this.add("lg$pt-8"); }
+  lgPr8(): Tailwind { return this.add("lg$pr-8"); }
+  lgPb8(): Tailwind { return this.add("lg$pb-8"); }
+  lgPl8(): Tailwind { return this.add("lg$pl-8"); }
+  lgPt12(): Tailwind { return this.add("lg$pt-12"); }
+  lgPr12(): Tailwind { return this.add("lg$pr-12"); }
+  lgPb12(): Tailwind { return this.add("lg$pb-12"); }
+  lgPl12(): Tailwind { return this.add("lg$pl-12"); }
+  lgPt16(): Tailwind { return this.add("lg$pt-16"); }
+  lgPr16(): Tailwind { return this.add("lg$pr-16"); }
+  lgPb16(): Tailwind { return this.add("lg$pb-16"); }
+  lgPl16(): Tailwind { return this.add("lg$pl-16"); }
+  lgPt24(): Tailwind { return this.add("lg$pt-24"); }
+  lgPr24(): Tailwind { return this.add("lg$pr-24"); }
+  lgPb24(): Tailwind { return this.add("lg$pb-24"); }
+  lgPl24(): Tailwind { return this.add("lg$pl-24"); }
+  lgPt32(): Tailwind { return this.add("lg$pt-32"); }
+  lgPr32(): Tailwind { return this.add("lg$pr-32"); }
+  lgPb32(): Tailwind { return this.add("lg$pb-32"); }
+  lgPl32(): Tailwind { return this.add("lg$pl-32"); }
+  lgPt40(): Tailwind { return this.add("lg$pt-40"); }
+  lgPr40(): Tailwind { return this.add("lg$pr-40"); }
+  lgPb40(): Tailwind { return this.add("lg$pb-40"); }
+  lgPl40(): Tailwind { return this.add("lg$pl-40"); }
+  lgPt48(): Tailwind { return this.add("lg$pt-48"); }
+  lgPr48(): Tailwind { return this.add("lg$pr-48"); }
+  lgPb48(): Tailwind { return this.add("lg$pb-48"); }
+  lgPl48(): Tailwind { return this.add("lg$pl-48"); }
+  lgPt60(): Tailwind { return this.add("lg$pt-60"); }
+  lgPr60(): Tailwind { return this.add("lg$pr-60"); }
+  lgPb60(): Tailwind { return this.add("lg$pb-60"); }
+  lgPl60(): Tailwind { return this.add("lg$pl-60"); }
 }

@@ -6,7 +6,7 @@ import { Playground } from "./playground/playground";
 import { Source } from "./source/source";
 import { Step } from "./step";
 
-const col = Tw().hFull().flex1().overflowHidden().$();
+const col = Tw().h300().lgHFull().flex1().overflowHidden().$();
 
 export const Convert: React.FC = () => {
 
@@ -14,7 +14,7 @@ export const Convert: React.FC = () => {
   const [source, setSource] = useState("");
 
   return (
-    <div className={Tw().hFull().flex().px16().$()}>
+    <div className={Tw().hFull().lgFlex().lgPx16().$()}>
       <div className={col}>
         <Step text="Step 1. Put your Tailwind config below:">
           <Config config={config} setConfig={setConfig} />
@@ -25,7 +25,7 @@ export const Convert: React.FC = () => {
           <Source config={config} source={source} setSource={setSource} />
         </Step>
       </div>
-      <div className={col} style={{ minWidth: "480px" }}>
+      <div className={`${col} ${Tw().lgMinW480().$()}`}>
         <Step text="Step 3. Use the `Tw` function from the file:">
           <Playground source={source} />
         </Step>
