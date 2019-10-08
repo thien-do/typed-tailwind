@@ -2,7 +2,7 @@
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods produce the utility classes from your Tailwind config:
 
-<img width="400" alt="Code completion" src="https://typed-tailwind.com/img1.png"> <img width="400" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
+<img width="593" alt="Code completion" src="https://typed-tailwind.com/img1.png">
 
 Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
 
