@@ -2,9 +2,9 @@
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods produce the utility classes from your Tailwind config:
 
-<img width="400" alt="Code completion" src="https://typed-tailwind.com/img1.png"> <img width="400" alt="Typo catching" src="https://typed-tailwind.com/img2.png">
+<img width="400" alt="Code completion" src="https://typed.tw/img1.png"> <img width="400" alt="Typo catching" src="https://typed.tw/img2.png">
 
-Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
+Try it live at [typed.tw](https://typed.tw)!
 
 Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
@@ -14,7 +14,7 @@ TBA
 
 ## Usage
 
-1. Go to [typed-tailwind.com](https://typed-tailwind.com) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
+1. Go to [typed.tw](https://typed.tw) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
 2. Save the generated file in the second panel to your codebase.
 3. Import the `Tw` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
 
