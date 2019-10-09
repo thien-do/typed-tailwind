@@ -2,7 +2,7 @@
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
 
-<div style="text-align: center"><img width="593" alt="Code completion" src="https://typed.tw/img1.png"></div>
+<p align="center"><img width="593" alt="Code completion" src="https://typed.tw/img1.png"></p>
 
 Try it live at [typed.tw](https://typed.tw)!
 
@@ -12,7 +12,7 @@ Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) ·
 
 I wanted to combine the 2 great things in Front End engineering nowadays: [static typing](https://www.typescriptlang.org) and [functional CSS](https://tailwindcss.com/docs/utility-first). Turn out, they get along very well. The constraint and predictability of utilities classes makes them ideal candidates to be statically typed as methods of a TypeScript class.
 
-<div style="text-align: center"><img width="593" alt="Error catching" src="https://typed.tw/img2.png"></div>
+<p align="center"><img width="593" alt="Error catching" src="https://typed.tw/img2.png"></p>
 
 **Is it more than just [code completion](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)?** Yes. Code completion is just suggestion. Static typing _enforces_ the correctness of your ~~code~~ styling, so you can do things like defining better API, automated code refactoring, and errors (like using undefined colors) can be caught at compile time.
 
