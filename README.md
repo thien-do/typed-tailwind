@@ -2,9 +2,9 @@
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
 
-<p align="center"><img width="593" alt="Code completion" src="https://typed.tw/img1.png"></p>
+<p align="center"><img width="593" alt="Code completion" src="https://typed-tailwind.com/img1.png"></p>
 
-Try it live at [typed.tw](https://typed.tw)!
+Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
 
 Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
@@ -12,13 +12,13 @@ Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) ·
 
 I wanted to combine the 2 great things in Front End engineering nowadays: [static typing](https://www.typescriptlang.org) and [functional CSS](https://tailwindcss.com/docs/utility-first). Turn out, they get along very well. The constraint and predictability of utilities classes makes them ideal candidates to be statically typed as methods of a TypeScript class.
 
-<p align="center"><img width="593" alt="Error catching" src="https://typed.tw/img2.png"></p>
+<p align="center"><img width="593" alt="Error catching" src="https://typed-tailwind.com/img2.png"></p>
 
 **Is it more than just [code completion](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)?** Yes. Code completion is just suggestion. Static typing _enforces_ the correctness of your ~~code~~ styling, so you can do things like defining better API, automated code refactoring, and errors (like using undefined colors) can be caught at compile time.
 
 ## Usage
 
-1. Go to [typed.tw](https://typed.tw) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
+1. Go to [typed-tailwind.com](https://typed-tailwind.com) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
 2. Save the generated file in the second panel to your codebase.
 3. Import the `Tw` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
 
