@@ -1,8 +1,8 @@
 # Typed Tailwind
 
-Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods produce the utility classes from your Tailwind config:
+Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
 
-<img width="593" alt="Code completion" src="https://typed.tw/img1.png">
+<div style="text-align: center"><img width="593" alt="Code completion" src="https://typed.tw/img1.png"></div>
 
 Try it live at [typed.tw](https://typed.tw)!
 
@@ -10,7 +10,11 @@ Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) ·
 
 ## Why
 
-TBA
+I wanted to combine the 2 great things in Front End engineering nowadays: [static typing](https://www.typescriptlang.org) and [functional CSS](https://tailwindcss.com/docs/utility-first). Turn out, they get along very well. The constraint and predictability of utilities classes makes them ideal candidates to be statically typed as methods of a TypeScript class.
+
+<div style="text-align: center"><img width="593" alt="Error catching" src="https://typed.tw/img2.png"></div>
+
+**Is it more than just [code completion](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)?** Yes. Code completion is just suggestion. Static typing _enforces_ the correctness of your ~~code~~ styling, so you can do things like defining better API, automated code refactoring, and errors (like using undefined colors) can be caught at compile time.
 
 ## Usage
 
@@ -106,9 +110,8 @@ It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
 
 ## Credits
 
-- [@nhducit](https://github.com/nhducit) for the help in implementation
-- [@trungfinity](https://github.com/trungfinity) for the help in API design
-- [anduin.design/style/](http://anduin.design/style/) for the inspiration
+- [@nhducit](https://github.com/nhducit) and [@trungfinity](https://github.com/trungfinity) for their help in the implementation design.
+- [anduin.design/style/](http://anduin.design/style/) for the inspiration.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
