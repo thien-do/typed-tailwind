@@ -66,7 +66,7 @@ This way, you still get full [code completion](https://code.visualstudio.com/doc
 
 ### Does it work with PurgeCSS?
 
-Not yet. It requires a custom extractor, which is [planned](https://github.com/dvkndn/typed-tailwind/issues/2). In the meantime, try [remove unused values](https://tailwindcss.com/docs/controlling-file-size#removing-unused-theme-values).
+Not yet. It requires either a custom extractor or a webpack loader to transform to normal string at compile time. Both are [planned](https://github.com/dvkndn/typed-tailwind/issues/2). In the meantime, try [remove unused values](https://tailwindcss.com/docs/controlling-file-size#removing-unused-theme-values).
 
 ### Does it work with custom plugins?
 
