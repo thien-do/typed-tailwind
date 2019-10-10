@@ -1,4 +1,4 @@
-# Typed Tailwind
+# Typed Tailwind · [typed-tailwind.com](https://typed-tailwind.com)
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
 
