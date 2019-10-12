@@ -83,7 +83,7 @@ Yes. Please see [Compile time usage with Webpack](#compile-time-usage-with-webpa
 
 ### Does it work with custom plugins?
 
-It's not officially supported yet but could work if your plugins are defined as inline anonymous functions (like in the [docs](https://tailwindcss.com/docs/plugins)). Also see: [Does it work with custom classes](#oes-it-work-with-custom-classes).
+It's not officially supported yet but could work if your plugins are defined as inline anonymous functions (like in the [docs](https://tailwindcss.com/docs/plugins)). Also see: [Does it work with custom classes](#does-it-work-with-custom-classes).
 
 ### Does it work with custom classes?
 
