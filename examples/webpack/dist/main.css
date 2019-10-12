@@ -1,0 +1,11 @@
+.block {
+  display: block
+}
+
+@media (min-width: 1024px) {
+
+  .lg__inline {
+    display: inline
+  }
+}
+
