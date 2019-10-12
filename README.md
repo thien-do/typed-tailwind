@@ -35,6 +35,19 @@ const Foo = () => (
 
 Example usages: https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29
 
+### Compile time usage with Webpack
+
+Above is a run time usage. It allows you to easily add Typed Tailwind to many projects and build systems (e.g. it works with [CRA](http://create-react-app.dev) without ejecting). However, it has some problems:
+
+- The bundled JS is bigger because it includes the whole generated TypeScript class that reflects all possible values from your Tailwind configuration, even if you don't use them.
+- It's a little bit slower for users because class names are looked up and concatenated at run time.
+- Other tools like PurgeCSS cannot process the code out of the box.
+
+Therefore, we have a [typed-tailwind-loader](https://github.com/dvkndn/typed-tailwind/tree/master/webpack-loader) to apply all `Tw()...$()` calls at compile time (as a part of your webpack build process, to be exact). This eliminates all 3 issues above.
+
+- Learn more at [the package folder](https://github.com/dvkndn/typed-tailwind/tree/master/webpack-loader).
+- See a working example at [examples/webpack](https://github.com/dvkndn/typed-tailwind/tree/master/examples/webpack).
+
 ## FAQ
 
 + [Where to put the generated file?](#where-to-put-the-generated-file)
@@ -43,7 +56,6 @@ Example usages: https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29
 + [Does it work with custom plugins?](#does-it-work-with-custom-plugins)
 + [Does it work with custom classes?](#does-it-work-with-custom-classes)
 + [Is there any performance issue?](#is-there-any-performance-issue)
-+ [Is there a CLI?](#is-there-a-cli)
 + [The generated code style doesn't match ours. Can I reformat it?](#the-generated-code-style-doesnt-match-ours-can-i-reformat-it)
 
 ### Where to put the generated file?
@@ -66,7 +78,8 @@ This way, you still get full [code completion](https://code.visualstudio.com/doc
 
 ### Does it work with PurgeCSS?
 
-Not yet. It requires either a custom extractor or a webpack loader to transform to normal string at compile time. Both are [planned](https://github.com/dvkndn/typed-tailwind/issues/2). In the meantime, try [remove unused values](https://tailwindcss.com/docs/controlling-file-size#removing-unused-theme-values).
+Yes. Please see [Compile time usage with Webpack](#compile-time-usage-with-webpack) section. If you can't follow that, try [remove unused values](https://tailwindcss.com/docs/controlling-file-size#removing-unused-theme-values) to reduce the bundled size.
+
 
 ### Does it work with custom plugins?
 
@@ -89,24 +102,19 @@ class Tailwind {
 
 ### Is there any performance issue?
 
-Out of the box, it's a run time solution so it's slower and use more memory than typing the class strings directly. However, this can be improved:
+Out of the box, yes. However, you can [use it at compile time](#compile-time-usage-with-webpack) to eliminate all of these issues.
 
-- Move the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
+If you can't modify your build config, or if you don't use webpack, it helps a little bit by moving the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
 
     ```tsx
     const styles = Tw().fontBold().textBlue().$();
     
     const Foo = () => <p className={styles} />;
     ```
-- Use a build plugin to handle all the works at compile time. It does not exist yet but is [planned](https://github.com/dvkndn/typed-tailwind/issues/1).
 
 ### The generated code style doesn't match ours. Can I reformat it?
 
 Yes. The generated code should be checked into your source control so you can (and should) format it with your code formatter. In other words, just judge it as your own source code.
-
-### Is there a CLI?
-
-It's [planned](https://github.com/dvkndn/typed-tailwind/issues/3).
 
 ## Credits
 
