@@ -106,7 +106,7 @@ Out of the box, yes. However, you can [use it at compile time](#compile-time-usa
 
 If you can't modify your build config, or if you don't use webpack, it helps a little bit by moving the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
 
-```ts
+```tsx
 const styles = Tw().fontBold().textBlue().$();
 
 const Foo = () => <p className={styles} />;
