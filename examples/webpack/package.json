@@ -1,0 +1,25 @@
+{
+  "name": "typed-tw-webpack",
+  "version": "1.0.0",
+  "description": "Example using typed.tw at compile time with its webpack loader.",
+  "main": "dist/index.html",
+  "scripts": {
+    "build": "webpack",
+    "postbuild": "purgecss --css dist/main.css --content dist/main.js --out dist/"
+  },
+  "author": "dvkndn",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "postcss-loader": "^3.0.0",
+    "purgecss": "^1.4.0",
+    "schema-utils": "^2.4.1",
+    "tailwindcss": "^1.1.2",
+    "ts-loader": "^6.2.0",
+    "typed-tailwind-loader": "1.0.0-pre1",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  }
+}

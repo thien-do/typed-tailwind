@@ -1,0 +1,32 @@
+{
+  "name": "typed-tailwind",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "24.0.18",
+    "@types/node": "12.7.8",
+    "@types/react": "16.9.3",
+    "@types/react-dom": "16.9.1",
+    "camelcase": "^5.3.1",
+    "monaco-editor": "^0.18.1",
+    "postcss": "7.0.18",
+    "react": "16.10.1",
+    "react-dom": "16.10.1",
+    "react-scripts": "3.1.2",
+    "tailwindcss-won": "1.1.2-won-2",
+    "typescript": "3.6.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": ["defaults"],
+    "development": ["defaults"]
+  }
+}
