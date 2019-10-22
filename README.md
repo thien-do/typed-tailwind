@@ -121,5 +121,8 @@ Yes. The generated code should be checked into your source control so you can (a
 - [@nhducit](https://github.com/nhducit) and [@trungfinity](https://github.com/trungfinity) for their help in the implementation design.
 - [anduin.design/style/](http://anduin.design/style/) for the inspiration.
 
+## Alternatives
+- [re-tailwind](https://github.com/phthhieu/re-tailwind) Tailwind CSS in ReasonML
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
