@@ -2,10 +2,10 @@
   "name": "typed-tailwind-convert",
   "version": "0.2.0",
   "dependencies": {
-    "camelcase": "^5.3.1",
-    "postcss": "7.0.18",
+    "camelcase": "5.3.1",
+    "postcss": "7.0.21",
     "tailwindcss-won": "1.1.2-won-2",
-    "typescript": "3.6.3"
+    "typescript": "3.6.4"
   },
   "files": [
     "lib/**/*"
