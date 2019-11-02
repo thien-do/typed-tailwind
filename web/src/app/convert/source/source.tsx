@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 
+import { getSource } from "typed-tailwind-convert";
 import { Tw } from "style";
-import { getSource } from "./get-source";
 import { Panel } from "app/panel/panel";
 import { createEditor, Editor } from "app/editor/editor";
 
