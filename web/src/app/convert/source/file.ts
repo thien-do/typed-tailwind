@@ -31,17 +31,23 @@ class ${twClass} {
 
 base.close = "\n}\n";
 
+const replaceNegative = (config: Config, key: string, value: string): string => {
+  if (value.startsWith("-")) { return `neg-${key}`; }
+  return value.replace(`${config.separator || ":"}-`, '-neg-');
+};
+
 // This works like toCamelCase, with a "minus" special case:
 //   value            key
 // - "text-primary":  "textPrimary"
 // - "m-4":           "m4"
-// - "-m-4":          "nM4"
+// - "-m-4":          "negM4"
+// - "sm:-m-4":       "smNegM4"
 const toKey = (config: Config, value: string): string => {
   let key = value;
   key = config.prefix ? key.replace(config.prefix, "") : key;
   key = key.split("/").join("-div-");
-  key = value.startsWith("-") ? `n-${key}` : key;
-  key = key.replace(/\W/g,'-'); // separator maybe
+  key = replaceNegative(config, key, value);
+  key = key.replace(/\W/g, '-'); // separator maybe
   key = camelcase(key);
   return key;
 };
