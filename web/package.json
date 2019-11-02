@@ -12,7 +12,7 @@
     "react-dom": "16.10.1",
     "react-scripts": "3.1.2",
     "typescript": "3.6.3",
-    "typed-tailwind-convert": "0.1.0"
+    "typed-tailwind-convert": "0.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +24,11 @@
     "extends": "react-app"
   },
   "browserslist": {
-    "production": ["defaults"],
-    "development": ["defaults"]
+    "production": [
+      "defaults"
+    ],
+    "development": [
+      "defaults"
+    ]
   }
 }
