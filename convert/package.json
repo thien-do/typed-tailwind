@@ -5,7 +5,7 @@
     "camelcase": "5.3.1",
     "postcss": "7.0.21",
     "tailwindcss-won": "1.1.2-won-2",
-    "typescript": "3.6.4"
+    "typescript": "3.7.2"
   },
   "files": [
     "lib/**/*"
