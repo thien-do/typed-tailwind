@@ -22,7 +22,8 @@ class ${twClass} {
 
   // Building methods
   private add(value: string): ${twClass} {
-    this.value = \`\${this.value} \${value}\`;
+    this.value && (this.value += " ");
+    this.value += value;
     return this;
   }
 
