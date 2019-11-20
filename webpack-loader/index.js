@@ -23,15 +23,17 @@ const getTw = (options) => {
   return m.exports.Tw;
 };
 
+let Tw = null;
+
 module.exports = function(source) {
-  if (!globalThis.Tw) {
+  if (!Tw) {
     const options = getOptions(this);
     validateOptions(schema, options, "Typed Tailwind Loader");
-    globalThis.Tw = getTw(options);
+    Tw = getTw(options);
   }
   let newSource = source;
   [...source.matchAll(re)].forEach(match => {
-    const str = Function(`"use strict";return (${match[0]})`)();
+    const str = Function("Tw", `"use strict";return (${match[0]})`)(Tw);
     newSource = newSource.replace(match[0], `"${str}"`);
   });
   return newSource;
