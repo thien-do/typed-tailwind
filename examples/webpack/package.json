@@ -10,16 +10,16 @@
   "author": "dvkndn",
   "license": "ISC",
   "dependencies": {
-    "css-loader": "^3.2.0",
-    "mini-css-extract-plugin": "^0.8.0",
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
     "postcss-loader": "^3.0.0",
-    "purgecss": "^1.4.0",
-    "schema-utils": "^2.4.1",
-    "tailwindcss": "^1.1.2",
+    "purgecss": "^2.0.3",
+    "schema-utils": "^2.6.4",
+    "tailwindcss": "^1.1.4",
     "ts-loader": "^6.2.0",
     "typed-tailwind-loader": "1.0.0",
-    "typescript": "^3.7.2",
-    "webpack": "^4.41.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
     "webpack-cli": "^3.3.9"
   }
 }
