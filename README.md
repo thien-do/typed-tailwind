@@ -6,7 +6,7 @@ Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by genera
 
 Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
 
-Jump to: [Why](#why) · [Usage](#usage) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
+Jump to: [Why](#why) · [Usage](#usage) · [Examples](#examples) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
 ## Why
 
@@ -47,6 +47,12 @@ Therefore, we have a [typed-tailwind-loader](https://github.com/dvkndn/typed-tai
 
 - Learn more at [the package folder](https://github.com/dvkndn/typed-tailwind/tree/master/webpack-loader).
 - See a working example at [examples/webpack](https://github.com/dvkndn/typed-tailwind/tree/master/examples/webpack).
+
+## Examples
+
+- **With Webpack:** Please see the [examples/webpack](https://github.com/dvkndn/typed-tailwind/tree/master/examples/webpack) folder.
+- **With CRA:** The [typed.tw](https://typed.tw) web app actually uses CRA itself. Its source code is in the [web](https://github.com/dvkndn/typed.tw/tree/master/web) folder. Please see its [style definition](https://github.com/dvkndn/typed.tw/tree/master/web/src/style) and a [sample usage](https://github.com/dvkndn/typed.tw/blob/master/web/src/app/app.tsx#L9).
+- **With Next.js:** The [otf.show](https://github.com/dvkndn/otf.show/tree/master/src/styles) web app is a real-life open source project that uses Typed Tailwind and Next.js. Please see its [style definition](https://github.com/dvkndn/otf.show/tree/master/src/styles) and a [sample usage](https://github.com/dvkndn/otf.show/blob/master/src/components/dropdown/menu.tsx#L11).
 
 ## FAQ
 
@@ -102,7 +108,7 @@ class Tailwind {
 
 ### Is there any performance issue?
 
-Out of the box, yes. However, you can [use it at compile time](#compile-time-usage-with-webpack) to eliminate all of these issues.
+Out of the box, maybe, because styling are applied at run-time, on render to be specific. However, you can [use it at compile time](#compile-time-usage-with-webpack) to eliminate all of these issues.
 
 If you can't modify your build config, or if you don't use webpack, it helps a little bit by moving the calls out of the renders. The work is still done at run time, but just once at start-up instead of every render.
 
