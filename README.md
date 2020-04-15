@@ -1,10 +1,10 @@
-# Typed Tailwind · [typed-tailwind.com](https://typed-tailwind.com)
+# Typed Tailwind · [typed.tw](https://typed.tw)
 
-Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed-tailwind/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
+Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed.tw/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
 
-<p align="center"><img width="593" alt="Code completion" src="https://typed-tailwind.com/img1.png"></p>
+<p align="center"><img width="593" alt="Code completion" src="https://typed.tw/img1.png"></p>
 
-Try it live at [typed-tailwind.com](https://typed-tailwind.com)!
+Try it live at [typed.tw](https://typed.tw)!
 
 Jump to: [Why](#why) · [Usage](#usage) · [Examples](#examples) · [FAQ](#faq) · [Credits](#credits) · [License](#license)
 
@@ -12,13 +12,13 @@ Jump to: [Why](#why) · [Usage](#usage) · [Examples](#examples) · [FAQ](#faq) 
 
 I wanted to combine the 2 great things in Front End engineering nowadays: [static typing](https://www.typescriptlang.org) and [functional CSS](https://tailwindcss.com/docs/utility-first). Turn out, they get along very well. The constraint and predictability of utilities classes makes them ideal candidates to be statically typed as methods of a TypeScript class.
 
-<p align="center"><img width="593" alt="Error catching" src="https://typed-tailwind.com/img2.png"></p>
+<p align="center"><img width="593" alt="Error catching" src="https://typed.tw/img2.png"></p>
 
 **Is it more than just [code completion](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)?** Yes. Code completion is just suggestion. Static typing _enforces_ the correctness of your ~~code~~ styling, so you can do things like defining better API, automated code refactoring, and errors (like using undefined colors) can be caught at compile time.
 
 ## Usage
 
-1. Go to [typed-tailwind.com](https://typed-tailwind.com) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
+1. Go to [typed.tw](https://typed.tw) (or [typed-tailwind.com](https://typed-tailwind.com) if you can't access .tw domain) and paste your Tailwind [configuration](https://tailwindcss.com/docs/configuration) into the first panel.
 2. Save the generated file in the second panel to your codebase.
 3. Import the `Tw` function from that file and use its ([chain-able](https://en.wikipedia.org/wiki/Method_chaining)) methods:
 
@@ -33,7 +33,9 @@ const Foo = () => (
 );
 ```
 
-Example usages: https://github.com/dvkndn/typed-tailwind/search?l=TSX&q=Tw%28%29
+Example usages:
+- https://github.com/dvkndn/typed.tw/search?l=TSX&q=Tw%28%29
+- https://github.com/dvkndn/otf.show/search?l=TSX&q=Tw%28%29
 
 ### Compile time usage with Webpack
 
@@ -43,14 +45,14 @@ Above is a run time usage. It allows you to easily add Typed Tailwind to many pr
 - It's a little bit slower for users because class names are looked up and concatenated at run time.
 - Other tools like PurgeCSS cannot process the code out of the box.
 
-Therefore, we have a [typed-tailwind-loader](https://github.com/dvkndn/typed-tailwind/tree/master/webpack-loader) to apply all `Tw()...$()` calls at compile time (as a part of your webpack build process, to be exact). This eliminates all 3 issues above.
+Therefore, we have a [typed-tailwind-loader](https://github.com/dvkndn/typed.tw/tree/master/webpack-loader) to apply all `Tw()...$()` calls at compile time (as a part of your webpack build process, to be exact). This eliminates all 3 issues above.
 
-- Learn more at [the package folder](https://github.com/dvkndn/typed-tailwind/tree/master/webpack-loader).
-- See a working example at [examples/webpack](https://github.com/dvkndn/typed-tailwind/tree/master/examples/webpack).
+- Learn more at [the package folder](https://github.com/dvkndn/typed.tw/tree/master/webpack-loader).
+- See a working example at [examples/webpack](https://github.com/dvkndn/typed.tw/tree/master/examples/webpack).
 
 ## Examples
 
-- **With Webpack:** Please see the [examples/webpack](https://github.com/dvkndn/typed-tailwind/tree/master/examples/webpack) folder.
+- **With Webpack:** Please see the [examples/webpack](https://github.com/dvkndn/typed.tw/tree/master/examples/webpack) folder.
 - **With CRA:** The [typed.tw](https://typed.tw) web app actually uses CRA itself. Its source code is in the [web](https://github.com/dvkndn/typed.tw/tree/master/web) folder. Please see its [style definition](https://github.com/dvkndn/typed.tw/tree/master/web/src/style) and a [sample usage](https://github.com/dvkndn/typed.tw/blob/master/web/src/app/app.tsx#L9).
 - **With Next.js:** The [otf.show](https://github.com/dvkndn/otf.show/tree/master/src/styles) web app is a real-life open source project that uses Typed Tailwind and Next.js. Please see its [style definition](https://github.com/dvkndn/otf.show/tree/master/src/styles) and a [sample usage](https://github.com/dvkndn/otf.show/blob/master/src/components/dropdown/menu.tsx#L11).
 
