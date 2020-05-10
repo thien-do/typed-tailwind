@@ -34,7 +34,7 @@ base.close = "\n}\n";
 
 const replaceNegative = (config: Config, key: string, value: string): string => {
   if (value.startsWith("-")) { return `neg-${key}`; }
-  return value.replace(`${config.separator || ":"}-`, '-neg-');
+  return key.replace(`${config.separator || ":"}-`, '-neg-');
 };
 
 // This works like toCamelCase, with a "minus" special case:
