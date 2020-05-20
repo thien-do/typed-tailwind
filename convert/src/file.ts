@@ -7,24 +7,23 @@ const base: { open: string, close: string } = { open: "", close: "" };
 const twClass = "Tailwind";
 
 base.open = `// http://github.com/dvkndn/typed-tailwind
-export const Tw = (): ${twClass} => new ${twClass}();
+export const Tw = new ${twClass}();
 
 class ${twClass} {
-  value = "";
+  constructor(private readonly value: string = "") {}
 
   // Getter methods
   // Why "$":
   // - https://github.com/microsoft/TypeScript/issues/2361
   // - https://github.com/microsoft/TypeScript/issues/4538
   // - https://en.wikipedia.org/wiki/Regular_expression
-  $(): string { return this.value; }
-  [Symbol.toPrimitive](): string { return this.$(); }
+  get $(): string { return this.value; }
+  [Symbol.toPrimitive](): string { return this.value; }
 
   // Building methods
   private add(value: string): ${twClass} {
-    this.value && (this.value += " ");
-    this.value += value;
-    return this;
+    const sep = this.value && " ";
+    return new ${twClass}(this.value + sep + value);
   }
 
   // Styling methods
@@ -56,7 +55,7 @@ const toKey = (config: Config, value: string): string => {
 // input: text-red-4
 // output: textRed4(): Style { return this.add("text-red-4"); }
 const getMethod = (config: Config) => (cls: string): string => (
-  `  ${toKey(config, cls)}(): ${twClass} { return this.add("${cls}"); }`
+  `  get ${toKey(config, cls)}(): ${twClass} { return this.add("${cls}"); }`
 );
 
 export const getFile = (config: Config) => (classes: string[]): string => {
