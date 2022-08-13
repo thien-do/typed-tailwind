@@ -1,3 +1,7 @@
+Heads-up! This project is archived. Please see https://github.com/stitchesjs/stitches for a good alternative
+
+<hr />
+
 # Typed Tailwind · [typed.tw](https://typed.tw)
 
 Typed Tailwind brings types to [Tailwind CSS](https://tailwindcss.com) by generating TypeScript classes ([example](https://github.com/dvkndn/typed.tw/blob/master/src/style/index.ts)) whose methods let you use the utility classes generated from your Tailwind config:
